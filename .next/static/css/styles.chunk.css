@@ -1,0 +1,36 @@
+h1{
+    color: #023459;
+    font-family: NunitoBold;
+}
+
+h3{
+    font-family: NunitoItalic;
+    color: #1E646E;
+}
+
+p,a{
+    color:#002C2F;
+    font-family: Nunito;
+}
+
+body{
+    background:#ECE4E2;
+}      
+
+@font-face{
+    font-family: Nunito;
+    src: url(/Nunito/Nunito-Light.ttf);
+}
+
+@font-face{
+    font-family: NunitoBold;
+    src: url(/Nunito/Nunito-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: NunitoItalic;
+    src: url(/Nunito/Nunito-LightItalic.ttf);
+
+}
+
+/*# sourceMappingURL=styles.chunk.css.map*/
