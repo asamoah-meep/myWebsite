@@ -8,9 +8,13 @@ h3{
     color: #1E646E;
 }
 
-p,a{
+p,a,form,text,input,span{
     color:#002C2F;
     font-family: Nunito;
+}
+
+input[type='submit']{
+    float: right;
 }
 
 body{

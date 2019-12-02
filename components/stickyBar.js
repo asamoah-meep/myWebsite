@@ -8,38 +8,38 @@ class StickyBar extends React.Component{
     componentDidMount(){
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75,window.innerHeight/window.innerHeight,.1,1000);
-        camera.position.z = 3;
-        const renderer = new THREE.WebGLRenderer();
+
+        camera.position.z = 4;
+        camera.position.y = 1;
+        const renderer = new THREE.WebGLRenderer({antialias:true,alpha:true});
         renderer.setSize(200,200);
-        // renderer.gammaOutput=true;
-        // renderer.gammaFactor=2.2;
+        renderer.setClearColor(0xffffff,0);
+        renderer.gammaOutput=true;
+        renderer.gammaFactor=2.2;
         this.mount.appendChild( renderer.domElement );
-        // const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-        // const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );        
+       
         const loader = new GLTFLoader();
         let torch = undefined;
+        let rotation = .005;
+        
+        const animate = function () {
+            requestAnimationFrame( animate );
+              torch.rotation.z+= rotation;
+              torch.rotation.y+=rotation;
+              if(Math.abs(torch.rotation.z) > Math.PI/12)
+                rotation*=-1;
+            renderer.render( scene, camera );
+          };
 
-        loader.load('/Torch.gltf', function(gltf){
+        loader.load('/Logo.gltf', function(gltf){
             torch = gltf.scene;
             scene.add(torch);
-            console.log(torch);
+            animate();
 
         },undefined,function(error){
             console.error(error);
         });
-        // const cube = new THREE.Mesh( geometry, material );
-        // scene.add( cube );
-        // console.log(cube);
-        // console.log(scene);
-        const animate = function () {
-          requestAnimationFrame( animate );
-          if(torch)
-            torch.rotation.x+= 0.01;
-        //   cube.rotation.x += 0.01;
-        //   cube.rotation.y += 0.01;
-          renderer.render( scene, camera );
-        };
-        animate();
+
     }
 
     render(){
