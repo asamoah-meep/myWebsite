@@ -10,9 +10,11 @@ class Layout extends React.Component{
     render(){
         const style = <style jsx>{`
             #content{
+                display:inline-block;
                 margin-top:5px;
                 position:relative;
-                left:300px;
+                left:5%;
+                width:70%;
             }
         `}</style>
 

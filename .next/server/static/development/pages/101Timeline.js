@@ -129,9 +129,11 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this
     }, `
             #content{
+                display:inline-block;
                 margin-top:5px;
                 position:relative;
-                left:300px;
+                left:5%;
+                width:70%;
             }
         `);
 
@@ -139,7 +141,7 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       id: "content",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 21
       },
       __self: this
     }, this.props.children);
@@ -164,23 +166,20 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-datepicker/dist/react-datepicker.css */ "./node_modules/react-datepicker/dist/react-datepicker.css");
-/* harmony import */ var react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_datepicker_dist_react_datepicker_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var d3_axis__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! d3-axis */ "d3-axis");
-/* harmony import */ var d3_axis__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(d3_axis__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! d3-selection */ "d3-selection");
-/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(d3_selection__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var d3_scale__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! d3-scale */ "d3-scale");
-/* harmony import */ var d3_scale__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(d3_scale__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var d3_brush__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! d3-brush */ "d3-brush");
-/* harmony import */ var d3_brush__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(d3_brush__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var d3_time_format__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! d3-time-format */ "d3-time-format");
-/* harmony import */ var d3_time_format__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(d3_time_format__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! moment */ "moment");
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var d3_axis__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! d3-axis */ "d3-axis");
+/* harmony import */ var d3_axis__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(d3_axis__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! d3-selection */ "d3-selection");
+/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(d3_selection__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var d3_scale__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! d3-scale */ "d3-scale");
+/* harmony import */ var d3_scale__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(d3_scale__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var d3_brush__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! d3-brush */ "d3-brush");
+/* harmony import */ var d3_brush__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(d3_brush__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var d3_time_format__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! d3-time-format */ "d3-time-format");
+/* harmony import */ var d3_time_format__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(d3_time_format__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! moment */ "moment");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_6__);
 var _jsxFileName = "C:\\Users\\User\\Documents\\myWebsite\\components\\Timeframe.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
 
 
 
@@ -199,20 +198,20 @@ class Timeframe extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     this.removeScaleAndZoom = this.removeScaleAndZoom.bind(this);
     this.updatePoints = this.updatePoints.bind(this);
     this.createZoom = this.createZoom.bind(this);
-    this.scale = d3_scale__WEBPACK_IMPORTED_MODULE_4__["scaleTime"]().domain([moment__WEBPACK_IMPORTED_MODULE_7___default()("2018-09-01"), moment__WEBPACK_IMPORTED_MODULE_7___default()('2019-05-20')]).range([0, this.props.width + 150]);
+    this.scale = d3_scale__WEBPACK_IMPORTED_MODULE_3__["scaleTime"]().domain([moment__WEBPACK_IMPORTED_MODULE_6___default()("2018-09-01"), moment__WEBPACK_IMPORTED_MODULE_6___default()('2019-05-20')]).range([0, this.props.width + 150]);
 
     this.f = function () {
-      d3_selection__WEBPACK_IMPORTED_MODULE_3__["select"]("#zoomBox").call(this.brush.move, [this.props.start, this.props.end].map(ele => this.scale(ele)));
+      d3_selection__WEBPACK_IMPORTED_MODULE_2__["select"]("#zoomBox").call(this.brush.move, [this.props.start, this.props.end].map(ele => this.scale(ele)));
     };
 
-    this.brush = d3_brush__WEBPACK_IMPORTED_MODULE_5__["brushX"]().extent([[5, 0], [this.props.width + 155, 110]]).on("end", () => this.props.updateZoom(this.scale, this.f.bind(this)));
+    this.brush = d3_brush__WEBPACK_IMPORTED_MODULE_4__["brushX"]().extent([[5, 0], [this.props.width + 155, 110]]).on("end", () => this.props.updateZoom(this.scale, this.f.bind(this)));
   }
 
   componentDidMount() {
     this.createScale();
     this.createZoom();
     const that = this;
-    d3_selection__WEBPACK_IMPORTED_MODULE_3__["selectAll"]("#timeFrame span").on("click", function () {
+    d3_selection__WEBPACK_IMPORTED_MODULE_2__["selectAll"]("#timeFrame span").on("click", function () {
       that.props.setFrame(this.innerHTML, that.f.bind(that));
     });
   }
@@ -224,9 +223,9 @@ class Timeframe extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   }
 
   removeScaleAndZoom() {
-    d3_selection__WEBPACK_IMPORTED_MODULE_3__["select"]("#timeScale").remove();
-    d3_selection__WEBPACK_IMPORTED_MODULE_3__["selectAll"](".pointRow").remove();
-    d3_selection__WEBPACK_IMPORTED_MODULE_3__["select"]("#zoomBrush").selectAll("*").remove();
+    d3_selection__WEBPACK_IMPORTED_MODULE_2__["select"]("#timeScale").remove();
+    d3_selection__WEBPACK_IMPORTED_MODULE_2__["selectAll"](".pointRow").remove();
+    d3_selection__WEBPACK_IMPORTED_MODULE_2__["select"]("#zoomBrush").selectAll("*").remove();
   }
 
   updateStart(date) {
@@ -238,26 +237,26 @@ class Timeframe extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   }
 
   createScale() {
-    const scale = d3_scale__WEBPACK_IMPORTED_MODULE_4__["scaleTime"]().domain([this.props.start, this.props.end]).range([0, this.props.width]);
-    const axis = d3_axis__WEBPACK_IMPORTED_MODULE_2__["axisBottom"](scale);
+    const scale = d3_scale__WEBPACK_IMPORTED_MODULE_3__["scaleTime"]().domain([this.props.start, this.props.end]).range([0, this.props.width]);
+    const axis = d3_axis__WEBPACK_IMPORTED_MODULE_1__["axisBottom"](scale);
     let diff = Math.abs(this.props.start.diff(this.props.end, "months"));
 
     if (diff <= 3) {
       diff = Math.abs(this.props.start.diff(this.props.end, "hours"));
-      if (diff < 72) axis.tickFormat(d3_time_format__WEBPACK_IMPORTED_MODULE_6__["timeFormat"]("%I%p %b %f"));else axis.tickFormat(d3_time_format__WEBPACK_IMPORTED_MODULE_6__["timeFormat"]("%b %e"));
-    } else axis.tickFormat(d3_time_format__WEBPACK_IMPORTED_MODULE_6__["timeFormat"]("%b %Y"));
+      if (diff < 72) axis.tickFormat(d3_time_format__WEBPACK_IMPORTED_MODULE_5__["timeFormat"]("%I%p %b %f"));else axis.tickFormat(d3_time_format__WEBPACK_IMPORTED_MODULE_5__["timeFormat"]("%b %e"));
+    } else axis.tickFormat(d3_time_format__WEBPACK_IMPORTED_MODULE_5__["timeFormat"]("%b %Y"));
 
-    d3_selection__WEBPACK_IMPORTED_MODULE_3__["select"]("#timeBox").append("g").attr("transform", "translate(150,0)").attr("id", "timeScale").call(axis);
+    d3_selection__WEBPACK_IMPORTED_MODULE_2__["select"]("#timeBox").append("g").attr("transform", "translate(150,0)").attr("id", "timeScale").call(axis);
   }
 
   createZoom() {
     const scale = this.scale;
-    const axis = d3_axis__WEBPACK_IMPORTED_MODULE_2__["axisTop"](scale);
-    axis.tickFormat(d3_time_format__WEBPACK_IMPORTED_MODULE_6__["timeFormat"]("%b %Y"));
+    const axis = d3_axis__WEBPACK_IMPORTED_MODULE_1__["axisTop"](scale);
+    axis.tickFormat(d3_time_format__WEBPACK_IMPORTED_MODULE_5__["timeFormat"]("%b %Y"));
     const brush = this.brush;
-    d3_selection__WEBPACK_IMPORTED_MODULE_3__["select"]("#timeBox").append("g").attr("id", "zoomBox").attr("transform", "translate(20,30)");
-    d3_selection__WEBPACK_IMPORTED_MODULE_3__["select"]("#timeBox").append("g").attr("transform", "translate(25,140)").call(axis);
-    const zoomBrush = d3_selection__WEBPACK_IMPORTED_MODULE_3__["select"]("#zoomBox");
+    d3_selection__WEBPACK_IMPORTED_MODULE_2__["select"]("#timeBox").append("g").attr("id", "zoomBox").attr("transform", "translate(20,30)");
+    d3_selection__WEBPACK_IMPORTED_MODULE_2__["select"]("#timeBox").append("g").attr("transform", "translate(25,140)").call(axis);
+    const zoomBrush = d3_selection__WEBPACK_IMPORTED_MODULE_2__["select"]("#zoomBox");
     zoomBrush.call(brush).call(brush.move, [this.props.start, this.props.end].map(ele => scale(ele)));
   }
 
@@ -267,9 +266,9 @@ class Timeframe extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     for (let prof in this.props.data) profData.push(this.props.data[prof]);
 
     const scale = this.scale;
-    const yScale = d3_scale__WEBPACK_IMPORTED_MODULE_4__["scaleLinear"]().domain([0, profData.length]).range([0, 100]);
-    d3_selection__WEBPACK_IMPORTED_MODULE_3__["select"]("#zoomBox").selectAll("g [class=pointRow]").data(profData).enter().append('g').classed("pointRow", true).attr('y', (d, i) => yScale(i));
-    d3_selection__WEBPACK_IMPORTED_MODULE_3__["selectAll"]('.pointRow').selectAll('circle [class=scalePoint]').data(d => d.filter(ele => ele.date !== null)).enter().append('circle').classed('scalePoint', true).attr("cx", d => scale(moment__WEBPACK_IMPORTED_MODULE_7___default()(d.date))).attr("cy", function (d) {
+    const yScale = d3_scale__WEBPACK_IMPORTED_MODULE_3__["scaleLinear"]().domain([0, profData.length]).range([0, 100]);
+    d3_selection__WEBPACK_IMPORTED_MODULE_2__["select"]("#zoomBox").selectAll("g [class=pointRow]").data(profData).enter().append('g').classed("pointRow", true).attr('y', (d, i) => yScale(i));
+    d3_selection__WEBPACK_IMPORTED_MODULE_2__["selectAll"]('.pointRow').selectAll('circle [class=scalePoint]').data(d => d.filter(ele => ele.date !== null)).enter().append('circle').classed('scalePoint', true).attr("cx", d => scale(moment__WEBPACK_IMPORTED_MODULE_6___default()(d.date))).attr("cy", function (d) {
       return +this.parentNode.getAttribute('y') + 10;
     }).attr("fill", d => {
       if (d.resolve === undefined) d.resolve = 'Unresolved';
@@ -283,7 +282,7 @@ class Timeframe extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       jsx: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 166
+        lineNumber: 165
       },
       __self: this
     }, `
@@ -312,13 +311,13 @@ class Timeframe extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       width: 1100,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 189
+        lineNumber: 188
       },
       __self: this
     }), __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 191
+        lineNumber: 190
       },
       __self: this
     }), __jsx("div", {
@@ -326,13 +325,13 @@ class Timeframe extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       id: "startDate",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 192
+        lineNumber: 191
       },
       __self: this
     }, "Start Date:", __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 192
+        lineNumber: 191
       },
       __self: this
     }), __jsx("input", {
@@ -342,20 +341,20 @@ class Timeframe extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       min: "2018-09-01",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 192
+        lineNumber: 191
       },
       __self: this
     })), __jsx("div", {
       className: "datePicker",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 193
+        lineNumber: 192
       },
       __self: this
     }, "End Date:", __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 193
+        lineNumber: 192
       },
       __self: this
     }), __jsx("input", {
@@ -365,50 +364,50 @@ class Timeframe extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       max: "2019-05-20",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 193
+        lineNumber: 192
       },
       __self: this
     })), __jsx("div", {
       id: "timeFrame",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 194
+        lineNumber: 193
       },
       __self: this
     }, __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 194
+        lineNumber: 193
       },
       __self: this
     }, "1 day"), " |  ", __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 194
+        lineNumber: 193
       },
       __self: this
     }, "1 week"), " |  ", __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 194
+        lineNumber: 193
       },
       __self: this
     }, "1 month"), " |", __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 195
+        lineNumber: 194
       },
       __self: this
     }, "Fall Semester"), " |  ", __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 195
+        lineNumber: 194
       },
       __self: this
     }, "Spring Semester"), " |  ", __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 195
+        lineNumber: 194
       },
       __self: this
     }, "All")));
@@ -601,31 +600,30 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     const scene = new three__WEBPACK_IMPORTED_MODULE_3__["Scene"]();
     const camera = new three__WEBPACK_IMPORTED_MODULE_3__["PerspectiveCamera"](75, window.innerHeight / window.innerHeight, .1, 1000);
     camera.position.z = 4;
-    camera.position.y = 1;
     const renderer = new three__WEBPACK_IMPORTED_MODULE_3__["WebGLRenderer"]({
       antialias: true,
       alpha: true
     });
-    renderer.setSize(200, 200);
-    renderer.setClearColor(0xffffff, 0);
-    renderer.gammaOutput = true;
-    renderer.gammaFactor = 2.2;
+    renderer.setSize(300, 300); // renderer.setClearColor(0xffffff,0);
+    // renderer.gammaOutput=true;
+    // renderer.gammaFactor=2.2;
+
     this.mount.appendChild(renderer.domElement);
     const loader = new three_gltf_loader__WEBPACK_IMPORTED_MODULE_4___default.a();
-    let torch = undefined;
-    let rotation = .005;
+    let logo = undefined;
 
     const animate = function () {
       requestAnimationFrame(animate);
-      torch.rotation.z += rotation;
-      torch.rotation.y += rotation;
-      if (Math.abs(torch.rotation.z) > Math.PI / 12) rotation *= -1;
       renderer.render(scene, camera);
     };
 
     loader.load('/Logo.gltf', function (gltf) {
-      torch = gltf.scene;
-      scene.add(torch);
+      logo = gltf.scene;
+      logo.rotation.x = -Math.PI / 12;
+      logo.rotation.y = Math.PI / 12;
+      logo.rotation.z = Math.PI / 6;
+      logo.scale.set(2, 2, 2);
+      scene.add(logo);
       animate();
     }, undefined, function (error) {
       console.error(error);
@@ -638,108 +636,129 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       ref: ref => this.mount = ref,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46
+        lineNumber: 44
       },
       __self: this
     }, __jsx("h1", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47
+        lineNumber: 45
       },
       __self: this
     }, "Jeffrey Asamoah"), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "/",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48
+        lineNumber: 46
       },
       __self: this
     }, __jsx("a", {
       className: "subHeading",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 49
+        lineNumber: 47
       },
       __self: this
     }, "Home")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "/about",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51
+        lineNumber: 49
       },
       __self: this
     }, __jsx("a", {
       className: "subHeading",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52
+        lineNumber: 50
       },
       __self: this
     }, "About")), __jsx("h3", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54
+        lineNumber: 52
       },
       __self: this
     }, "Projects"), __jsx("ul", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 53
       },
       __self: this
     }, __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 54
       },
       __self: this
     }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/101Timeline",
+      href: "/#TimelineHeader",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 54
       },
       __self: this
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 55
       },
       __self: this
     }, "Tutor Timeline"))), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59
+        lineNumber: 57
       },
       __self: this
     }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/KMeans",
+      href: "/#KMeansHeader",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59
+        lineNumber: 57
       },
       __self: this
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
+        lineNumber: 58
+      },
+      __self: this
+    }, "K-Means Demo"))), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
         lineNumber: 60
       },
       __self: this
-    }, "K-Means Demo")))));
+    }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/#WebsiteHeader",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 60
+      },
+      __self: this
+    }, __jsx("a", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 61
+      },
+      __self: this
+    }, "This Website")))));
 
     const style = __jsx("style", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65
+        lineNumber: 66
       },
       __self: this
     }, `
             #stickyBar{
-                position: fixed;
-                top:0;
+                vertical-align:top;
+                position: relative;
+                display:inline-block;
                 left:3%;
-                width:auto;
+                width:18%;
                 padding-right: 5px;
+                margin-right:5px;
                 margin-top:5px;
                 border-right: solid 2px #1E646E;
             }
@@ -765,126 +784,6 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
 /***/ }),
 
-/***/ "./node_modules/react-datepicker/dist/react-datepicker.css":
-/*!*****************************************************************!*\
-  !*** ./node_modules/react-datepicker/dist/react-datepicker.css ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = {
-	"react-datepicker-popper": "_2HzzFtpFPILJJNwZsxKI3Y",
-	"react-datepicker__triangle": "y0O8f2Htj4UM8TFk3knH3",
-	"react-datepicker__year-read-view--down-arrow": "_3GsZQmclPy4IuN6k5VrGG1",
-	"react-datepicker__month-read-view--down-arrow": "_2Yp4PmOFcJf7LHrM-w9ZDK",
-	"react-datepicker__month-year-read-view--down-arrow": "_3woCe8F8hdn4EcmyWWLGSM",
-	"react-datepicker-wrapper": "_1OHfks045SWGvXCrum2gWi",
-	"react-datepicker": "_2DVlGJFkxio_rtUux1GdNb",
-	"react-datepicker--time-only": "_3iV0xyNZKUFR7sekdXPRht",
-	"react-datepicker__time-container": "_5FhJRx8KXY6_gFJnH_LCk",
-	"react-datepicker__time": "_2KFChOvXyjrqz4uBMXL0YY",
-	"react-datepicker__time-box": "_1oOpyxiSLTNCTh3068U-Rk",
-	"react-datepicker__header": "_1RXF7Nm0GUg6FLAVVBh3Q5",
-	"react-datepicker__header--time": "_1a9bbXVb2sxUDFBJAieLMy",
-	"react-datepicker__year-dropdown-container--select": "iF5uTvwOlrd64V6nXPm76",
-	"react-datepicker__month-dropdown-container--select": "_2zBJOu_-sq48UNtscZSQUK",
-	"react-datepicker__month-year-dropdown-container--select": "_3W-L5MetInwc6vTALEwMSf",
-	"react-datepicker__year-dropdown-container--scroll": "ZNTIVp6fjraBLGOF8qPTC",
-	"react-datepicker__month-dropdown-container--scroll": "_2Ocq0fcVGpeqspQJfBqN3X",
-	"react-datepicker__month-year-dropdown-container--scroll": "_2BR_cSoNMaZXMLnNaS0-zX",
-	"react-datepicker__current-month": "_2AFcEQnwrHkDALq0pIOr16",
-	"react-datepicker-time__header": "_1j4e_9CbPsxS5JFgOJF7fK",
-	"react-datepicker-year-header": "_2usP0v_BAnuxoMoSjaMZpD",
-	"react-datepicker__navigation": "_1iF3JuPQB79M7OfxV8Sx2W",
-	"react-datepicker__navigation--previous": "_3Im5Bjve94FD-ou7vH634i",
-	"react-datepicker__navigation--previous--disabled": "_2CPkWj_3obUfbdbf7TMAMm",
-	"react-datepicker__navigation--next": "_1u_mmStSFjdvdSH3Sw6LmK",
-	"react-datepicker__navigation--next--with-time": "_3Vx0LzMHR6d0uGSQlDSr-u",
-	"react-datepicker__navigation--next--with-today-button": "_1WKvbuvRA-x8dtYncfJ_V_",
-	"react-datepicker__navigation--next--disabled": "_3ZVsEvuKBbifAMB6eh9oy3",
-	"react-datepicker__navigation--years": "_3A5EI4_cvxCHQBKFSCSYJr",
-	"react-datepicker__navigation--years-previous": "_3KFCCfEg-SiaKn_b-o9z0j",
-	"react-datepicker__navigation--years-upcoming": "AjxfaGfjtu8ph3V333O7H",
-	"react-datepicker__month-container": "_8xQ6FBJIJyepHe3Ditk82",
-	"react-datepicker__month": "_3E9colwIV0yM8tCmyN2Pz2",
-	"react-datepicker__month-text": "_3SmmDhQHhjSd6CEVMH89Uq",
-	"react-datepicker__quarter-text": "_3yKOUjbr_29EHY3bcXHyg4",
-	"react-datepicker__input-time-container": "_36JvIABnDCQn2_JflF2gQV",
-	"react-datepicker-time__caption": "_1ar7YNpIUAxPiGi_2TmUTY",
-	"react-datepicker-time__input-container": "a3SylVjJ_VJV7qAH2_MfY",
-	"react-datepicker-time__input": "_1im5eKTumAbKXXZpwxO_zJ",
-	"react-datepicker-time__delimiter": "_39OP9khWx8BlFIvEbw_X_z",
-	"react-datepicker__time-container--with-today-button": "_3IjgFfHGEEiijkEpbA7x2r",
-	"react-datepicker__time-list": "n-5z8K3bVpzx8QRTsyi6V",
-	"react-datepicker__time-list-item": "_2kygO-jxDZO-Cw51yOj8L",
-	"react-datepicker__time-list-item--selected": "_1gB_14uhT89R2urulBWAql",
-	"react-datepicker__time-list-item--disabled": "_2fGYrPPLz4kzLp2f6hX8ZG",
-	"react-datepicker__week-number": "_3WItUc9gBA3TiOoqayYKmO",
-	"react-datepicker__week-number--clickable": "q_ltW7N__UYkpJ4ImWws8",
-	"react-datepicker__day-names": "_2my4LaGLo4UYMHutNpQ42W",
-	"react-datepicker__week": "_2Mc86mRy8VnOnMv8MR2uvU",
-	"react-datepicker__day-name": "_1DN2Oy01ZCApShGFzLATaF",
-	"react-datepicker__day": "_3T4IV--HoFqK8qA24hCLBy",
-	"react-datepicker__time-name": "_3ovNEcovcsOahcQDn5M3iy",
-	"react-datepicker__month--selected": "_1H_4dVeZj8qKdPN8ZX7xWX",
-	"react-datepicker__month--in-selecting-range": "_2iAFAd84cLsNooR5w_SKbv",
-	"react-datepicker__month--in-range": "_1BV3n4qQAfzD3i1IischVc",
-	"react-datepicker__quarter--selected": "ActTpN5G-GDJsnCbWTPQk",
-	"react-datepicker__quarter--in-selecting-range": "HNkymk0hJYC_cuvOY4AQg",
-	"react-datepicker__quarter--in-range": "_2xU5cPi5YxZgLDPkMxy1KQ",
-	"react-datepicker__month--disabled": "kSaVuLymf1j-J4-__LO21",
-	"react-datepicker__quarter--disabled": "_3ev444q0L2uxAVXTQVM934",
-	"react-datepicker__day--today": "_2THOsl6Y29IKEAj21X3l0m",
-	"react-datepicker__month-text--today": "_15zXQSIneJExZqRY8brm1T",
-	"react-datepicker__quarter-text--today": "_2FVWRr6h7eV_OJdyZo6BPg",
-	"react-datepicker__day--highlighted": "_2JPiPcRF9lv1PyKvfgg9D",
-	"react-datepicker__month-text--highlighted": "Ykv_ombPkxFZlHAdg-pCl",
-	"react-datepicker__quarter-text--highlighted": "_2fHMjk1F94kxShyfAxRqko",
-	"react-datepicker__day--highlighted-custom-1": "_2r1qLAJdVw2djNx-KmSmwq",
-	"react-datepicker__month-text--highlighted-custom-1": "_2-1ez5xODTB1xHwH-0UCCk",
-	"react-datepicker__quarter-text--highlighted-custom-1": "-q7T3OuZGefh3n_NxxoH9",
-	"react-datepicker__day--highlighted-custom-2": "_2HZrWYB0wF3JHGET3e8Tci",
-	"react-datepicker__month-text--highlighted-custom-2": "_1WDm9NRmsMQilt6N3o8aPj",
-	"react-datepicker__quarter-text--highlighted-custom-2": "_2_aR1HS4nZPgIrc-BzBEmL",
-	"react-datepicker__day--selected": "_2HzMdGLrToGkYpR4NSg5bB",
-	"react-datepicker__day--in-selecting-range": "hwFmSr-rtcdw8OYoUFNLM",
-	"react-datepicker__day--in-range": "_SI28Cp0AXiDsIB95YK77",
-	"react-datepicker__month-text--selected": "_3rrkK2nWdfjq_UuAiSbWP8",
-	"react-datepicker__month-text--in-selecting-range": "_2HUQCoYmyaHcpTQG4RERFP",
-	"react-datepicker__month-text--in-range": "_27p_SltJbr5J0Je8WbP0nX",
-	"react-datepicker__quarter-text--selected": "_2bRAJG5lgioVDl2QRCB1wv",
-	"react-datepicker__quarter-text--in-selecting-range": "_3mIU6IdW8r3jAO3cA11BBl",
-	"react-datepicker__quarter-text--in-range": "CkuMD92tlSwiJy1Y4Wh2U",
-	"react-datepicker__day--keyboard-selected": "DNt5B1eg5esa6fTvn3Rz7",
-	"react-datepicker__month-text--keyboard-selected": "Mb9JoKistdxyrt21djXtX",
-	"react-datepicker__quarter-text--keyboard-selected": "_3VkLN9_Q-2EyJf1HVsXfIU",
-	"react-datepicker__month--selecting-range": "_2-dPSzqkhAnaDbs50bRz6n",
-	"react-datepicker__day--disabled": "_1pL5NxmpNpoUj5vw7_a8bt",
-	"react-datepicker__month-text--disabled": "_1-FkX9k5Ufntn9YM1zyEK7",
-	"react-datepicker__quarter-text--disabled": "W1yl6jLGcxDLYzlZAoCx6",
-	"react-datepicker__input-container": "_3N7sgTEhIdNBg-ifJBBv9o",
-	"react-datepicker__year-read-view": "_1jRerIEH8QSaQZc3gZRgV4",
-	"react-datepicker__month-read-view": "OwJCsL-6H9P6CifN5fAWQ",
-	"react-datepicker__month-year-read-view": "_3LcMTUNirmnll4rbvJNHJb",
-	"react-datepicker__year-dropdown": "_2NABOWsMVBdoGfZdugq3Lh",
-	"react-datepicker__month-dropdown": "_1M3vEUWW0MNfoq3bM8wGQ6",
-	"react-datepicker__month-year-dropdown": "_2f-S3EENJwPBLJB9BPo_JD",
-	"react-datepicker__year-dropdown--scrollable": "_2lC4tn5Hk56GTdQW1ycT5E",
-	"react-datepicker__month-dropdown--scrollable": "_2gXIw-Zu-tEb5s6l6VmJB-",
-	"react-datepicker__month-year-dropdown--scrollable": "_1zRS3xsEChktusjdzTzxCL",
-	"react-datepicker__year-option": "_3t_nqbkqknpQkStoqZxlFO",
-	"react-datepicker__month-option": "_29XsGNzP4rwmdJ6JWv-v8",
-	"react-datepicker__month-year-option": "VfVotYr33V8bc1zo6exHj",
-	"react-datepicker__year-option--selected": "_2nVX_LsfHZFZBR76mgMo5w",
-	"react-datepicker__month-option--selected": "_1XyVF9i2H4MwC1jPnKxfL6",
-	"react-datepicker__month-year-option--selected": "_32Jt4l6fVepomwmRpgVju9",
-	"react-datepicker__close-icon": "_2uQInSpcvA-qfTNGp5C1_W",
-	"react-datepicker__today-button": "_3ckH99BYDpwPUOobGktm8w",
-	"react-datepicker__portal": "_3UN-gzxlOzvo0szLfVKtKf"
-};
-
-/***/ }),
-
 /***/ "./pages/101Timeline.js":
 /*!******************************!*\
   !*** ./pages/101Timeline.js ***!
@@ -896,30 +795,28 @@ module.exports = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/Link */ "next/Link");
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles.css */ "./styles.css");
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../public/Data/Fall2018.json */ "./public/Data/Fall2018.json");
-var _public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../public/Data/Fall2018.json */ "./public/Data/Fall2018.json", 1);
-/* harmony import */ var _public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../public/Data/Spring2019.json */ "./public/Data/Spring2019.json");
-var _public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../public/Data/Spring2019.json */ "./public/Data/Spring2019.json", 1);
-/* harmony import */ var _components_stickyBar_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/stickyBar.js */ "./components/stickyBar.js");
-/* harmony import */ var _components_Layout_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Layout.js */ "./components/Layout.js");
-/* harmony import */ var _components_Timeframe_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Timeframe.js */ "./components/Timeframe.js");
-/* harmony import */ var _components_Usecase_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Usecase.js */ "./components/Usecase.js");
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-helmet */ "react-helmet");
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! moment */ "moment");
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! d3-selection */ "d3-selection");
-/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(d3_selection__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var d3_scale__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! d3-scale */ "d3-scale");
-/* harmony import */ var d3_scale__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(d3_scale__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "@fortawesome/react-fontawesome");
-/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "@fortawesome/free-solid-svg-icons");
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles.css */ "./styles.css");
+/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../public/Data/Fall2018.json */ "./public/Data/Fall2018.json");
+var _public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../public/Data/Fall2018.json */ "./public/Data/Fall2018.json", 1);
+/* harmony import */ var _public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../public/Data/Spring2019.json */ "./public/Data/Spring2019.json");
+var _public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../public/Data/Spring2019.json */ "./public/Data/Spring2019.json", 1);
+/* harmony import */ var _components_stickyBar_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/stickyBar.js */ "./components/stickyBar.js");
+/* harmony import */ var _components_Layout_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Layout.js */ "./components/Layout.js");
+/* harmony import */ var _components_Timeframe_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Timeframe.js */ "./components/Timeframe.js");
+/* harmony import */ var _components_Usecase_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Usecase.js */ "./components/Usecase.js");
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-helmet */ "react-helmet");
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! moment */ "moment");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! d3-selection */ "d3-selection");
+/* harmony import */ var d3_selection__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(d3_selection__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var d3_scale__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! d3-scale */ "d3-scale");
+/* harmony import */ var d3_scale__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(d3_scale__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "@fortawesome/react-fontawesome");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "@fortawesome/free-solid-svg-icons");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__);
 var _jsxFileName = "C:\\Users\\User\\Documents\\myWebsite\\pages\\101Timeline.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -937,11 +834,10 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
 class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   constructor(props) {
     super(props);
-    const scale = d3_scale__WEBPACK_IMPORTED_MODULE_12__["scaleTime"]().domain([moment__WEBPACK_IMPORTED_MODULE_10___default()("2018-09-02"), moment__WEBPACK_IMPORTED_MODULE_10___default()("2019-05-21")]).range([0, 1150]);
+    const scale = d3_scale__WEBPACK_IMPORTED_MODULE_11__["scaleTime"]().domain([moment__WEBPACK_IMPORTED_MODULE_9___default()("2018-09-02"), moment__WEBPACK_IMPORTED_MODULE_9___default()("2019-05-21")]).range([0, 1150]);
     this.updateZoom = this.updateZoom.bind(this);
     this.updateStart = this.updateStart.bind(this);
     this.updateEnd = this.updateEnd.bind(this);
@@ -954,12 +850,12 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     this.enterTutor = this.enterTutor.bind(this);
     this.parseData = this.parseData.bind(this);
     this.mergeData = this.mergeData.bind(this);
-    const fData = this.parseData(_public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_3__);
-    const sData = this.parseData(_public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_4__);
+    const fData = this.parseData(_public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_2__);
+    const sData = this.parseData(_public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_3__);
     const allData = this.mergeData(fData, sData);
     this.state = {
-      start: moment__WEBPACK_IMPORTED_MODULE_10___default()("2018-09-02"),
-      end: moment__WEBPACK_IMPORTED_MODULE_10___default()("2019-05-21"),
+      start: moment__WEBPACK_IMPORTED_MODULE_9___default()("2018-09-02"),
+      end: moment__WEBPACK_IMPORTED_MODULE_9___default()("2019-05-21"),
       scale: scale,
       filteredData: allData,
       initData: allData,
@@ -970,15 +866,11 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       jsx: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 54
       },
       __self: this
     }, `
-          body{
-              padding-left:50px;
-              overflow-x:hidden;
-          }
-          
+
           .datePicker{
             display:inline-block;
             position:relative;
@@ -988,9 +880,12 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
           #filter{
             padding-right:10px;
             padding-bottom:10px;
+            display:inline-block;
             width:450px;
+            vertical-align:bottom;
             border-right: 1px solid #002C2f;
             border-bottom: 1px solid #002C2F;
+            margin-bottom:20px;
 
           }
           
@@ -999,13 +894,14 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
           }
           
           #legend{
+            vertical-align:top;
             display: inline-block;
             border:2px solid #002C2F;
             margin-left:20px;
             position:relative;
-            top:30px;   
-            width:250px;
+            width:500px;
             padding:2px;
+            margin-bottom:20px;
           }
                     
           #info{
@@ -1053,10 +949,10 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   }
 
   resetZoom(scale, f) {
-    if (d3_selection__WEBPACK_IMPORTED_MODULE_11__["event"].selection === null) {
+    if (d3_selection__WEBPACK_IMPORTED_MODULE_10__["event"].selection === null) {
       this.setState({
-        start: moment__WEBPACK_IMPORTED_MODULE_10___default()("2018-09-02"),
-        end: moment__WEBPACK_IMPORTED_MODULE_10___default()('2019-05-21')
+        start: moment__WEBPACK_IMPORTED_MODULE_9___default()("2018-09-02"),
+        end: moment__WEBPACK_IMPORTED_MODULE_9___default()('2019-05-21')
       }, f);
     }
   }
@@ -1088,14 +984,14 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     let s = null,
         e = null;
 
-    if (d3_selection__WEBPACK_IMPORTED_MODULE_11__["event"].selection === null) {
+    if (d3_selection__WEBPACK_IMPORTED_MODULE_10__["event"].selection === null) {
       this.resetZoom(scale, f);
       return;
     }
 
-    [s, e] = d3_selection__WEBPACK_IMPORTED_MODULE_11__["event"].selection.map(ele => scale.invert(ele));
-    s = moment__WEBPACK_IMPORTED_MODULE_10___default()(s);
-    e = moment__WEBPACK_IMPORTED_MODULE_10___default()(e);
+    [s, e] = d3_selection__WEBPACK_IMPORTED_MODULE_10__["event"].selection.map(ele => scale.invert(ele));
+    s = moment__WEBPACK_IMPORTED_MODULE_9___default()(s);
+    e = moment__WEBPACK_IMPORTED_MODULE_9___default()(e);
     this.setState({
       start: s,
       end: e
@@ -1104,13 +1000,13 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
   updateStart(date, f) {
     this.setState({
-      start: moment__WEBPACK_IMPORTED_MODULE_10___default()(date)
+      start: moment__WEBPACK_IMPORTED_MODULE_9___default()(date)
     }, f);
   }
 
   updateEnd(date, f) {
     this.setState({
-      end: moment__WEBPACK_IMPORTED_MODULE_10___default()(date)
+      end: moment__WEBPACK_IMPORTED_MODULE_9___default()(date)
     }, f);
   }
 
@@ -1120,29 +1016,29 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
     switch (frame) {
       case "1 day":
-        end = moment__WEBPACK_IMPORTED_MODULE_10___default()(start).add(1, "day").isBefore(moment__WEBPACK_IMPORTED_MODULE_10___default()()) ? moment__WEBPACK_IMPORTED_MODULE_10___default()(start).add(1, "day") : end;
+        end = moment__WEBPACK_IMPORTED_MODULE_9___default()(start).add(1, "day").isBefore(moment__WEBPACK_IMPORTED_MODULE_9___default()()) ? moment__WEBPACK_IMPORTED_MODULE_9___default()(start).add(1, "day") : end;
         this.setState({
           end: end
         }, f);
         break;
 
       case "1 week":
-        end = moment__WEBPACK_IMPORTED_MODULE_10___default()(start).add(1, "week").isBefore(moment__WEBPACK_IMPORTED_MODULE_10___default()()) ? moment__WEBPACK_IMPORTED_MODULE_10___default()(start).add(1, "week") : end;
+        end = moment__WEBPACK_IMPORTED_MODULE_9___default()(start).add(1, "week").isBefore(moment__WEBPACK_IMPORTED_MODULE_9___default()()) ? moment__WEBPACK_IMPORTED_MODULE_9___default()(start).add(1, "week") : end;
         this.setState({
           end: end
         }, f);
         break;
 
       case "1 month":
-        end = moment__WEBPACK_IMPORTED_MODULE_10___default()(start).add(1, "month").isBefore(moment__WEBPACK_IMPORTED_MODULE_10___default()()) ? moment__WEBPACK_IMPORTED_MODULE_10___default()(start).add(1, "month") : end;
+        end = moment__WEBPACK_IMPORTED_MODULE_9___default()(start).add(1, "month").isBefore(moment__WEBPACK_IMPORTED_MODULE_9___default()()) ? moment__WEBPACK_IMPORTED_MODULE_9___default()(start).add(1, "month") : end;
         this.setState({
           end: end
         }, f);
         break;
 
       case "Fall Semester":
-        start = moment__WEBPACK_IMPORTED_MODULE_10___default()('2018-09-02');
-        end = moment__WEBPACK_IMPORTED_MODULE_10___default()('2018-12-15');
+        start = moment__WEBPACK_IMPORTED_MODULE_9___default()('2018-09-02');
+        end = moment__WEBPACK_IMPORTED_MODULE_9___default()('2018-12-15');
         this.setState({
           start: start,
           end: end
@@ -1150,8 +1046,8 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         break;
 
       case "Spring Semester":
-        start = moment__WEBPACK_IMPORTED_MODULE_10___default()('2019-01-25');
-        end = moment__WEBPACK_IMPORTED_MODULE_10___default()('2019-05-21');
+        start = moment__WEBPACK_IMPORTED_MODULE_9___default()('2019-01-25');
+        end = moment__WEBPACK_IMPORTED_MODULE_9___default()('2019-05-21');
         this.setState({
           start: start,
           end: end
@@ -1161,8 +1057,8 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       case "All":
       default:
         this.setState({
-          start: moment__WEBPACK_IMPORTED_MODULE_10___default()("2018-09-02"),
-          end: moment__WEBPACK_IMPORTED_MODULE_10___default()("2019-05-21")
+          start: moment__WEBPACK_IMPORTED_MODULE_9___default()("2018-09-02"),
+          end: moment__WEBPACK_IMPORTED_MODULE_9___default()("2019-05-21")
         }, f);
         break;
     }
@@ -1214,7 +1110,7 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
   resetFilter(evt) {
     evt.preventDefault();
-    d3_selection__WEBPACK_IMPORTED_MODULE_11__["select"]("#info").classed('hideInfo', true);
+    d3_selection__WEBPACK_IMPORTED_MODULE_10__["select"]("#info").classed('hideInfo', true);
     this.setState({
       filteredData: this.state.initData,
       queryStudent: "",
@@ -1273,7 +1169,7 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       const prof = this.state.filteredData[ele];
       const profInfo = ele.split(" ");
 
-      const uc = __jsx(_components_Usecase_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      const uc = __jsx(_components_Usecase_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
         num: numProfs++,
         data: prof,
         name: profInfo[0],
@@ -1285,7 +1181,7 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         styling: fontStyles,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 362
+          lineNumber: 361
         },
         __self: this
       });
@@ -1297,7 +1193,7 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       id: "ucContainer",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 367
+        lineNumber: 366
       },
       __self: this
     }, profData);
@@ -1307,12 +1203,12 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       className: "hideInfo",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 371
+        lineNumber: 370
       },
       __self: this
     });
 
-    const timeLine = __jsx(_components_Timeframe_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    const timeLine = __jsx(_components_Timeframe_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
       width: 850,
       start: this.state.start,
       end: this.state.end,
@@ -1324,7 +1220,7 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       key: "Timeline",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 374
+        lineNumber: 373
       },
       __self: this
     });
@@ -1333,14 +1229,14 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       id: "filter",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 378
+        lineNumber: 377
       },
       __self: this
     }, " ", __jsx("form", {
       onSubmit: this.filterStudent,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 378
+        lineNumber: 377
       },
       __self: this
     }, "Enter the Student Name: ", __jsx("input", {
@@ -1350,14 +1246,14 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       onChange: this.enterStudent,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 379
+        lineNumber: 378
       },
       __self: this
     }), __jsx("input", {
       type: "submit",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 380
+        lineNumber: 379
       },
       __self: this
     }), " "), __jsx("form", {
@@ -1365,7 +1261,7 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       onReset: this.resetFilter,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 381
+        lineNumber: 380
       },
       __self: this
     }, "Enter the Tutor Name:  ", __jsx("input", {
@@ -1375,27 +1271,27 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       onChange: this.enterTutor,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 382
+        lineNumber: 381
       },
       __self: this
     }), __jsx("input", {
       type: "submit",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 383
+        lineNumber: 382
       },
       __self: this
     }), " ", __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 383
+        lineNumber: 382
       },
       __self: this
     }), __jsx("input", {
       type: "reset",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 384
+        lineNumber: 383
       },
       __self: this
     })));
@@ -1404,146 +1300,128 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       id: "legend",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 388
+        lineNumber: 387
       },
       __self: this
     }, __jsx("h3", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 389
+        lineNumber: 388
       },
       __self: this
     }, "LEGEND"), __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 390
+        lineNumber: 389
       },
       __self: this
-    }, "Jeff: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faDragon"],
+    }, "Jeff: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faDragon"],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 389
+      },
+      __self: this
+    }), "  Julia: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faCat"],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 389
+      },
+      __self: this
+    }), " Bella: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faLemon"],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 389
+      },
+      __self: this
+    }), "Alex: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faDog"],
       __source: {
         fileName: _jsxFileName,
         lineNumber: 390
       },
       __self: this
-    }), "  Julia: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faCat"],
+    }), " Alan: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faCrow"],
       __source: {
         fileName: _jsxFileName,
         lineNumber: 390
       },
       __self: this
-    }), " Bella: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faLemon"],
+    }), " Hari: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faCheese"],
       __source: {
         fileName: _jsxFileName,
         lineNumber: 390
       },
       __self: this
-    })), __jsx("p", {
+    }), "Ilias: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faHippo"],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 390
+      },
+      __self: this
+    }), " "), __jsx("p", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 391
       },
       __self: this
-    }, "Alex: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faDog"],
+    }, " Aashish: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faHorse"],
       __source: {
         fileName: _jsxFileName,
         lineNumber: 391
       },
       __self: this
-    }), " Alan: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faCrow"],
+    }), "Gilad: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faFrog"],
       __source: {
         fileName: _jsxFileName,
         lineNumber: 391
       },
       __self: this
-    }), " Hari: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faCheese"],
+    }), "Cindy: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faSpider"],
       __source: {
         fileName: _jsxFileName,
         lineNumber: 391
       },
       __self: this
-    })), __jsx("p", {
+    }), " Santiago: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faBreadSlice"],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 391
+      },
+      __self: this
+    }), "Rahul: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faFish"],
       __source: {
         fileName: _jsxFileName,
         lineNumber: 392
       },
       __self: this
-    }, "Ilias: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faHippo"],
+    }), " Jonathan: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faAppleAlt"],
       __source: {
         fileName: _jsxFileName,
         lineNumber: 392
-      },
-      __self: this
-    }), "  Aashish: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faHorse"],
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 392
-      },
-      __self: this
-    }), "Gilad: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faFrog"],
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 392
-      },
-      __self: this
-    })), __jsx("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 393
-      },
-      __self: this
-    }, "Cindy: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faSpider"],
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 393
-      },
-      __self: this
-    }), " Santiago: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faBreadSlice"],
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 393
-      },
-      __self: this
-    }), "  Rahul: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faFish"],
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 393
-      },
-      __self: this
-    })), __jsx("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 394
-      },
-      __self: this
-    }, "Jonathan: ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_13__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faAppleAlt"],
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 394
       },
       __self: this
     }), " "), __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 395
+        lineNumber: 393
       },
       __self: this
     }), __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 396
+        lineNumber: 394
       },
       __self: this
     }, __jsx("span", {
@@ -1552,72 +1430,60 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 396
+        lineNumber: 394
       },
       __self: this
-    }, "Red"), ": Unresolved"), __jsx("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 397
-      },
-      __self: this
-    }, __jsx("span", {
+    }, "Red"), ": Unresolved", __jsx("span", {
       style: {
         color: "#FAD201"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 397
+        lineNumber: 395
       },
       __self: this
-    }, "Yellow"), ": Partially Resolved"), __jsx("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 398
-      },
-      __self: this
-    }, __jsx("span", {
+    }, "     Yellow"), ": Partially Resolved", __jsx("span", {
       style: {
         color: "#33A532"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 398
+        lineNumber: 396
       },
       __self: this
-    }, "Green"), ": Resolved"));
+    }, "     Green"), ": Resolved"));
 
-    return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_stickyBar_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_stickyBar_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 402
+        lineNumber: 400
       },
       __self: this
-    }), __jsx(_components_Layout_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), __jsx(_components_Layout_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 401
+      },
+      __self: this
+    }, this.style, __jsx(react_helmet__WEBPACK_IMPORTED_MODULE_8___default.a, {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 403
       },
       __self: this
-    }, this.style, __jsx(react_helmet__WEBPACK_IMPORTED_MODULE_9___default.a, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 405
-      },
-      __self: this
     }, __jsx("title", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 406
+        lineNumber: 404
       },
       __self: this
     }, "Tutor Timeline")), __jsx("h1", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 408
+        lineNumber: 406
       },
       __self: this
-    }, "2018-2019 CS101 Tutoring Timeline"), filter, ucContainer, legend, timeLine, info));
+    }, "2018-2019 CS101 Tutoring Timeline"), filter, legend, ucContainer, timeLine, info));
   }
 
 }

@@ -1,4 +1,3 @@
-import Link from 'next/Link';
 import '../styles.css';
 import fallData from '../public/Data/Fall2018.json';
 import springData from '../public/Data/Spring2019.json';
@@ -53,11 +52,7 @@ class Timeline extends React.Component{
           }
 
         this.style = <style jsx>{`
-          body{
-              padding-left:50px;
-              overflow-x:hidden;
-          }
-          
+
           .datePicker{
             display:inline-block;
             position:relative;
@@ -67,9 +62,12 @@ class Timeline extends React.Component{
           #filter{
             padding-right:10px;
             padding-bottom:10px;
+            display:inline-block;
             width:450px;
+            vertical-align:bottom;
             border-right: 1px solid #002C2f;
             border-bottom: 1px solid #002C2F;
+            margin-bottom:20px;
 
           }
           
@@ -78,13 +76,14 @@ class Timeline extends React.Component{
           }
           
           #legend{
+            vertical-align:top;
             display: inline-block;
             border:2px solid #002C2F;
             margin-left:20px;
             position:relative;
-            top:30px;   
-            width:250px;
+            width:500px;
             padding:2px;
+            margin-bottom:20px;
           }
                     
           #info{
@@ -387,15 +386,14 @@ class Timeline extends React.Component{
 
         const legend = <div id='legend'>
         <h3>LEGEND</h3>
-        <p>Jeff: <FontAwesomeIcon icon={faDragon}/>  Julia: <FontAwesomeIcon icon={faCat}/> Bella: <FontAwesomeIcon icon={faLemon}/></p>
-        <p>Alex: <FontAwesomeIcon icon={faDog}/> Alan: <FontAwesomeIcon icon={faCrow}/> Hari: <FontAwesomeIcon icon={faCheese}/></p>
-        <p>Ilias: <FontAwesomeIcon icon={faHippo}/>  Aashish: <FontAwesomeIcon icon={faHorse}/>Gilad: <FontAwesomeIcon icon={faFrog}/></p>
-        <p>Cindy: <FontAwesomeIcon icon={faSpider}/> Santiago: <FontAwesomeIcon icon={faBreadSlice}/>  Rahul: <FontAwesomeIcon icon={faFish}/></p>
-        <p>Jonathan: <FontAwesomeIcon icon={faAppleAlt}/> </p>
+        <p>Jeff: <FontAwesomeIcon icon={faDragon}/>  Julia: <FontAwesomeIcon icon={faCat}/> Bella: <FontAwesomeIcon icon={faLemon}/>
+        Alex: <FontAwesomeIcon icon={faDog}/> Alan: <FontAwesomeIcon icon={faCrow}/> Hari: <FontAwesomeIcon icon={faCheese}/>Ilias: <FontAwesomeIcon icon={faHippo}/> </p>
+        <p> Aashish: <FontAwesomeIcon icon={faHorse}/>Gilad: <FontAwesomeIcon icon={faFrog}/>Cindy: <FontAwesomeIcon icon={faSpider}/> Santiago: <FontAwesomeIcon icon={faBreadSlice}/>  
+        Rahul: <FontAwesomeIcon icon={faFish}/> Jonathan: <FontAwesomeIcon icon={faAppleAlt}/> </p>
         <br/>
-        <p><span style={{color:'#CF142B'}}>Red</span>: Unresolved</p>
-        <p><span style={{color:"#FAD201"}}>Yellow</span>: Partially Resolved</p>
-        <p><span style={{color:"#33A532"}}>Green</span>: Resolved</p>
+        <p><span style={{color:'#CF142B'}}>Red</span>: Unresolved
+        <span style={{color:"#FAD201"}}>     Yellow</span>: Partially Resolved
+        <span style={{color:"#33A532"}}>     Green</span>: Resolved</p>
       </div>
 
         return<>
@@ -407,8 +405,8 @@ class Timeline extends React.Component{
                 </Helmet>
                 <h1>2018-2019 CS101 Tutoring Timeline</h1>
                 {filter}
-                {ucContainer}
                 {legend} 
+                {ucContainer}
                 {timeLine}
                 {info}
             </Layout>

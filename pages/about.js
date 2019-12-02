@@ -1,5 +1,5 @@
 import Link from 'next/Link';
-import css from '../styles.css';
+import '../styles.css';
 import Bar from '../components/stickyBar.js';
 import Layout from '../components/Layout.js';
 import Helmet from 'react-helmet';
@@ -11,7 +11,7 @@ class About extends React.Component{
         
         const resume =             
         <Link href="/resume.pdf">
-            <a>My Resume</a>
+            <a tareget="_blank">My Resume</a>
         </Link>
 
         return<>

@@ -1,5 +1,5 @@
 import Link from 'next/Link';
-import css from '../styles.css';
+import '../styles.css';
 import * as THREE from 'three';
 import GLTFLoader from 'three-gltf-loader';
 
@@ -10,30 +10,28 @@ class StickyBar extends React.Component{
         const camera = new THREE.PerspectiveCamera(75,window.innerHeight/window.innerHeight,.1,1000);
 
         camera.position.z = 4;
-        camera.position.y = 1;
         const renderer = new THREE.WebGLRenderer({antialias:true,alpha:true});
-        renderer.setSize(200,200);
-        renderer.setClearColor(0xffffff,0);
-        renderer.gammaOutput=true;
-        renderer.gammaFactor=2.2;
+        renderer.setSize(300,300);
+        // renderer.setClearColor(0xffffff,0);
+        // renderer.gammaOutput=true;
+        // renderer.gammaFactor=2.2;
         this.mount.appendChild( renderer.domElement );
        
         const loader = new GLTFLoader();
-        let torch = undefined;
-        let rotation = .005;
+        let logo = undefined;
         
         const animate = function () {
             requestAnimationFrame( animate );
-              torch.rotation.z+= rotation;
-              torch.rotation.y+=rotation;
-              if(Math.abs(torch.rotation.z) > Math.PI/12)
-                rotation*=-1;
             renderer.render( scene, camera );
           };
 
         loader.load('/Logo.gltf', function(gltf){
-            torch = gltf.scene;
-            scene.add(torch);
+            logo = gltf.scene;
+            logo.rotation.x=-Math.PI/12;
+            logo.rotation.y=Math.PI/12;
+            logo.rotation.z=Math.PI/6;
+            logo.scale.set(2,2,2);
+            scene.add(logo);
             animate();
 
         },undefined,function(error){
@@ -53,22 +51,27 @@ class StickyBar extends React.Component{
             </Link>
             <h3>Projects</h3>
             <ul>
-                <li><Link href="/101Timeline">
+                <li><Link href="/#TimelineHeader">
                     <a>Tutor Timeline</a>
                 </Link></li>
-                <li><Link href="/KMeans">
+                <li><Link href="/#KMeansHeader">
                     <a>K-Means Demo</a>
+                </Link></li>
+                <li><Link href="/#WebsiteHeader">
+                    <a>This Website</a>    
                 </Link></li>
             </ul>
         </div>;
 
         const style = <style>{`
             #stickyBar{
-                position: fixed;
-                top:0;
+                vertical-align:top;
+                position: relative;
+                display:inline-block;
                 left:3%;
-                width:auto;
+                width:18%;
                 padding-right: 5px;
+                margin-right:5px;
                 margin-top:5px;
                 border-right: solid 2px #1E646E;
             }
