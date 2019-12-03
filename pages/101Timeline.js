@@ -1,10 +1,10 @@
-import '../styles.css';
-import fallData from '../public/Data/Fall2018.json';
-import springData from '../public/Data/Spring2019.json';
-import Bar from '../components/stickyBar.js';
-import Layout from '../components/Layout.js';
-import Timeframe from '../components/Timeframe.js';
-import UseCaseRow from '../components/Usecase.js';
+import 'styles.css';
+import fallData from 'public/Data/Fall2018.json';
+import springData from 'public/Data/Spring2019.json';
+import Bar from 'components/stickyBar.js';
+import Layout from 'components/layout.js';
+import Timeframe from 'components/Timeframe.js';
+import UseCaseRow from 'components/Usecase.js';
 import Helmet from 'react-helmet';
 import moment from 'moment';
 import * as d3Selection from "d3-selection";

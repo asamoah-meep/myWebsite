@@ -1,8 +1,8 @@
-import '../styles.css';
-import Bar from '../components/stickyBar.js';
-import Layout from '../components/Layout.js';
+import 'styles.css';
+import Bar from 'components/stickyBar.js';
+import Layout from 'components/layout.js';
 import Helmet from 'react-helmet';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 class Index extends React.Component{
 

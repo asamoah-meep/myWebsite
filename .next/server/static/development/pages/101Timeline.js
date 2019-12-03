@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -106,8 +106,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/Link */ "next/Link");
 /* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles.css */ "./styles.css");
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styles.css */ "./styles.css");
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styles_css__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "C:\\Users\\User\\Documents\\myWebsite\\components\\Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -438,7 +438,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "C:\\Users\\User\\Documents\\myWebsite\\components\\Usecase.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
- // import './App.css';
 
 
 
@@ -512,7 +511,7 @@ class UseCaseRow extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
       jsx: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 133
+        lineNumber: 132
       },
       __self: this
     }, this.props.styling);
@@ -521,7 +520,7 @@ class UseCaseRow extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
       jsx: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 134
+        lineNumber: 133
       },
       __self: this
     }, `          
@@ -537,7 +536,7 @@ class UseCaseRow extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
       jsx: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 145
+        lineNumber: 144
       },
       __self: this
     }, style), __jsx("svg", {
@@ -547,7 +546,7 @@ class UseCaseRow extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
       height: 140,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 146
+        lineNumber: 145
       },
       __self: this
     }, __jsx("rect", {
@@ -556,7 +555,7 @@ class UseCaseRow extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
       height: 140,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 147
+        lineNumber: 146
       },
       __self: this
     })));
@@ -581,8 +580,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/Link */ "next/Link");
 /* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles.css */ "./styles.css");
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styles.css */ "./styles.css");
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styles_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var three__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! three */ "three");
 /* harmony import */ var three__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(three__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var three_gltf_loader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! three-gltf-loader */ "three-gltf-loader");
@@ -599,15 +598,16 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   componentDidMount() {
     const scene = new three__WEBPACK_IMPORTED_MODULE_3__["Scene"]();
     const camera = new three__WEBPACK_IMPORTED_MODULE_3__["PerspectiveCamera"](75, window.innerHeight / window.innerHeight, .1, 1000);
-    camera.position.z = 4;
+    camera.position.z = 5;
+    camera.position.x = -1;
     const renderer = new three__WEBPACK_IMPORTED_MODULE_3__["WebGLRenderer"]({
       antialias: true,
       alpha: true
     });
-    renderer.setSize(300, 300); // renderer.setClearColor(0xffffff,0);
-    // renderer.gammaOutput=true;
-    // renderer.gammaFactor=2.2;
-
+    renderer.setSize(100, 100);
+    renderer.setClearColor(0xffffff, 0);
+    renderer.gammaOutput = true;
+    renderer.gammaFactor = 2.2;
     this.mount.appendChild(renderer.domElement);
     const loader = new three_gltf_loader__WEBPACK_IMPORTED_MODULE_4___default.a();
     let logo = undefined;
@@ -633,34 +633,33 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   render() {
     const bar = __jsx("div", {
       id: "stickyBar",
-      ref: ref => this.mount = ref,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 44
-      },
-      __self: this
-    }, __jsx("h1", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 45
       },
       __self: this
-    }, "Jeffrey Asamoah"), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/",
+    }, __jsx("div", {
+      id: "logoMount",
+      ref: ref => this.mount = ref,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 46
       },
       __self: this
-    }, __jsx("a", {
-      className: "subHeading",
+    }), __jsx("h1", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 47
       },
       __self: this
-    }, "Home")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/about",
+    }, "Jeffrey"), __jsx("h1", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48
+      },
+      __self: this
+    }, " Asamoah"), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 49
@@ -673,45 +672,40 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 50
       },
       __self: this
-    }, "About")), __jsx("h3", {
+    }, "Home")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/about",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 52
       },
       __self: this
-    }, "Projects"), __jsx("ul", {
+    }, __jsx("a", {
+      className: "subHeading",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 53
       },
       __self: this
-    }, __jsx("li", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 54
-      },
-      __self: this
-    }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/#TimelineHeader",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 54
-      },
-      __self: this
-    }, __jsx("a", {
+    }, "About")), __jsx("h3", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 55
       },
       __self: this
-    }, "Tutor Timeline"))), __jsx("li", {
+    }, "Projects"), __jsx("ul", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 56
+      },
+      __self: this
+    }, __jsx("li", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 57
       },
       __self: this
     }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/#KMeansHeader",
+      href: "/#TimelineHeader",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 57
@@ -723,14 +717,14 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 58
       },
       __self: this
-    }, "K-Means Demo"))), __jsx("li", {
+    }, "Tutor Timeline"))), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 60
       },
       __self: this
     }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/#WebsiteHeader",
+      href: "/#KMeansHeader",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 60
@@ -742,21 +736,44 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 61
       },
       __self: this
+    }, "K-Means Demo"))), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 63
+      },
+      __self: this
+    }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/#WebsiteHeader",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 63
+      },
+      __self: this
+    }, __jsx("a", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 64
+      },
+      __self: this
     }, "This Website")))));
 
     const style = __jsx("style", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 69
       },
       __self: this
     }, `
+
+            #logoMount{
+                height:75px;
+            }
             #stickyBar{
                 vertical-align:top;
                 position: relative;
                 display:inline-block;
                 left:3%;
-                width:18%;
+                width:12%;
                 padding-right: 5px;
                 margin-right:5px;
                 margin-top:5px;
@@ -795,16 +812,16 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles.css */ "./styles.css");
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../public/Data/Fall2018.json */ "./public/Data/Fall2018.json");
-var _public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../public/Data/Fall2018.json */ "./public/Data/Fall2018.json", 1);
-/* harmony import */ var _public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../public/Data/Spring2019.json */ "./public/Data/Spring2019.json");
-var _public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../public/Data/Spring2019.json */ "./public/Data/Spring2019.json", 1);
-/* harmony import */ var _components_stickyBar_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/stickyBar.js */ "./components/stickyBar.js");
-/* harmony import */ var _components_Layout_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Layout.js */ "./components/Layout.js");
-/* harmony import */ var _components_Timeframe_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Timeframe.js */ "./components/Timeframe.js");
-/* harmony import */ var _components_Usecase_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Usecase.js */ "./components/Usecase.js");
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styles.css */ "./styles.css");
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styles_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! public/Data/Fall2018.json */ "./public/Data/Fall2018.json");
+var public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! public/Data/Fall2018.json */ "./public/Data/Fall2018.json", 1);
+/* harmony import */ var public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! public/Data/Spring2019.json */ "./public/Data/Spring2019.json");
+var public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! public/Data/Spring2019.json */ "./public/Data/Spring2019.json", 1);
+/* harmony import */ var components_stickyBar_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! components/stickyBar.js */ "./components/stickyBar.js");
+/* harmony import */ var components_Layout_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! components/Layout.js */ "./components/Layout.js");
+/* harmony import */ var components_Timeframe_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! components/Timeframe.js */ "./components/Timeframe.js");
+/* harmony import */ var components_Usecase_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! components/Usecase.js */ "./components/Usecase.js");
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-helmet */ "react-helmet");
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! moment */ "moment");
@@ -850,8 +867,8 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     this.enterTutor = this.enterTutor.bind(this);
     this.parseData = this.parseData.bind(this);
     this.mergeData = this.mergeData.bind(this);
-    const fData = this.parseData(_public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_2__);
-    const sData = this.parseData(_public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_3__);
+    const fData = this.parseData(public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_2__);
+    const sData = this.parseData(public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_3__);
     const allData = this.mergeData(fData, sData);
     this.state = {
       start: moment__WEBPACK_IMPORTED_MODULE_9___default()("2018-09-02"),
@@ -1169,7 +1186,7 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       const prof = this.state.filteredData[ele];
       const profInfo = ele.split(" ");
 
-      const uc = __jsx(_components_Usecase_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      const uc = __jsx(components_Usecase_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
         num: numProfs++,
         data: prof,
         name: profInfo[0],
@@ -1208,7 +1225,7 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this
     });
 
-    const timeLine = __jsx(_components_Timeframe_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    const timeLine = __jsx(components_Timeframe_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
       width: 850,
       start: this.state.start,
       end: this.state.end,
@@ -1453,13 +1470,13 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this
     }, "     Green"), ": Resolved"));
 
-    return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_stickyBar_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(components_stickyBar_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 400
       },
       __self: this
-    }), __jsx(_components_Layout_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }), __jsx(components_Layout_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 401
@@ -1525,7 +1542,7 @@ module.exports = JSON.parse("[{\"date\":\"2019-01-30T02:10:00.000Z\",\"name\":\"
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!************************************!*\
   !*** multi ./pages/101Timeline.js ***!
   \************************************/

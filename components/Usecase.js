@@ -1,5 +1,4 @@
 import React from 'react';
-// import './App.css';
 import * as d3Scale from "d3-scale";
 import * as d3Selection from "d3-selection";
 import moment from "moment";

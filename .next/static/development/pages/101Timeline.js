@@ -18,8 +18,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/Link */ "./node_modules/next/Link.js");
 /* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles.css */ "./styles.css");
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styles.css */ "./styles.css");
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(styles_css__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
@@ -400,7 +400,6 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "C:\\Users\\User\\Documents\\myWebsite\\components\\Usecase.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
- // import './App.css';
 
 
 
@@ -502,7 +501,7 @@ function (_React$Component) {
         jsx: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 133
+          lineNumber: 132
         },
         __self: this
       }, this.props.styling);
@@ -511,7 +510,7 @@ function (_React$Component) {
         jsx: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 134
+          lineNumber: 133
         },
         __self: this
       }, "          \n        .ucRow text{\n            cursor:pointer;\n        }\n        \n        .ucRow rect{\n            stroke:#8E8D8A;\n        }");
@@ -520,7 +519,7 @@ function (_React$Component) {
         jsx: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 145
+          lineNumber: 144
         },
         __self: this
       }, style), __jsx("svg", {
@@ -530,7 +529,7 @@ function (_React$Component) {
         height: 140,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 146
+          lineNumber: 145
         },
         __self: this
       }, __jsx("rect", {
@@ -539,7 +538,7 @@ function (_React$Component) {
         height: 140,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 147
+          lineNumber: 146
         },
         __self: this
       })));
@@ -571,8 +570,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/Link */ "./node_modules/next/Link.js");
 /* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles.css */ "./styles.css");
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styles.css */ "./styles.css");
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(styles_css__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var three__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! three */ "./node_modules/three/build/three.module.js");
 /* harmony import */ var three_gltf_loader__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! three-gltf-loader */ "./node_modules/three-gltf-loader/index.js");
 /* harmony import */ var three_gltf_loader__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(three_gltf_loader__WEBPACK_IMPORTED_MODULE_9__);
@@ -605,15 +604,16 @@ function (_React$Component) {
     value: function componentDidMount() {
       var scene = new three__WEBPACK_IMPORTED_MODULE_8__["Scene"]();
       var camera = new three__WEBPACK_IMPORTED_MODULE_8__["PerspectiveCamera"](75, window.innerHeight / window.innerHeight, .1, 1000);
-      camera.position.z = 4;
+      camera.position.z = 5;
+      camera.position.x = -1;
       var renderer = new three__WEBPACK_IMPORTED_MODULE_8__["WebGLRenderer"]({
         antialias: true,
         alpha: true
       });
-      renderer.setSize(300, 300); // renderer.setClearColor(0xffffff,0);
-      // renderer.gammaOutput=true;
-      // renderer.gammaFactor=2.2;
-
+      renderer.setSize(100, 100);
+      renderer.setClearColor(0xffffff, 0);
+      renderer.gammaOutput = true;
+      renderer.gammaFactor = 2.2;
       this.mount.appendChild(renderer.domElement);
       var loader = new three_gltf_loader__WEBPACK_IMPORTED_MODULE_9___default.a();
       var logo = undefined;
@@ -642,36 +642,35 @@ function (_React$Component) {
 
       var bar = __jsx("div", {
         id: "stickyBar",
-        ref: function ref(_ref) {
-          return _this.mount = _ref;
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 44
-        },
-        __self: this
-      }, __jsx("h1", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 45
         },
         __self: this
-      }, "Jeffrey Asamoah"), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        href: "/",
+      }, __jsx("div", {
+        id: "logoMount",
+        ref: function ref(_ref) {
+          return _this.mount = _ref;
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 46
         },
         __self: this
-      }, __jsx("a", {
-        className: "subHeading",
+      }), __jsx("h1", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 47
         },
         __self: this
-      }, "Home")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        href: "/about",
+      }, "Jeffrey"), __jsx("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }, " Asamoah"), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        href: "/",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 49
@@ -684,45 +683,40 @@ function (_React$Component) {
           lineNumber: 50
         },
         __self: this
-      }, "About")), __jsx("h3", {
+      }, "Home")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        href: "/about",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 52
         },
         __self: this
-      }, "Projects"), __jsx("ul", {
+      }, __jsx("a", {
+        className: "subHeading",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 53
         },
         __self: this
-      }, __jsx("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 54
-        },
-        __self: this
-      }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        href: "/#TimelineHeader",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 54
-        },
-        __self: this
-      }, __jsx("a", {
+      }, "About")), __jsx("h3", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 55
         },
         __self: this
-      }, "Tutor Timeline"))), __jsx("li", {
+      }, "Projects"), __jsx("ul", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56
+        },
+        __self: this
+      }, __jsx("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 57
         },
         __self: this
       }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        href: "/#KMeansHeader",
+        href: "/#TimelineHeader",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 57
@@ -734,14 +728,14 @@ function (_React$Component) {
           lineNumber: 58
         },
         __self: this
-      }, "K-Means Demo"))), __jsx("li", {
+      }, "Tutor Timeline"))), __jsx("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 60
         },
         __self: this
       }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        href: "/#WebsiteHeader",
+        href: "/#KMeansHeader",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 60
@@ -753,15 +747,34 @@ function (_React$Component) {
           lineNumber: 61
         },
         __self: this
+      }, "K-Means Demo"))), __jsx("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        href: "/#WebsiteHeader",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }, __jsx("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64
+        },
+        __self: this
       }, "This Website")))));
 
       var style = __jsx("style", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 69
         },
         __self: this
-      }, "\n            #stickyBar{\n                vertical-align:top;\n                position: relative;\n                display:inline-block;\n                left:3%;\n                width:18%;\n                padding-right: 5px;\n                margin-right:5px;\n                margin-top:5px;\n                border-right: solid 2px #1E646E;\n            }\n            .subHeading{\n                font-family: NunitoItalic;\n                color: #1E646E;\n                display: block;\n                font-size: 1.17em;\n                margin-block-start: 1em;\n                margin-block-end: 1em;\n                margin-inline-start: 0px;\n                margin-inline-end: 0px;\n                font-weight: bold;\n            }\n        ");
+      }, "\n\n            #logoMount{\n                height:75px;\n            }\n            #stickyBar{\n                vertical-align:top;\n                position: relative;\n                display:inline-block;\n                left:3%;\n                width:12%;\n                padding-right: 5px;\n                margin-right:5px;\n                margin-top:5px;\n                border-right: solid 2px #1E646E;\n            }\n            .subHeading{\n                font-family: NunitoItalic;\n                color: #1E646E;\n                display: block;\n                font-size: 1.17em;\n                margin-block-start: 1em;\n                margin-block-end: 1em;\n                margin-inline-start: 0px;\n                margin-inline-end: 0px;\n                font-weight: bold;\n            }\n        ");
 
       return __jsx(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, style, bar);
     }
@@ -105698,16 +105711,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles.css */ "./styles.css");
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../public/Data/Fall2018.json */ "./public/Data/Fall2018.json");
-var _public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_10___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../public/Data/Fall2018.json */ "./public/Data/Fall2018.json", 1);
-/* harmony import */ var _public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../public/Data/Spring2019.json */ "./public/Data/Spring2019.json");
-var _public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_11___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../public/Data/Spring2019.json */ "./public/Data/Spring2019.json", 1);
-/* harmony import */ var _components_stickyBar_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/stickyBar.js */ "./components/stickyBar.js");
-/* harmony import */ var _components_Layout_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/Layout.js */ "./components/Layout.js");
-/* harmony import */ var _components_Timeframe_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/Timeframe.js */ "./components/Timeframe.js");
-/* harmony import */ var _components_Usecase_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/Usecase.js */ "./components/Usecase.js");
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styles.css */ "./styles.css");
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(styles_css__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! public/Data/Fall2018.json */ "./public/Data/Fall2018.json");
+var public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_10___namespace = /*#__PURE__*/__webpack_require__.t(/*! public/Data/Fall2018.json */ "./public/Data/Fall2018.json", 1);
+/* harmony import */ var public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! public/Data/Spring2019.json */ "./public/Data/Spring2019.json");
+var public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_11___namespace = /*#__PURE__*/__webpack_require__.t(/*! public/Data/Spring2019.json */ "./public/Data/Spring2019.json", 1);
+/* harmony import */ var components_stickyBar_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! components/stickyBar.js */ "./components/stickyBar.js");
+/* harmony import */ var components_Layout_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! components/Layout.js */ "./components/Layout.js");
+/* harmony import */ var components_Timeframe_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! components/Timeframe.js */ "./components/Timeframe.js");
+/* harmony import */ var components_Usecase_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! components/Usecase.js */ "./components/Usecase.js");
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/lib/Helmet.js");
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_16__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
@@ -105766,9 +105779,9 @@ function (_React$Component) {
     _this.parseData = _this.parseData.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
     _this.mergeData = _this.mergeData.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
 
-    var fData = _this.parseData(_public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_10__);
+    var fData = _this.parseData(public_Data_Fall2018_json__WEBPACK_IMPORTED_MODULE_10__);
 
-    var sData = _this.parseData(_public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_11__);
+    var sData = _this.parseData(public_Data_Spring2019_json__WEBPACK_IMPORTED_MODULE_11__);
 
     var allData = _this.mergeData(fData, sData);
 
@@ -106065,7 +106078,7 @@ function (_React$Component) {
         var prof = this.state.filteredData[ele];
         var profInfo = ele.split(" ");
 
-        var uc = __jsx(_components_Usecase_js__WEBPACK_IMPORTED_MODULE_15__["default"], {
+        var uc = __jsx(components_Usecase_js__WEBPACK_IMPORTED_MODULE_15__["default"], {
           num: numProfs++,
           data: prof,
           name: profInfo[0],
@@ -106104,7 +106117,7 @@ function (_React$Component) {
         __self: this
       });
 
-      var timeLine = __jsx(_components_Timeframe_js__WEBPACK_IMPORTED_MODULE_14__["default"], {
+      var timeLine = __jsx(components_Timeframe_js__WEBPACK_IMPORTED_MODULE_14__["default"], {
         width: 850,
         start: this.state.start,
         end: this.state.end,
@@ -106349,13 +106362,13 @@ function (_React$Component) {
         __self: this
       }, "     Green"), ": Resolved"));
 
-      return __jsx(react__WEBPACK_IMPORTED_MODULE_8___default.a.Fragment, null, __jsx(_components_stickyBar_js__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      return __jsx(react__WEBPACK_IMPORTED_MODULE_8___default.a.Fragment, null, __jsx(components_stickyBar_js__WEBPACK_IMPORTED_MODULE_12__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 400
         },
         __self: this
-      }), __jsx(_components_Layout_js__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }), __jsx(components_Layout_js__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 401
@@ -106412,7 +106425,7 @@ module.exports = JSON.parse("[{\"date\":\"2019-01-30T02:10:00.000Z\",\"name\":\"
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F101Timeline&absolutePagePath=C%3A%5CUsers%5CUser%5CDocuments%5CmyWebsite%5Cpages%5C101Timeline.js ***!
   \************************************************************************************************************************************************/
@@ -106435,5 +106448,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[3,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=101Timeline.js.map

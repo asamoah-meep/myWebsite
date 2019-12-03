@@ -1,5 +1,5 @@
-import Link from 'next/Link';
-import '../styles.css';
+import Link from 'next/link';
+import 'styles.css';
 import * as THREE from 'three';
 import GLTFLoader from 'three-gltf-loader';
 
@@ -9,12 +9,13 @@ class StickyBar extends React.Component{
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75,window.innerHeight/window.innerHeight,.1,1000);
 
-        camera.position.z = 4;
+        camera.position.z = 5;
+        camera.position.x = -1;
         const renderer = new THREE.WebGLRenderer({antialias:true,alpha:true});
-        renderer.setSize(300,300);
-        // renderer.setClearColor(0xffffff,0);
-        // renderer.gammaOutput=true;
-        // renderer.gammaFactor=2.2;
+        renderer.setSize(100,100);
+        renderer.setClearColor(0xffffff,0);
+        renderer.gammaOutput=true;
+        renderer.gammaFactor=2.2;
         this.mount.appendChild( renderer.domElement );
        
         const loader = new GLTFLoader();
@@ -41,8 +42,10 @@ class StickyBar extends React.Component{
     }
 
     render(){
-        const bar = <div id='stickyBar' ref={ref=>(this.mount = ref)}>
-            <h1>Jeffrey Asamoah</h1>
+        const bar = <div id='stickyBar'>
+            <div id="logoMount" ref={ref=>(this.mount = ref)}/>
+            <h1>Jeffrey</h1>
+            <h1> Asamoah</h1>
             <Link href='/'>
                 <a className='subHeading'>Home</a>
             </Link>
@@ -64,12 +67,16 @@ class StickyBar extends React.Component{
         </div>;
 
         const style = <style>{`
+
+            #logoMount{
+                height:75px;
+            }
             #stickyBar{
                 vertical-align:top;
                 position: relative;
                 display:inline-block;
                 left:3%;
-                width:18%;
+                width:12%;
                 padding-right: 5px;
                 margin-right:5px;
                 margin-top:5px;

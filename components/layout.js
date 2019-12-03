@@ -1,5 +1,4 @@
-import Link from 'next/Link';
-import css from '../styles.css';
+import 'styles.css';
 
 class Layout extends React.Component{
 

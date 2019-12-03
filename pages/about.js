@@ -1,7 +1,7 @@
-import Link from 'next/Link';
-import '../styles.css';
-import Bar from '../components/stickyBar.js';
-import Layout from '../components/Layout.js';
+import Link from 'next/link';
+import 'styles.css';
+import Bar from 'components/stickyBar.js';
+import Layout from 'components/layout.js';
 import Helmet from 'react-helmet';
 
 class About extends React.Component{
