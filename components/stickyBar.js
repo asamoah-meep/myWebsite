@@ -75,8 +75,8 @@ class StickyBar extends React.Component{
                 vertical-align:top;
                 position: relative;
                 display:inline-block;
-                left:3%;
-                width:12%;
+                left:20px;
+                width:200px;
                 padding-right: 5px;
                 margin-right:5px;
                 margin-top:5px;

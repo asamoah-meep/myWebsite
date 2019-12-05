@@ -14,10 +14,21 @@ class Index extends React.Component{
             <Helmet>
                 <title>Home</title>
             </Helmet>
+            <section id='AboutMe'>
+                <h3>About Me</h3>
+                <p>Hey, looks like you found my website!</p>
+                <p>My name is Jeffrey Asamoah, and I'm currently living in the NYC metropolitan area.
+                    I'm studying Mathematics and Computer Science at New York University and plan
+                    to graduate in May 2020. My hobbies include running, coding, and 3-D modelling.
+                </p>
+                <Link href="/about">
+                    <a>See more here</a>
+                </Link>
+            </section>
             <section id='TimelineHeader'>
                 <h3>Timeline App</h3>
                 <p>I created this timeline app to emulate the project I worked on during my Comcast Internship. At my internship my project was 
-                    to create a front-facing visual to display how the Xfinity Fraud Managment (XFM) team monitored and mitigated fraud activity.
+                    to create a front-facing visual to display how the Xfinity Fraud Man (XFM) team monitored and mitigated fraud activity.
                     For that project I displayed the ~40 use cases of potentially fraudulent activity and plotted the occurence of each point. The 
                     app allowed for you to filter which items you wanted to look at as well as select the timeframe on which you were looking.
                     I recreated that project using data from my tutoring experience at NYU. Here I display when each student would approach various tutors

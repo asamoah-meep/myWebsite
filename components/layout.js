@@ -12,7 +12,7 @@ class Layout extends React.Component{
                 display:inline-block;
                 margin-top:5px;
                 position:relative;
-                left:5%;
+                left: 30px;
                 width:70%;
             }
         `}</style>

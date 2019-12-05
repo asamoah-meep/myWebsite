@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
 
-/***/ "./components/Layout.js":
+/***/ "./components/layout.js":
 /*!******************************!*\
-  !*** ./components/Layout.js ***!
+  !*** ./components/layout.js ***!
   \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -16,19 +16,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/Link */ "./node_modules/next/Link.js");
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styles.css */ "./styles.css");
-/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(styles_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styles.css */ "./styles.css");
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(styles_css__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
 
 
-var _jsxFileName = "C:\\Users\\User\\Documents\\myWebsite\\components\\Layout.js";
+var _jsxFileName = "C:\\Users\\User\\Documents\\myWebsite\\components\\layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
-
 
 
 var Layout =
@@ -49,16 +46,16 @@ function (_React$Component) {
         jsx: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 10
         },
         __self: this
-      }, "\n            #content{\n                display:inline-block;\n                margin-top:5px;\n                position:relative;\n                left:5%;\n                width:70%;\n            }\n        ");
+      }, "\n            #content{\n                display:inline-block;\n                margin-top:5px;\n                position:relative;\n                left: 30px;\n                width:70%;\n            }\n        ");
 
       var layout = __jsx("div", {
         id: "content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 20
         },
         __self: this
       }, this.props.children);
@@ -90,8 +87,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/Link */ "./node_modules/next/Link.js");
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styles.css */ "./styles.css");
 /* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(styles_css__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var three__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! three */ "./node_modules/three/build/three.module.js");
@@ -191,7 +188,7 @@ function (_React$Component) {
           lineNumber: 48
         },
         __self: this
-      }, " Asamoah"), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      }, " Asamoah"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
@@ -205,7 +202,7 @@ function (_React$Component) {
           lineNumber: 50
         },
         __self: this
-      }, "Home")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      }, "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/about",
         __source: {
           fileName: _jsxFileName,
@@ -237,7 +234,7 @@ function (_React$Component) {
           lineNumber: 57
         },
         __self: this
-      }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/#TimelineHeader",
         __source: {
           fileName: _jsxFileName,
@@ -256,7 +253,7 @@ function (_React$Component) {
           lineNumber: 60
         },
         __self: this
-      }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/#KMeansHeader",
         __source: {
           fileName: _jsxFileName,
@@ -275,7 +272,7 @@ function (_React$Component) {
           lineNumber: 63
         },
         __self: this
-      }, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/#WebsiteHeader",
         __source: {
           fileName: _jsxFileName,
@@ -296,7 +293,7 @@ function (_React$Component) {
           lineNumber: 69
         },
         __self: this
-      }, "\n\n            #logoMount{\n                height:75px;\n            }\n            #stickyBar{\n                vertical-align:top;\n                position: relative;\n                display:inline-block;\n                left:3%;\n                width:12%;\n                padding-right: 5px;\n                margin-right:5px;\n                margin-top:5px;\n                border-right: solid 2px #1E646E;\n            }\n            .subHeading{\n                font-family: NunitoItalic;\n                color: #1E646E;\n                display: block;\n                font-size: 1.17em;\n                margin-block-start: 1em;\n                margin-block-end: 1em;\n                margin-inline-start: 0px;\n                margin-inline-end: 0px;\n                font-weight: bold;\n            }\n        ");
+      }, "\n\n            #logoMount{\n                height:75px;\n            }\n            #stickyBar{\n                vertical-align:top;\n                position: relative;\n                display:inline-block;\n                left:20px;\n                width:200px;\n                padding-right: 5px;\n                margin-right:5px;\n                margin-top:5px;\n                border-right: solid 2px #1E646E;\n            }\n            .subHeading{\n                font-family: NunitoItalic;\n                color: #1E646E;\n                display: block;\n                font-size: 1.17em;\n                margin-block-start: 1em;\n                margin-block-end: 1em;\n                margin-inline-start: 0px;\n                margin-inline-end: 0px;\n                font-weight: bold;\n            }\n        ");
 
       return __jsx(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, style, bar);
     }
@@ -5129,18 +5126,6 @@ module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 
 /***/ }),
 
-/***/ "./node_modules/next/Link.js":
-/*!***********************************!*\
-  !*** ./node_modules/next/Link.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/next/dist/client/link.js")
-
-
-/***/ }),
-
 /***/ "./node_modules/next/dist/build/polyfills/object-assign.js":
 /*!***********************************************************************************************************************!*\
   !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_ef0ff7c60362f24a921f ***!
@@ -6960,6 +6945,18 @@ function formatWithValidation(url, options) {
 exports.formatWithValidation = formatWithValidation;
 exports.SUPPORTS_PERFORMANCE = typeof performance !== 'undefined';
 exports.SUPPORTS_PERFORMANCE_USER_TIMING = exports.SUPPORTS_PERFORMANCE && typeof performance.mark === 'function' && typeof performance.measure === 'function';
+
+/***/ }),
+
+/***/ "./node_modules/next/link.js":
+/*!***********************************!*\
+  !*** ./node_modules/next/link.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/next/dist/client/link.js")
+
 
 /***/ }),
 
@@ -64954,11 +64951,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styles.css */ "./styles.css");
 /* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(styles_css__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var components_stickyBar_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! components/stickyBar.js */ "./components/stickyBar.js");
-/* harmony import */ var components_Layout_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! components/Layout.js */ "./components/Layout.js");
+/* harmony import */ var components_layout_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! components/layout.js */ "./components/layout.js");
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/lib/Helmet.js");
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/Link */ "./node_modules/next/Link.js");
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_10__);
 
 
 
@@ -64993,7 +64990,7 @@ function (_React$Component) {
           lineNumber: 12
         },
         __self: this
-      }), __jsx(components_Layout_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      }), __jsx(components_layout_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 13
@@ -65012,7 +65009,7 @@ function (_React$Component) {
         },
         __self: this
       }, "Home")), __jsx("section", {
-        id: "TimelineHeader",
+        id: "AboutMe",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 17
@@ -65024,22 +65021,60 @@ function (_React$Component) {
           lineNumber: 18
         },
         __self: this
-      }, "Timeline App"), __jsx("p", {
+      }, "About Me"), __jsx("p", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 19
         },
         __self: this
-      }, "I created this timeline app to emulate the project I worked on during my Comcast Internship. At my internship my project was to create a front-facing visual to display how the Xfinity Fraud Managment (XFM) team monitored and mitigated fraud activity. For that project I displayed the ~40 use cases of potentially fraudulent activity and plotted the occurence of each point. The app allowed for you to filter which items you wanted to look at as well as select the timeframe on which you were looking. I recreated that project using data from my tutoring experience at NYU. Here I display when each student would approach various tutors and the success of the tutoring session. The key features of this project were:"), __jsx("ul", {
+      }, "Hey, looks like you found my website!"), __jsx("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 20
+        },
+        __self: this
+      }, "My name is Jeffrey Asamoah, and I'm currently living in the NYC metropolitan area. I'm studying Mathematics and Computer Science at New York University and plan to graduate in May 2020. My hobbies include running, coding, and 3-D modelling."), __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
+        href: "/about",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }, __jsx("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }, "See more here"))), __jsx("section", {
+        id: "TimelineHeader",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }, __jsx("h3", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, "Timeline App"), __jsx("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, "I created this timeline app to emulate the project I worked on during my Comcast Internship. At my internship my project was to create a front-facing visual to display how the Xfinity Fraud Man (XFM) team monitored and mitigated fraud activity. For that project I displayed the ~40 use cases of potentially fraudulent activity and plotted the occurence of each point. The app allowed for you to filter which items you wanted to look at as well as select the timeframe on which you were looking. I recreated that project using data from my tutoring experience at NYU. Here I display when each student would approach various tutors and the success of the tutoring session. The key features of this project were:"), __jsx("ul", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
         },
         __self: this
       }, __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 38
         },
         __self: this
       }, "Built using ", __jsx("a", {
@@ -65047,13 +65082,13 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 38
         },
         __self: this
       }, "React.js")), __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 39
         },
         __self: this
       }, "Data was read from", __jsx("a", {
@@ -65061,13 +65096,13 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 39
         },
         __self: this
       }, "Cassandra DB (now static data)")), __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 40
         },
         __self: this
       }, "Used ", __jsx("a", {
@@ -65075,13 +65110,13 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 40
         },
         __self: this
       }, "D3 libraries"), " to scale and plot data points according to their dates"), __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 41
         },
         __self: this
       }, "Used D3 libraries to create a window frame to adjust the date window of viewing")), __jsx("a", {
@@ -65089,45 +65124,45 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 43
         },
         __self: this
       }, "View source"), __jsx("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 43
         },
         __self: this
-      }), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_10___default.a, {
+      }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
         href: "/101Timeline",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 44
         },
         __self: this
       }, __jsx("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 45
         },
         __self: this
       }, "Live Demo"))), __jsx("section", {
         id: "KMeansHeader",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 48
         },
         __self: this
       }, __jsx("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 49
         },
         __self: this
       }, "K-Means Demo"), __jsx("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 50
         },
         __self: this
       }, "This ", __jsx("a", {
@@ -65135,7 +65170,7 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 50
         },
         __self: this
       }, "K-Means"), " project is a self-made data clustering algorithm that I created for my predictive analytics class. The algorithm takes in 24 documents roughly concerned with 3 topics (Mouth and Foot Diseases, Airline Safety, and International Housing Prices) and clusters them into k centroids. The data is 1st converted into a tf-idf matrix adjusted for the lengths of the respective documents. The data is then trimmed by removing low intra-dimensional words, combining highly correlated dimensions, and then adjusting the matrix using ", __jsx("a", {
@@ -65143,7 +65178,7 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 54
         },
         __self: this
       }, "PCA"), ".The similarity is measured using ", __jsx("a", {
@@ -65151,7 +65186,7 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 55
         },
         __self: this
       }, "cosine similarity"), " into clusted determined by initial means furthest away from each other (see ", __jsx("a", {
@@ -65159,19 +65194,19 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 56
         },
         __self: this
       }, "K-Means++"), "). After the data is clustered it is then transformed again by PCA onto 2 dimensions and plotted on a 2-D graph."), __jsx("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 59
         },
         __self: this
       }, __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 60
         },
         __self: this
       }, "Built in ", __jsx("a", {
@@ -65179,13 +65214,13 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 60
         },
         __self: this
       }, "Java")), __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 61
         },
         __self: this
       }, "Used ", __jsx("a", {
@@ -65193,13 +65228,13 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 61
         },
         __self: this
       }, "Apache Commons"), " Math for vector/matrix manipulation"), __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 62
         },
         __self: this
       }, "Used ", __jsx("a", {
@@ -65207,7 +65242,7 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 62
         },
         __self: this
       }, "JFree charts"), " to create plots")), __jsx("a", {
@@ -65215,38 +65250,38 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 64
         },
         __self: this
       }, "View source")), __jsx("section", {
         id: "WebsiteHeader",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 66
         },
         __self: this
       }, __jsx("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 67
         },
         __self: this
       }, "This Website"), __jsx("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 68
         },
         __self: this
       }, "More to come..."), __jsx("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 71
         },
         __self: this
       }, __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 72
         },
         __self: this
       }, "Built using ", __jsx("a", {
@@ -65254,13 +65289,13 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 72
         },
         __self: this
       }, "Next.js")), __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 73
         },
         __self: this
       }, "Hosted using ", __jsx("a", {
@@ -65268,7 +65303,7 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 73
         },
         __self: this
       }, "Zeit"))))));
@@ -65282,7 +65317,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!*******************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CUser%5CDocuments%5CmyWebsite%5Cpages%5Cindex.js ***!
   \*******************************************************************************************************************************/
@@ -65305,5 +65340,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
