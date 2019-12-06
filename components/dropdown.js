@@ -5,28 +5,43 @@ class Dropdown extends React.Component{
     constructor(props){
         super(props);
         
-        this.content = this.props.content;
+        this.title = this.props.title;
         this.expand = this.expand.bind(this);
-        console.log(this.content);
+        this.state={
+            show:false
+        }
     }
 
     expand(){
-        this.ref.querySelector("#test").style.backgroundColor= 'red';
+        this.setState({
+            show:!this.state.show
+        },()=>{
+            console.log(this.state)
+            
+        });
     }
 
     render(){
-        const dropDown = <button src="/down_arrow.png" onClick={e=>this.expand(e)}></button>
+        const dropDown = <img src="/down_arrow.png" onClick={this.expand}/>
 
         const style = <style jsx>{`
-            #test{
-                width:200px;
-                height:200px;
+            img{
+                width:20px;
+                height:20px;
+                position:relative;
+                top:5px;
+                left:20px;
             }
-        `}</style>        
-        return <div className='drop' ref={ele=>this.ref = ele}>
+            h3{
+                display:inline-block;
+            }
+        `}</style>      
+
+        return <div className='drop'>
             {style}
+            <h3>{this.props.title}</h3>
             {dropDown}
-            <div id='test'/>
+            {this.state.show && this.props.children}
         </div>
     }
 }

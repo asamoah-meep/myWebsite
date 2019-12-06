@@ -1,15 +1,15 @@
 h1{
-    color: #023459;
+    color: #0f4b79;
     font-family: NunitoBold;
 }
 
 h3{
     font-family: NunitoItalic;
-    color: #1E646E;
+    color: #1A4A4F
 }
 
 p,a,form,text,input,span, li{
-    color:#002C2F;
+    color:#1E3130;
     font-family: Nunito;
 }
 
@@ -18,7 +18,7 @@ input[type='submit']{
 }
 
 body{
-    background:#ECE4E2;
+    background:#D5DBE7;
     overflow-x: auto;
 }      
 

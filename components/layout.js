@@ -14,6 +14,8 @@ class Layout extends React.Component{
                 position:relative;
                 left: 30px;
                 width:70%;
+                padding-left: 15px;
+                border-left: solid 2px #1A4A4F;
             }
         `}</style>
 

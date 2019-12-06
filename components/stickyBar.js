@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import 'styles.css';
 import * as THREE from 'three';
+import Dropdown from 'components/dropdown.js';
 import GLTFLoader from 'three-gltf-loader';
 
 class StickyBar extends React.Component{
@@ -42,6 +43,25 @@ class StickyBar extends React.Component{
     }
 
     render(){
+        const contact = <>
+            <p>E-mail: ja3180@nyu.edu</p>
+            <p>Telephone: 914-224-6241</p>
+            <a href="https://github.com/asamoah-meep" target="_blank">Github</a>
+        </>
+
+        const projects =             
+        <ul>
+            <li><Link href="/#TimelineHeader">
+                <a>Tutor Timeline</a>
+            </Link></li>
+            <li><Link href="/#KMeansHeader">
+                <a>K-Means Demo</a>
+            </Link></li>
+            <li><Link href="/#WebsiteHeader">
+                <a>This Website</a>    
+            </Link></li>
+        </ul>
+
         const bar = <div id='stickyBar'>
             <div id="logoMount" ref={ref=>(this.mount = ref)}/>
             <h1>Jeffrey</h1>
@@ -52,18 +72,8 @@ class StickyBar extends React.Component{
             <Link href="/about">
                 <a className='subHeading'>About</a>
             </Link>
-            <h3>Projects</h3>
-            <ul>
-                <li><Link href="/#TimelineHeader">
-                    <a>Tutor Timeline</a>
-                </Link></li>
-                <li><Link href="/#KMeansHeader">
-                    <a>K-Means Demo</a>
-                </Link></li>
-                <li><Link href="/#WebsiteHeader">
-                    <a>This Website</a>    
-                </Link></li>
-            </ul>
+            <Dropdown title="Projects">{projects}</Dropdown>
+            <Dropdown title='Contact and Media'>{contact}</Dropdown>
         </div>;
 
         const style = <style>{`
@@ -77,14 +87,12 @@ class StickyBar extends React.Component{
                 display:inline-block;
                 left:20px;
                 width:200px;
-                padding-right: 5px;
-                margin-right:5px;
+                margin-right: 5px;
                 margin-top:5px;
-                border-right: solid 2px #1E646E;
             }
             .subHeading{
                 font-family: NunitoItalic;
-                color: #1E646E;
+                color: #1A4A4F;
                 display: block;
                 font-size: 1.17em;
                 margin-block-start: 1em;
@@ -93,7 +101,7 @@ class StickyBar extends React.Component{
                 margin-inline-end: 0px;
                 font-weight: bold;
             }
-        `}</style>       
+        `}</style>      
 
         return <>
             {style}

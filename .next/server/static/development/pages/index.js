@@ -93,6 +93,95 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/dropdown.js":
+/*!********************************!*\
+  !*** ./components/dropdown.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styles.css */ "./styles.css");
+/* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styles_css__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\User\\Documents\\myWebsite\\components\\dropdown.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+class Dropdown extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.title = this.props.title;
+    this.expand = this.expand.bind(this);
+    this.state = {
+      show: false
+    };
+  }
+
+  expand() {
+    this.setState({
+      show: !this.state.show
+    }, () => {
+      console.log(this.state);
+    });
+  }
+
+  render() {
+    const dropDown = __jsx("img", {
+      src: "/down_arrow.png",
+      onClick: this.expand,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    });
+
+    const style = __jsx("style", {
+      jsx: true,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, `
+            img{
+                width:20px;
+                height:20px;
+                position:relative;
+                top:5px;
+                left:20px;
+            }
+            h3{
+                display:inline-block;
+            }
+        `);
+
+    return __jsx("div", {
+      className: "drop",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: this
+    }, style, __jsx("h3", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: this
+    }, this.props.title), dropDown, this.state.show && this.props.children);
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Dropdown);
+
+/***/ }),
+
 /***/ "./components/layout.js":
 /*!******************************!*\
   !*** ./components/layout.js ***!
@@ -131,6 +220,8 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 position:relative;
                 left: 30px;
                 width:70%;
+                padding-left: 15px;
+                border-left: solid 2px #1A4A4F;
             }
         `);
 
@@ -138,7 +229,7 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       id: "content",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 22
       },
       __self: this
     }, this.props.children);
@@ -169,11 +260,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styles_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styles_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var three__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! three */ "three");
 /* harmony import */ var three__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(three__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var three_gltf_loader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! three-gltf-loader */ "three-gltf-loader");
-/* harmony import */ var three_gltf_loader__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(three_gltf_loader__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var components_dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! components/dropdown.js */ "./components/dropdown.js");
+/* harmony import */ var three_gltf_loader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! three-gltf-loader */ "three-gltf-loader");
+/* harmony import */ var three_gltf_loader__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(three_gltf_loader__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "C:\\Users\\User\\Documents\\myWebsite\\components\\stickyBar.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -194,7 +287,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     renderer.gammaOutput = true;
     renderer.gammaFactor = 2.2;
     this.mount.appendChild(renderer.domElement);
-    const loader = new three_gltf_loader__WEBPACK_IMPORTED_MODULE_4___default.a();
+    const loader = new three_gltf_loader__WEBPACK_IMPORTED_MODULE_5___default.a();
     let logo = undefined;
 
     const animate = function () {
@@ -216,81 +309,61 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   }
 
   render() {
-    const bar = __jsx("div", {
-      id: "stickyBar",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 45
-      },
-      __self: this
-    }, __jsx("div", {
-      id: "logoMount",
-      ref: ref => this.mount = ref,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 46
-      },
-      __self: this
-    }), __jsx("h1", {
+    const contact = __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("p", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 47
       },
       __self: this
-    }, "Jeffrey"), __jsx("h1", {
+    }, "E-mail: ja3180@nyu.edu"), __jsx("p", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 48
       },
       __self: this
-    }, " Asamoah"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/",
+    }, "Telephone: 914-224-6241"), __jsx("a", {
+      href: "https://github.com/asamoah-meep",
+      target: "_blank",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 49
       },
       __self: this
-    }, __jsx("a", {
-      className: "subHeading",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50
-      },
-      __self: this
-    }, "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/about",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 52
-      },
-      __self: this
-    }, __jsx("a", {
-      className: "subHeading",
+    }, "Github"));
+
+    const projects = __jsx("ul", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 53
       },
       __self: this
-    }, "About")), __jsx("h3", {
+    }, __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54
+      },
+      __self: this
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/#TimelineHeader",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54
+      },
+      __self: this
+    }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 55
       },
       __self: this
-    }, "Projects"), __jsx("ul", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 56
-      },
-      __self: this
-    }, __jsx("li", {
+    }, "Tutor Timeline"))), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 57
       },
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/#TimelineHeader",
+      href: "/#KMeansHeader",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 57
@@ -302,14 +375,14 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 58
       },
       __self: this
-    }, "Tutor Timeline"))), __jsx("li", {
+    }, "K-Means Demo"))), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 60
       },
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/#KMeansHeader",
+      href: "/#WebsiteHeader",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 60
@@ -321,31 +394,83 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 61
       },
       __self: this
-    }, "K-Means Demo"))), __jsx("li", {
+    }, "This Website"))));
+
+    const bar = __jsx("div", {
+      id: "stickyBar",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63
+        lineNumber: 65
       },
       __self: this
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/#WebsiteHeader",
+    }, __jsx("div", {
+      id: "logoMount",
+      ref: ref => this.mount = ref,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63
+        lineNumber: 66
+      },
+      __self: this
+    }), __jsx("h1", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 67
+      },
+      __self: this
+    }, "Jeffrey"), __jsx("h1", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 68
+      },
+      __self: this
+    }, " Asamoah"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 69
       },
       __self: this
     }, __jsx("a", {
+      className: "subHeading",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64
+        lineNumber: 70
       },
       __self: this
-    }, "This Website")))));
+    }, "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/about",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 72
+      },
+      __self: this
+    }, __jsx("a", {
+      className: "subHeading",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 73
+      },
+      __self: this
+    }, "About")), __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      title: "Projects",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75
+      },
+      __self: this
+    }, projects), __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      title: "Contact and Media",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76
+      },
+      __self: this
+    }, contact));
 
     const style = __jsx("style", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69
+        lineNumber: 79
       },
       __self: this
     }, `
@@ -359,14 +484,12 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 display:inline-block;
                 left:20px;
                 width:200px;
-                padding-right: 5px;
-                margin-right:5px;
+                margin-right: 5px;
                 margin-top:5px;
-                border-right: solid 2px #1E646E;
             }
             .subHeading{
                 font-family: NunitoItalic;
-                color: #1E646E;
+                color: #1A4A4F;
                 display: block;
                 font-size: 1.17em;
                 margin-block-start: 1em;
