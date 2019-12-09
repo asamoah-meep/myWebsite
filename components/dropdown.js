@@ -1,4 +1,6 @@
 import 'styles.css';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCaretSquareDown, faCaretSquareUp} from "@fortawesome/free-solid-svg-icons";
 
 class Dropdown extends React.Component{
 
@@ -8,39 +10,37 @@ class Dropdown extends React.Component{
         this.title = this.props.title;
         this.expand = this.expand.bind(this);
         this.state={
-            show:false
+            show:this.props.openOnStart
         }
     }
 
     expand(){
         this.setState({
             show:!this.state.show
-        },()=>{
-            console.log(this.state)
-            
         });
     }
 
     render(){
-        const dropDown = <img src="/down_arrow.png" onClick={this.expand}/>
+
+        const arrow = this.state.show? faCaretSquareUp : faCaretSquareDown;
 
         const style = <style jsx>{`
-            img{
-                width:20px;
-                height:20px;
+            .myFAIcon{
                 position:relative;
-                top:5px;
-                left:20px;
+                color: #D9B08C;
+                left:10px;
             }
             h3{
                 display:inline-block;
             }
         `}</style>      
 
-        return <div className='drop'>
+        const eleStyle = this.props.barDropdown? "barDropdown" : "drop";
+
+        return <div className={eleStyle}>
             {style}
             <h3>{this.props.title}</h3>
-            {dropDown}
+            <FontAwesomeIcon className='myFAIcon' icon={arrow} onClick = {this.expand}/>
             {this.state.show && this.props.children}
         </div>
     }

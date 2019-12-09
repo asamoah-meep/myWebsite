@@ -38,7 +38,7 @@ class About extends React.Component{
         
         const education = <div className='aboutMe'>
             <p>High School(2012-2016): Byram Hills High School</p>
-            <p>Undergraduage(2016-2929): Mathematics and Computer Science at NYU</p>
+            <p>Undergraduage(2016-2020): Mathematics and Computer Science at NYU</p>
         </div>
         
         const work = <div className='aboutMe'>

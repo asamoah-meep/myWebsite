@@ -1,15 +1,15 @@
 h1{
-    color: #0f4b79;
+    color: #FFCB9A;
     font-family: NunitoBold;
 }
 
 h3{
     font-family: NunitoItalic;
-    color: #1A4A4F
+    color: #D9B08C;
 }
 
 p,a,form,text,input,span, li{
-    color:#1E3130;
+    color:#D1E8E2;
     font-family: Nunito;
 }
 
@@ -18,27 +18,29 @@ input[type='submit']{
 }
 
 body{
-    background:#D5DBE7;
+    background:#2F4454;
     overflow-x: auto;
 }      
 
 section{
     width: 55%;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #D9B08C;
 }
 
 @font-face{
     font-family: Nunito;
-    src: url(/Nunito/Nunito-Light.ttf);
+    src: url(/Nunito/Nunito-Regular.ttf);
 }
 
 @font-face{
     font-family: NunitoBold;
-    src: url(/Nunito/Nunito-SemiBold.ttf);
+    src: url(/Nunito/Nunito-Bold.ttf);
 }
 
 @font-face{
     font-family: NunitoItalic;
-    src: url(/Nunito/Nunito-LightItalic.ttf);
+    src: url(/Nunito/Nunito-Italic.ttf);
 
 }
 

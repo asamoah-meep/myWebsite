@@ -1,0 +1,17 @@
+Sleek & Futuristic (Dark)
+    BG: #2C3531
+    Primary: #116466
+    Secondary: #D9B08C
+    Tertiary: #D1E8E2
+
+Textured & Dynamic (Dark)
+    BG: #2F4454
+    Primary: #2E151B
+    Secondary: #DA7B93
+    Tertiary: #376E6F
+
+Clean & Energetic (Light)
+    BG: #C1C8E4
+    Primary: #5680E9
+    Secondary: #84CEEB
+    Tertiary: #5AB9EA

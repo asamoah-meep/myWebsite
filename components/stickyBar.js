@@ -3,6 +3,8 @@ import 'styles.css';
 import * as THREE from 'three';
 import Dropdown from 'components/dropdown.js';
 import GLTFLoader from 'three-gltf-loader';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faHome, faAddressCard,faEnvelope,faTasks} from "@fortawesome/free-solid-svg-icons";
 
 class StickyBar extends React.Component{
 
@@ -67,13 +69,13 @@ class StickyBar extends React.Component{
             <h1>Jeffrey</h1>
             <h1> Asamoah</h1>
             <Link href='/'>
-                <a className='subHeading'>Home</a>
+                <a className='subHeading'><FontAwesomeIcon className='barIcon' icon={faHome}/>Home</a>
             </Link>
             <Link href="/about">
-                <a className='subHeading'>About</a>
+                <a className='subHeading'><FontAwesomeIcon className='barIcon' icon={faAddressCard}/>About</a>
             </Link>
-            <Dropdown title="Projects">{projects}</Dropdown>
-            <Dropdown title='Contact and Media'>{contact}</Dropdown>
+            <FontAwesomeIcon className='barIcon' icon={faTasks}/> <Dropdown title="Projects" barDropdown>{projects}</Dropdown><br/>
+            <FontAwesomeIcon className='barIcon' icon={faEnvelope}/> <Dropdown title='Contact and Media' barDropdown>{contact}</Dropdown>
         </div>;
 
         const style = <style>{`
@@ -81,6 +83,22 @@ class StickyBar extends React.Component{
             #logoMount{
                 height:75px;
             }
+
+            .barIcon{
+                color: #D9B08C;
+                display:inline-block;
+                position:relative;
+                right:5px;
+            }
+
+            .barIcon:right{
+                display:inline:block;
+            }
+
+            .barDropdown{
+                display:inline-block;
+            }
+
             #stickyBar{
                 vertical-align:top;
                 position: relative;
@@ -92,7 +110,7 @@ class StickyBar extends React.Component{
             }
             .subHeading{
                 font-family: NunitoItalic;
-                color: #1A4A4F;
+                color: #D9B08C;
                 display: block;
                 font-size: 1.17em;
                 margin-block-start: 1em;
