@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -223,7 +223,7 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 margin-top:5px;
                 position:relative;
                 left: 30px;
-                width:70%;
+                width:80%;
                 padding-left: 15px;
                 border-left: solid 2px #D9B08C;
             }
@@ -422,18 +422,26 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       },
       __self: this
     }), __jsx("h1", {
+      style: {
+        position: "relative",
+        left: "12px"
+      },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 69
       },
       __self: this
     }, "Jeffrey"), __jsx("h1", {
+      style: {
+        position: "relative",
+        left: "25px"
+      },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 70
       },
       __self: this
-    }, " Asamoah"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    }, "Asamoah"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "/",
       __source: {
         fileName: _jsxFileName,
@@ -455,7 +463,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 72
       },
       __self: this
-    }), "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    }), " Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "/about",
       __source: {
         fileName: _jsxFileName,
@@ -477,7 +485,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 75
       },
       __self: this
-    }), "About")), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+    }), " About")), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
       className: "barIcon",
       icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faTasks"],
       __source: {
@@ -536,10 +544,6 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 right:5px;
             }
 
-            .barIcon:right{
-                display:inline:block;
-            }
-
             .barDropdown{
                 display:inline-block;
             }
@@ -549,7 +553,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 position: relative;
                 display:inline-block;
                 left:20px;
-                width:200px;
+                width:250px;
                 margin-right: 5px;
                 margin-top:5px;
             }
@@ -557,7 +561,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 font-family: NunitoItalic;
                 color: #D9B08C;
                 display: block;
-                font-size: 1.17em;
+                font-size: 1.5rem;
                 margin-block-start: 1em;
                 margin-block-end: 1em;
                 margin-inline-start: 0px;
@@ -2624,7 +2628,7 @@ class About extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/about.js ***!
   \******************************/

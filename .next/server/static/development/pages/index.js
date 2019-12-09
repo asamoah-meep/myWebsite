@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -223,7 +223,7 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 margin-top:5px;
                 position:relative;
                 left: 30px;
-                width:70%;
+                width:80%;
                 padding-left: 15px;
                 border-left: solid 2px #D9B08C;
             }
@@ -422,18 +422,26 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       },
       __self: this
     }), __jsx("h1", {
+      style: {
+        position: "relative",
+        left: "12px"
+      },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 69
       },
       __self: this
     }, "Jeffrey"), __jsx("h1", {
+      style: {
+        position: "relative",
+        left: "25px"
+      },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 70
       },
       __self: this
-    }, " Asamoah"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    }, "Asamoah"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "/",
       __source: {
         fileName: _jsxFileName,
@@ -455,7 +463,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 72
       },
       __self: this
-    }), "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    }), " Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "/about",
       __source: {
         fileName: _jsxFileName,
@@ -477,7 +485,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 75
       },
       __self: this
-    }), "About")), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+    }), " About")), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
       className: "barIcon",
       icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faTasks"],
       __source: {
@@ -536,10 +544,6 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 right:5px;
             }
 
-            .barIcon:right{
-                display:inline:block;
-            }
-
             .barDropdown{
                 display:inline-block;
             }
@@ -549,7 +553,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 position: relative;
                 display:inline-block;
                 left:20px;
-                width:200px;
+                width:250px;
                 margin-right: 5px;
                 margin-top:5px;
             }
@@ -557,7 +561,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 font-family: NunitoItalic;
                 color: #D9B08C;
                 display: block;
-                font-size: 1.17em;
+                font-size: 1.5rem;
                 margin-block-start: 1em;
                 margin-block-end: 1em;
                 margin-inline-start: 0px;
@@ -2426,7 +2430,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 32
       },
       __self: this
-    }, "I created this timeline app to emulate the project I worked on during my Comcast Internship. At my internship my project was to create a front-facing visual to display how the Xfinity Fraud Man (XFM) team monitored and mitigated fraud activity. For that project I displayed the ~40 use cases of potentially fraudulent activity and plotted the occurence of each point. The app allowed for you to filter which items you wanted to look at as well as select the timeframe on which you were looking. I recreated that project using data from my tutoring experience at NYU. Here I display when each student would approach various tutors and the success of the tutoring session. The key features of this project were:"), __jsx("ul", {
+    }, "I created this timeline app to emulate the project I worked on during my Comcast Internship. At my internship my project was to create a foward-facing visual to display how the Xfinity Fraud Managment (XFM) team monitored and mitigated fraud activity. For my internship I displayed the ~40 use cases of potentially fraudulent activity and plotted the occurences of each usecase. The app allowed for you to filter which items you wanted to look at as well as select the timeframe on which you were looking. I recreated that project using data from my tutoring experience at NYU. Here I display when each student would approach various tutors and the success of the tutoring session."), __jsx("ul", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 39
@@ -2446,7 +2450,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 40
       },
       __self: this
-    }, "React.js")), __jsx("li", {
+    }, " React.js")), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 41
@@ -2460,7 +2464,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 41
       },
       __self: this
-    }, "Cassandra DB (now static data)")), __jsx("li", {
+    }, " Cassandra DB (now static data)")), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 42
@@ -2535,7 +2539,13 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 53
       },
       __self: this
-    }, "K-Means"), " project is a self-made data clustering algorithm that I created for my predictive analytics class. The algorithm takes in 24 documents roughly concerned with 3 topics (Mouth and Foot Diseases, Airline Safety, and International Housing Prices) and clusters them into k centroids. The data is 1st converted into a tf-idf matrix adjusted for the lengths of the respective documents. The data is then trimmed by removing low intra-dimensional words, combining highly correlated dimensions, and then adjusting the matrix using ", __jsx("a", {
+    }, "K-Means"), " project is a self-made data clustering algorithm that I created for my predictive analytics class. The algorithm takes in 24 documents roughly concerned with 3 topics (Mouth and Foot Diseases, Airline Safety, and International Housing Prices) and clusters them into k centroids. The data is 1", __jsx("sup", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      },
+      __self: this
+    }, "st"), " converted into a TF-IDF matrix adjusted for the lengths of the respective documents. The data is then trimmed by removing low intra-dimensional words, combining highly correlated dimensions, and then adjusting the matrix using ", __jsx("a", {
       href: "https://en.wikipedia.org/wiki/Principal_component_analysis",
       target: "_blank",
       __source: {
@@ -2689,7 +2699,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

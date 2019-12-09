@@ -66,13 +66,13 @@ class StickyBar extends React.Component{
 
         const bar = <div id='stickyBar'>
             <div id="logoMount" ref={ref=>(this.mount = ref)}/>
-            <h1>Jeffrey</h1>
-            <h1> Asamoah</h1>
+            <h1 style={{position:"relative", left:"12px"}}>Jeffrey</h1>
+            <h1 style={{position:"relative", left:"25px"}}>Asamoah</h1>
             <Link href='/'>
-                <a className='subHeading'><FontAwesomeIcon className='barIcon' icon={faHome}/>Home</a>
+                <a className='subHeading'><FontAwesomeIcon className='barIcon' icon={faHome}/> Home</a>
             </Link>
             <Link href="/about">
-                <a className='subHeading'><FontAwesomeIcon className='barIcon' icon={faAddressCard}/>About</a>
+                <a className='subHeading'><FontAwesomeIcon className='barIcon' icon={faAddressCard}/> About</a>
             </Link>
             <FontAwesomeIcon className='barIcon' icon={faTasks}/> <Dropdown title="Projects" barDropdown>{projects}</Dropdown><br/>
             <FontAwesomeIcon className='barIcon' icon={faEnvelope}/> <Dropdown title='Contact and Media' barDropdown>{contact}</Dropdown>
@@ -91,10 +91,6 @@ class StickyBar extends React.Component{
                 right:5px;
             }
 
-            .barIcon:right{
-                display:inline:block;
-            }
-
             .barDropdown{
                 display:inline-block;
             }
@@ -104,7 +100,7 @@ class StickyBar extends React.Component{
                 position: relative;
                 display:inline-block;
                 left:20px;
-                width:200px;
+                width:250px;
                 margin-right: 5px;
                 margin-top:5px;
             }
@@ -112,7 +108,7 @@ class StickyBar extends React.Component{
                 font-family: NunitoItalic;
                 color: #D9B08C;
                 display: block;
-                font-size: 1.17em;
+                font-size: 1.5rem;
                 margin-block-start: 1em;
                 margin-block-end: 1em;
                 margin-inline-start: 0px;

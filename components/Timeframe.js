@@ -169,18 +169,22 @@ class Timeframe extends React.Component{
           
             #timeFrame span{
                 text-decoration:underline;
-                color:blue;
+                color: #D1E8E2;
                 cursor:pointer;
+            }
+
+            #timeframe span:hover{
+                color: #DA7B93;
             }
 
             .row .border{
                 fill:none;
                 stroke:black;
-              }
+            }
 
-              #zoomBox .selection{
-                stroke:#EAE7DC;
-              }
+            #zoomBox .selection{
+            stroke:#EAE7DC;
+            }
           `}</style>
         return(            
             <>

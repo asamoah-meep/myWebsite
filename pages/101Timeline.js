@@ -63,10 +63,10 @@ class Timeline extends React.Component{
             padding-right:10px;
             padding-bottom:10px;
             display:inline-block;
-            width:450px;
+            width:467.5px;
             vertical-align:bottom;
-            border-right: 1px solid #002C2f;
-            border-bottom: 1px solid #002C2F;
+            border-right: 2px solid #FFCB9A;
+            border-bottom: 2px solid #FFCB9A;
             margin-bottom:20px;
 
           }
@@ -78,7 +78,8 @@ class Timeline extends React.Component{
           #legend{
             vertical-align:top;
             display: inline-block;
-            border:2px solid #002C2F;
+            border:2px solid #FFCB9A;
+            padding:10px;
             margin-left:20px;
             position:relative;
             width:500px;
@@ -91,7 +92,7 @@ class Timeline extends React.Component{
             display:inline-block;
             padding:5px;
             margin:3px;
-            border:2px solid #002C2F;
+            border:2px solid #FFCB9A;
             overflow-x:auto;
             position:relative;
             bottom:60px;
@@ -130,7 +131,7 @@ class Timeline extends React.Component{
         `}</style>
     }
 
-    resetZoom(scale,f){
+    resetZoom(f){
         if(d3Selection.event.selection === null){
           this.setState({
               start:moment("2018-09-02"),
@@ -171,7 +172,7 @@ class Timeline extends React.Component{
         let s = null, e = null;
     
         if(d3Selection.event.selection === null){
-          this.resetZoom(scale,f);
+          this.resetZoom(f);
           return;
         }
     

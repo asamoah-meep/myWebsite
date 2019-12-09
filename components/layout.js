@@ -13,7 +13,7 @@ class Layout extends React.Component{
                 margin-top:5px;
                 position:relative;
                 left: 30px;
-                width:70%;
+                width:80%;
                 padding-left: 15px;
                 border-left: solid 2px #D9B08C;
             }

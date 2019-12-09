@@ -157,7 +157,7 @@ function (_React$Component) {
           lineNumber: 10
         },
         __self: this
-      }, "\n            #content{\n                display:inline-block;\n                margin-top:5px;\n                position:relative;\n                left: 30px;\n                width:70%;\n                padding-left: 15px;\n                border-left: solid 2px #D9B08C;\n            }\n        ");
+      }, "\n            #content{\n                display:inline-block;\n                margin-top:5px;\n                position:relative;\n                left: 30px;\n                width:80%;\n                padding-left: 15px;\n                border-left: solid 2px #D9B08C;\n            }\n        ");
 
       var layout = __jsx("div", {
         id: "content",
@@ -378,18 +378,26 @@ function (_React$Component) {
         },
         __self: this
       }), __jsx("h1", {
+        style: {
+          position: "relative",
+          left: "12px"
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 69
         },
         __self: this
       }, "Jeffrey"), __jsx("h1", {
+        style: {
+          position: "relative",
+          left: "25px"
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 70
         },
         __self: this
-      }, " Asamoah"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      }, "Asamoah"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
@@ -411,7 +419,7 @@ function (_React$Component) {
           lineNumber: 72
         },
         __self: this
-      }), "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      }), " Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/about",
         __source: {
           fileName: _jsxFileName,
@@ -433,7 +441,7 @@ function (_React$Component) {
           lineNumber: 75
         },
         __self: this
-      }), "About")), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_11__["FontAwesomeIcon"], {
+      }), " About")), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_11__["FontAwesomeIcon"], {
         className: "barIcon",
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_12__["faTasks"],
         __source: {
@@ -479,7 +487,7 @@ function (_React$Component) {
           lineNumber: 81
         },
         __self: this
-      }, "\n\n            #logoMount{\n                height:75px;\n            }\n\n            .barIcon{\n                color: #D9B08C;\n                display:inline-block;\n                position:relative;\n                right:5px;\n            }\n\n            .barIcon:right{\n                display:inline:block;\n            }\n\n            .barDropdown{\n                display:inline-block;\n            }\n\n            #stickyBar{\n                vertical-align:top;\n                position: relative;\n                display:inline-block;\n                left:20px;\n                width:200px;\n                margin-right: 5px;\n                margin-top:5px;\n            }\n            .subHeading{\n                font-family: NunitoItalic;\n                color: #D9B08C;\n                display: block;\n                font-size: 1.17em;\n                margin-block-start: 1em;\n                margin-block-end: 1em;\n                margin-inline-start: 0px;\n                margin-inline-end: 0px;\n                font-weight: bold;\n            }\n        ");
+      }, "\n\n            #logoMount{\n                height:75px;\n            }\n\n            .barIcon{\n                color: #D9B08C;\n                display:inline-block;\n                position:relative;\n                right:5px;\n            }\n\n            .barDropdown{\n                display:inline-block;\n            }\n\n            #stickyBar{\n                vertical-align:top;\n                position: relative;\n                display:inline-block;\n                left:20px;\n                width:250px;\n                margin-right: 5px;\n                margin-top:5px;\n            }\n            .subHeading{\n                font-family: NunitoItalic;\n                color: #D9B08C;\n                display: block;\n                font-size: 1.5rem;\n                margin-block-start: 1em;\n                margin-block-end: 1em;\n                margin-inline-start: 0px;\n                margin-inline-end: 0px;\n                font-weight: bold;\n            }\n        ");
 
       return __jsx(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, style, bar);
     }
@@ -75454,7 +75462,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 3:
 /*!************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=C%3A%5CUsers%5CUser%5CDocuments%5CmyWebsite%5Cpages%5Cabout.js ***!
   \************************************************************************************************************************************/
@@ -75477,5 +75485,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[3,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=about.js.map

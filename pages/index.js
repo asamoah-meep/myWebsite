@@ -30,15 +30,15 @@ class Index extends React.Component{
             <section id='TimelineHeader'>
                 <Dropdown title="Timeline App">
                 <p>I created this timeline app to emulate the project I worked on during my Comcast Internship. At my internship my project was 
-                    to create a front-facing visual to display how the Xfinity Fraud Man (XFM) team monitored and mitigated fraud activity.
-                    For that project I displayed the ~40 use cases of potentially fraudulent activity and plotted the occurence of each point. The 
+                    to create a foward-facing visual to display how the Xfinity Fraud Managment (XFM) team monitored and mitigated fraud activity.
+                    For my internship I displayed the ~40 use cases of potentially fraudulent activity and plotted the occurences of each usecase. The 
                     app allowed for you to filter which items you wanted to look at as well as select the timeframe on which you were looking.
                     I recreated that project using data from my tutoring experience at NYU. Here I display when each student would approach various tutors
-                    and the success of the tutoring session. The key features of this project were: 
+                    and the success of the tutoring session.
                 </p>
                 <ul>
-                    <li>Built using <a href="https://reactjs.org/" target="_blank">React.js</a></li>
-                    <li>Data was read from<a href="http://cassandra.apache.org/" target="_blank">Cassandra DB (now static data)</a></li>
+                    <li>Built using <a href="https://reactjs.org/" target="_blank"> React.js</a></li>
+                    <li>Data was read from<a href="http://cassandra.apache.org/" target="_blank"> Cassandra DB (now static data)</a></li>
                     <li>Used <a href="https://d3js.org/" target="_blank">D3 libraries</a> to scale and plot data points according to their dates</li>
                     <li>Used D3 libraries to create a window frame to adjust the date window of viewing</li>
                 </ul>
@@ -52,7 +52,7 @@ class Index extends React.Component{
                 <Dropdown title="K-Means Demo">
                     <p>This <a href="https://en.wikipedia.org/wiki/K-means_clustering" target="_blank">K-Means</a> project is a self-made data clustering algorithm that 
                         I created for my predictive analytics class. The algorithm takes in 24 documents roughly concerned with 3 topics (Mouth and Foot Diseases, 
-                        Airline Safety, and International Housing Prices) and clusters them into k centroids. The data is 1st converted into a tf-idf matrix adjusted for 
+                        Airline Safety, and International Housing Prices) and clusters them into k centroids. The data is 1<sup>st</sup> converted into a TF-IDF matrix adjusted for 
                         the lengths of the respective documents. The data is then trimmed by removing low intra-dimensional words, combining highly correlated dimensions, 
                         and then adjusting the matrix using <a href="https://en.wikipedia.org/wiki/Principal_component_analysis" target="_blank">PCA</a>.The similarity is 
                         measured using <a href="https://en.wikipedia.org/wiki/Cosine_similarity" target="_blank">cosine similarity</a> into clusted determined by initial 

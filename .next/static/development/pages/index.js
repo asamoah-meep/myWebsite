@@ -157,7 +157,7 @@ function (_React$Component) {
           lineNumber: 10
         },
         __self: this
-      }, "\n            #content{\n                display:inline-block;\n                margin-top:5px;\n                position:relative;\n                left: 30px;\n                width:70%;\n                padding-left: 15px;\n                border-left: solid 2px #D9B08C;\n            }\n        ");
+      }, "\n            #content{\n                display:inline-block;\n                margin-top:5px;\n                position:relative;\n                left: 30px;\n                width:80%;\n                padding-left: 15px;\n                border-left: solid 2px #D9B08C;\n            }\n        ");
 
       var layout = __jsx("div", {
         id: "content",
@@ -378,18 +378,26 @@ function (_React$Component) {
         },
         __self: this
       }), __jsx("h1", {
+        style: {
+          position: "relative",
+          left: "12px"
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 69
         },
         __self: this
       }, "Jeffrey"), __jsx("h1", {
+        style: {
+          position: "relative",
+          left: "25px"
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 70
         },
         __self: this
-      }, " Asamoah"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      }, "Asamoah"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
@@ -411,7 +419,7 @@ function (_React$Component) {
           lineNumber: 72
         },
         __self: this
-      }), "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      }), " Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: "/about",
         __source: {
           fileName: _jsxFileName,
@@ -433,7 +441,7 @@ function (_React$Component) {
           lineNumber: 75
         },
         __self: this
-      }), "About")), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_11__["FontAwesomeIcon"], {
+      }), " About")), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_11__["FontAwesomeIcon"], {
         className: "barIcon",
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_12__["faTasks"],
         __source: {
@@ -479,7 +487,7 @@ function (_React$Component) {
           lineNumber: 81
         },
         __self: this
-      }, "\n\n            #logoMount{\n                height:75px;\n            }\n\n            .barIcon{\n                color: #D9B08C;\n                display:inline-block;\n                position:relative;\n                right:5px;\n            }\n\n            .barIcon:right{\n                display:inline:block;\n            }\n\n            .barDropdown{\n                display:inline-block;\n            }\n\n            #stickyBar{\n                vertical-align:top;\n                position: relative;\n                display:inline-block;\n                left:20px;\n                width:200px;\n                margin-right: 5px;\n                margin-top:5px;\n            }\n            .subHeading{\n                font-family: NunitoItalic;\n                color: #D9B08C;\n                display: block;\n                font-size: 1.17em;\n                margin-block-start: 1em;\n                margin-block-end: 1em;\n                margin-inline-start: 0px;\n                margin-inline-end: 0px;\n                font-weight: bold;\n            }\n        ");
+      }, "\n\n            #logoMount{\n                height:75px;\n            }\n\n            .barIcon{\n                color: #D9B08C;\n                display:inline-block;\n                position:relative;\n                right:5px;\n            }\n\n            .barDropdown{\n                display:inline-block;\n            }\n\n            #stickyBar{\n                vertical-align:top;\n                position: relative;\n                display:inline-block;\n                left:20px;\n                width:250px;\n                margin-right: 5px;\n                margin-top:5px;\n            }\n            .subHeading{\n                font-family: NunitoItalic;\n                color: #D9B08C;\n                display: block;\n                font-size: 1.5rem;\n                margin-block-start: 1em;\n                margin-block-end: 1em;\n                margin-inline-start: 0px;\n                margin-inline-end: 0px;\n                font-weight: bold;\n            }\n        ");
 
       return __jsx(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, style, bar);
     }
@@ -75276,7 +75284,7 @@ function (_React$Component) {
           lineNumber: 32
         },
         __self: this
-      }, "I created this timeline app to emulate the project I worked on during my Comcast Internship. At my internship my project was to create a front-facing visual to display how the Xfinity Fraud Man (XFM) team monitored and mitigated fraud activity. For that project I displayed the ~40 use cases of potentially fraudulent activity and plotted the occurence of each point. The app allowed for you to filter which items you wanted to look at as well as select the timeframe on which you were looking. I recreated that project using data from my tutoring experience at NYU. Here I display when each student would approach various tutors and the success of the tutoring session. The key features of this project were:"), __jsx("ul", {
+      }, "I created this timeline app to emulate the project I worked on during my Comcast Internship. At my internship my project was to create a foward-facing visual to display how the Xfinity Fraud Managment (XFM) team monitored and mitigated fraud activity. For my internship I displayed the ~40 use cases of potentially fraudulent activity and plotted the occurences of each usecase. The app allowed for you to filter which items you wanted to look at as well as select the timeframe on which you were looking. I recreated that project using data from my tutoring experience at NYU. Here I display when each student would approach various tutors and the success of the tutoring session."), __jsx("ul", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 39
@@ -75296,7 +75304,7 @@ function (_React$Component) {
           lineNumber: 40
         },
         __self: this
-      }, "React.js")), __jsx("li", {
+      }, " React.js")), __jsx("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 41
@@ -75310,7 +75318,7 @@ function (_React$Component) {
           lineNumber: 41
         },
         __self: this
-      }, "Cassandra DB (now static data)")), __jsx("li", {
+      }, " Cassandra DB (now static data)")), __jsx("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 42
@@ -75385,7 +75393,13 @@ function (_React$Component) {
           lineNumber: 53
         },
         __self: this
-      }, "K-Means"), " project is a self-made data clustering algorithm that I created for my predictive analytics class. The algorithm takes in 24 documents roughly concerned with 3 topics (Mouth and Foot Diseases, Airline Safety, and International Housing Prices) and clusters them into k centroids. The data is 1st converted into a tf-idf matrix adjusted for the lengths of the respective documents. The data is then trimmed by removing low intra-dimensional words, combining highly correlated dimensions, and then adjusting the matrix using ", __jsx("a", {
+      }, "K-Means"), " project is a self-made data clustering algorithm that I created for my predictive analytics class. The algorithm takes in 24 documents roughly concerned with 3 topics (Mouth and Foot Diseases, Airline Safety, and International Housing Prices) and clusters them into k centroids. The data is 1", __jsx("sup", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      }, "st"), " converted into a TF-IDF matrix adjusted for the lengths of the respective documents. The data is then trimmed by removing low intra-dimensional words, combining highly correlated dimensions, and then adjusting the matrix using ", __jsx("a", {
         href: "https://en.wikipedia.org/wiki/Principal_component_analysis",
         target: "_blank",
         __source: {
@@ -75530,7 +75544,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /*!*******************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CUser%5CDocuments%5CmyWebsite%5Cpages%5Cindex.js ***!
   \*******************************************************************************************************************************/
@@ -75553,5 +75567,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

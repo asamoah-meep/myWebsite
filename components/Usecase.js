@@ -104,9 +104,7 @@ class UseCaseRow extends React.Component{
             .attr("x",5)
             .attr("y",75)
             .classed("ucName",true)
-            .text(this.props.lastName)
-            .append("title")
-            .text(this.rowName + " " + this.props.lastName);        
+            .text(this.props.lastName);         
     }
 
     createInfo(d){
