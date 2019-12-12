@@ -162,7 +162,7 @@ class Timeframe extends React.Component{
     }
 
     render(){
-        const style = <style jsx>{`
+        const style = <style>{`
             .scalePoint{
                 r:3;
             }

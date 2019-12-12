@@ -127,8 +127,8 @@ class UseCaseRow extends React.Component{
     }
 
     render(){
-        const iconStyle = <style jsx>{this.props.styling}</style>;
-        const style = <style jsx>{`          
+        const iconStyle = <style>{this.props.styling}</style>;
+        const style = <style>{`          
         .ucRow text{
             cursor:pointer;
         }

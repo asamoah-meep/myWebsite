@@ -46,7 +46,7 @@ class About extends React.Component{
             <p>Computer Science Tutoring(2017-2019)</p>
             <p>Comcast(Summer 2019)</p>
         </div>
-        const style = <style jsx>{`
+        const style = <style>{`
             #test{
                 width:200px;
                 height:200px;

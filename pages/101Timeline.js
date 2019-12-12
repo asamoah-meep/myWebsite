@@ -51,7 +51,7 @@ class Timeline extends React.Component{
             queryTutor:""
           }
 
-        this.style = <style jsx>{`
+        this.style = <style>{`
 
           .datePicker{
             display:inline-block;

@@ -24,7 +24,7 @@ class Dropdown extends React.Component{
 
         const arrow = this.state.show? faCaretSquareUp : faCaretSquareDown;
 
-        const style = <style jsx>{`
+        const style = <style>{`
             .myFAIcon{
                 position:relative;
                 color: #D9B08C;
