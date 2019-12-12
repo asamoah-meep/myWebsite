@@ -29,16 +29,17 @@ class PVH extends React.Component{
 
     h2{
         font-family: Klein-Medium;
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin-block-start: .5em;
         margin-block-end: .5em;
         color: #000000;
     }
 
     h4{
         font-family: Klein-Light;
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-block-start: .4em;
-        margin-block-end: .5em;
+        margin-block-end: .4em;
         color: #000000;
     }
 
@@ -55,7 +56,7 @@ class PVH extends React.Component{
         display:inline-block;
     }
 
-    #contents h4{
+    #contents h4, #custom h4{
         text-align: left;
     }
 
@@ -86,12 +87,6 @@ class PVH extends React.Component{
         row-gap: 10px;
         justify-content: center;
         grid-gap: 20px;
-    }
-
-    #suppliers h4, #goals h4{
-        font-size: 1rem;
-        // margin-block-end : .15rem;
-        // margin-block-start: .15rem;
     }
 
     @font-face{
@@ -128,7 +123,7 @@ class PVH extends React.Component{
         <section id='custom'>
             <h2>#MYCALVINS CUSTOM</h2>
 
-            <img src='Klein/map.png' width="80%" height="auto" margin='0'/>
+            <img src='Klein/map.png' width="90%" height="auto" margin='0'/>
             <h4>Sourced, manufactured, and customized locally in Sri
                 Lanka to optimize a small carbon footprint of XXXX
             </h4>
