@@ -4,7 +4,7 @@ class PVH extends React.Component{
 
     const style= <style>{`
     
-    #content{
+    body,#content{
         box-sizing: border-box;
         text-align: center;
         background: #FFFFFF;
@@ -26,7 +26,7 @@ class PVH extends React.Component{
     }
 
     h2{
-        font-family: Klein-Bold;
+        font-family: Klein-Medium;
         font-size: 4rem;
         margin-block-end: .5em;
         color: #000000;
