@@ -19,7 +19,7 @@ class PVH extends React.Component{
 
     a{
         text-decoration: none;
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-family: Klein-Bold;
     }
 
@@ -37,7 +37,7 @@ class PVH extends React.Component{
 
     h4{
         font-family: Klein-Light;
-        font-size: 1rem;
+        font-size: .85rem;
         margin-block-start: .4em;
         margin-block-end: .4em;
         color: #000000;
@@ -46,8 +46,6 @@ class PVH extends React.Component{
     p{
         font-family: Klein-Regular;
         font-size: 1.25rem;
-        padding-left:15%;
-        padding-right: 15%;
         color: #000000;
     }
 
@@ -56,7 +54,7 @@ class PVH extends React.Component{
         display:inline-block;
     }
 
-    #contents h4, #custom h4{
+    #contents h4{
         text-align: left;
     }
 
@@ -130,7 +128,7 @@ class PVH extends React.Component{
         </section>  
         <section id='contents'>
         <h2>CONTENTS</h2>
-            <img src='Klein/contents.png' style={{width:"40%", height:"auto"}}/>
+            <img src='Klein/contents.png' style={{width:"75%", height:"auto"}}/>
             <p>All Calvin Klein products are made with
                 <a href='https://urldefense.proofpoint.com/v2/url?u=https-3A__www.oeko-2Dtex.com_en_our-2Dstandards_standard-2D100-2Dby-2Doeko-2Dtex&d=DwMFAg&c=slrrB7dE8n7gBJbeO0g-IQ&r=EAdyeCaJvdjIn1KIyQGo1g&m=kN_7bXUCmItBePdIVDp1Cj4Mum7FO3WOWNRRfum9Zn4&s=1IUyBTSQ5FgxWSqJwH047h0w25BCWFOxUzmOs0xjMNI&e='
                  target='_blank' style={{color:"rgb(214, 19, 19)"}}> Oeko-tex</a> certified fabrics and trims
@@ -148,7 +146,7 @@ class PVH extends React.Component{
         </section>
         <section id='goals'>    
             <h2>#GOALS</h2>
-            <h4>Interested in supporting brands that care?</h4>
+            <h4>Interested in supporting <br/> brands that care?</h4>
             <h4>Click <a href='https://urldefense.proofpoint.com/v2/url?u=https-3A__responsibility.pvh.com_&d=DwMFAg&c=slrrB7dE8n7gBJbeO0g-IQ&r=EAdyeCaJvdjIn1KIyQGo1g&m=kN_7bXUCmItBePdIVDp1Cj4Mum7FO3WOWNRRfum9Zn4&s=B4ZCIUX8yPqT4XorTfzC-gKc0tTaEMG3gGBCwFVwhZw&e='
                 target = '_blank' style={{color:"red"}}>HERE</a> to learn more about 
                 <br/>PVH's sustainability goals</h4>
