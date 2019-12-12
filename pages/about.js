@@ -61,7 +61,7 @@ class About extends React.Component{
 
         const resume =             
         <Link href="/resume.pdf">
-            <a tareget="_blank">My Resume</a>
+            <a target="_blank">My Resume</a>
         </Link>
 
         return <>

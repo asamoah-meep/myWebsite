@@ -67,6 +67,14 @@ class Index extends React.Component{
                 </Dropdown>
                 <a href='https://github.com/asamoah-meep' target="_blank">View source</a>
             </section>
+            <section id='QRHeader'>
+                <Dropdown title='QR Marketing Project'>
+                    <p>Calvin Klein marketing project utilizing QR codes</p>
+                </Dropdown>
+                <Link href='/pvh'>
+                        <a target='_blank'>QR Project</a>
+                </Link>
+            </section>
             <section id="WebsiteHeader">
                 <Dropdown title='This Website'>
                     <p>
