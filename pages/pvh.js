@@ -19,6 +19,7 @@ class PVH extends React.Component{
 
     a{
         text-decoration: none;
+        font-size: 1.25rem;
         font-family: Klein-Bold;
     }
 
@@ -28,16 +29,14 @@ class PVH extends React.Component{
 
     h2{
         font-family: Klein-Medium;
-        font-size: 4rem;
+        font-size: 2.5rem;
         margin-block-end: .5em;
         color: #000000;
     }
 
     h4{
         font-family: Klein-Light;
-        font-size: 2.5rem;
-        padding-left: 5%;
-        padding-right: 5%;
+        font-size: 1.5rem;
         margin-block-start: .4em;
         margin-block-end: .5em;
         color: #000000;
@@ -45,9 +44,9 @@ class PVH extends React.Component{
 
     p{
         font-family: Klein-Regular;
-        font-size: 1.8rem;
-        padding-left:23%;
-        padding-right: 23%;
+        font-size: 1.25rem;
+        padding-left:15%;
+        padding-right: 15%;
         color: #000000;
     }
 
@@ -71,8 +70,8 @@ class PVH extends React.Component{
         grid-template-rows: auto;
         grid-template-columns: 25% 25% 25%;
         row-gap: 10px;
-        justify-content: center;
         grid-gap: 20px;
+        justify-content:center;
     }
 
     .model{
@@ -90,9 +89,9 @@ class PVH extends React.Component{
     }
 
     #suppliers h4, #goals h4{
-        font-size: 1.5rem;
-        margin-block-end : .15rem;
-        margin-block-start: .15rem;
+        font-size: 1rem;
+        // margin-block-end : .15rem;
+        // margin-block-start: .15rem;
     }
 
     @font-face{
@@ -128,6 +127,7 @@ class PVH extends React.Component{
         </section>
         <section id='custom'>
             <h2>#MYCALVINS CUSTOM</h2>
+
             <img src='Klein/map.png' width="80%" height="auto" margin='0'/>
             <h4>Sourced, manufactured, and customized locally in Sri
                 Lanka to optimize a small carbon footprint of XXXX

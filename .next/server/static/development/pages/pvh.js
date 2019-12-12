@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -118,9 +118,9 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       __self: this
     }, `
     
-    #content{
-        box-sizing: border-box;
+    body, #content{
         text-align: center;
+        justify-content: center;
         background: #FFFFFF;
     }
 
@@ -128,10 +128,12 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         font-family: Klein-Medium;
         font-size: 4rem;
         margin-block-end: .5em;
+        color: #000000;
     }
 
     a{
         text-decoration: none;
+        font-size: 1.25rem;
         font-family: Klein-Bold;
     }
 
@@ -140,17 +142,15 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     }
 
     h2{
-        font-family: Klein-Bold;
-        font-size: 4rem;
+        font-family: Klein-Medium;
+        font-size: 2.5rem;
         margin-block-end: .5em;
         color: #000000;
     }
 
     h4{
         font-family: Klein-Light;
-        font-size: 2.5rem;
-        padding-left: 5%;
-        padding-right: 5%;
+        font-size: 1.5rem;
         margin-block-start: .4em;
         margin-block-end: .5em;
         color: #000000;
@@ -158,13 +158,15 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
     p{
         font-family: Klein-Regular;
-        font-size: 1.8rem;
-        padding-left:23%;
-        padding-right: 23%;
+        font-size: 1.25rem;
+        padding-left:15%;
+        padding-right: 15%;
+        color: #000000;
     }
 
     section{
         border:none;
+        display:inline-block;
     }
 
     #contents h4{
@@ -182,8 +184,8 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         grid-template-rows: auto;
         grid-template-columns: 25% 25% 25%;
         row-gap: 10px;
-        justify-content: center;
         grid-gap: 20px;
+        justify-content:center;
     }
 
     .model{
@@ -201,9 +203,9 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     }
 
     #suppliers h4, #goals h4{
-        font-size: 1.5rem;
-        margin-block-end : .15rem;
-        margin-block-start: .15rem;
+        font-size: 1rem;
+        // margin-block-end : .15rem;
+        // margin-block-start: .15rem;
     }
 
     @font-face{
@@ -231,27 +233,27 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       id: "content",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 117
+        lineNumber: 119
       },
       __self: this
     }, __jsx("section", {
       id: "name",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 118
+        lineNumber: 120
       },
       __self: this
     }, __jsx("h1", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 119
+        lineNumber: 121
       },
       __self: this
     }, "CALVIN KLEIN"), __jsx("div", {
       id: "modelContainer",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 120
+        lineNumber: 122
       },
       __self: this
     }, __jsx("img", {
@@ -259,7 +261,7 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       className: "model",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 121
+        lineNumber: 123
       },
       __self: this
     }), __jsx("img", {
@@ -267,7 +269,7 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       className: "model",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 122
+        lineNumber: 124
       },
       __self: this
     }), __jsx("img", {
@@ -275,20 +277,20 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       className: "model",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 123
+        lineNumber: 125
       },
       __self: this
     }))), __jsx("section", {
       id: "custom",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 126
+        lineNumber: 128
       },
       __self: this
     }, __jsx("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 127
+        lineNumber: 129
       },
       __self: this
     }, "#MYCALVINS CUSTOM"), __jsx("img", {
@@ -298,26 +300,26 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       margin: "0",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 128
+        lineNumber: 131
       },
       __self: this
     }), __jsx("h4", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 129
+        lineNumber: 132
       },
       __self: this
     }, "Sourced, manufactured, and customized locally in Sri Lanka to optimize a small carbon footprint of XXXX")), __jsx("section", {
       id: "contents",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 133
+        lineNumber: 136
       },
       __self: this
     }, __jsx("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 134
+        lineNumber: 137
       },
       __self: this
     }, "CONTENTS"), __jsx("img", {
@@ -328,13 +330,13 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 135
+        lineNumber: 138
       },
       __self: this
     }), __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 136
+        lineNumber: 139
       },
       __self: this
     }, "All Calvin Klein products are made with", __jsx("a", {
@@ -345,51 +347,51 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 137
+        lineNumber: 140
       },
       __self: this
     }, " Oeko-tex"), " certified fabrics and trims")), __jsx("section", {
       id: "suppliers",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 141
+        lineNumber: 144
       },
       __self: this
     }, __jsx("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 142
+        lineNumber: 145
       },
       __self: this
     }, "SUPPLIERS"), __jsx("h4", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 143
+        lineNumber: 146
       },
       __self: this
     }, "Modern Cotton Fabric: Teejy, Sri Lanka"), __jsx("h4", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 144
+        lineNumber: 147
       },
       __self: this
     }, "CK Waistband: Strechline, Sri Lanka"), __jsx("h4", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 145
+        lineNumber: 148
       },
       __self: this
     }, " Manufacturing: MAS, Sri Lanka")), __jsx("section", {
       id: "video",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 147
+        lineNumber: 150
       },
       __self: this
     }, __jsx("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 148
+        lineNumber: 151
       },
       __self: this
     }, "WATCH IT HAPPEN"), __jsx("iframe", {
@@ -401,32 +403,32 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       allowFullScreen: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 149
+        lineNumber: 152
       },
       __self: this
     })), __jsx("section", {
       id: "goals",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 151
+        lineNumber: 154
       },
       __self: this
     }, __jsx("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 152
+        lineNumber: 155
       },
       __self: this
     }, "#GOALS"), __jsx("h4", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 153
+        lineNumber: 156
       },
       __self: this
     }, "Interested in supporting brands that care?"), __jsx("h4", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 154
+        lineNumber: 157
       },
       __self: this
     }, "Click ", __jsx("a", {
@@ -437,33 +439,33 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 154
+        lineNumber: 157
       },
       __self: this
     }, "HERE"), " to learn more about", __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 156
+        lineNumber: 159
       },
       __self: this
     }), "PVH's sustainability goals")), __jsx("section", {
       id: "socialMedia",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 158
+        lineNumber: 161
       },
       __self: this
     }, __jsx("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 159
+        lineNumber: 162
       },
       __self: this
     }, "FOLLOW US"), __jsx("div", {
       id: "mediaPics",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 160
+        lineNumber: 163
       },
       __self: this
     }, __jsx("img", {
@@ -472,7 +474,7 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       className: "mediaButton",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 161
+        lineNumber: 164
       },
       __self: this
     }), __jsx("img", {
@@ -481,7 +483,7 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       className: "mediaButton",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 162
+        lineNumber: 165
       },
       __self: this
     }), __jsx("img", {
@@ -490,7 +492,7 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       className: "mediaButton",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 163
+        lineNumber: 166
       },
       __self: this
     }))));
@@ -504,7 +506,7 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!****************************!*\
   !*** multi ./pages/pvh.js ***!
   \****************************/
