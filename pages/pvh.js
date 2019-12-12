@@ -7,6 +7,7 @@ class PVH extends React.Component{
     #content{
         box-sizing: border-box;
         text-align: center;
+        background: #FFFFFF;
     }
 
     h1{
@@ -28,6 +29,7 @@ class PVH extends React.Component{
         font-family: Klein-Bold;
         font-size: 4rem;
         margin-block-end: .5em;
+        color: #000000;
     }
 
     h4{
@@ -37,6 +39,7 @@ class PVH extends React.Component{
         padding-right: 5%;
         margin-block-start: .4em;
         margin-block-end: .5em;
+        color: #000000;
     }
 
     p{
@@ -44,6 +47,10 @@ class PVH extends React.Component{
         font-size: 1.8rem;
         padding-left:23%;
         padding-right: 23%;
+    }
+
+    section{
+        border:none;
     }
 
     #contents h4{
@@ -59,7 +66,7 @@ class PVH extends React.Component{
     #mediaPics{
         display: grid;
         grid-template-rows: auto;
-        grid-template-columns: 20% 20% 20%;
+        grid-template-columns: 25% 25% 25%;
         row-gap: 10px;
         justify-content: center;
         grid-gap: 20px;
@@ -80,6 +87,7 @@ class PVH extends React.Component{
     }
 
     #suppliers h4, #goals h4{
+        font-size: 1.5rem;
         margin-block-end : .15rem;
         margin-block-start: .15rem;
     }
@@ -132,8 +140,8 @@ class PVH extends React.Component{
         </section>
         <section id='suppliers'>
             <h2>SUPPLIERS</h2>
-            <h4>Modern Cotton Fabric: teejy, Sri Lanka</h4>
-            <h4>CK Waistband: strechline, Sri Lanka</h4>
+            <h4>Modern Cotton Fabric: Teejy, Sri Lanka</h4>
+            <h4>CK Waistband: Strechline, Sri Lanka</h4>
             <h4> Manufacturing: MAS, Sri Lanka</h4>
         </section>
         <section id='video'>
