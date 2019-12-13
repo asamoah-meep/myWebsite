@@ -1,5 +1,16 @@
 class PVH extends React.Component{
 
+    componentDidMount(){
+        const images = this.mediaContainer.querySelectorAll("img");
+
+        images[0].onclick = () => window.open(
+            "https://twitter.com/CalvinKlein?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor", "_blank");
+        images[1].onclick = () => window.open(
+            "https://www.facebook.com/CalvinKlein/","_blank");
+        images[2].onclick = () => window.open(
+            "https://www.instagram.com/calvinklein/?hl=en", "_blank");
+    }
+
     render(){
 
     const style= <style>{`
@@ -18,8 +29,8 @@ class PVH extends React.Component{
     }
 
     a{
-        text-decoration: none;
-        font-size: 1rem;
+        text-decoration: none
+        font-size: 1.1em;
         font-family: Klein-Bold;
     }
 
@@ -45,8 +56,10 @@ class PVH extends React.Component{
 
     p{
         font-family: Klein-Regular;
-        font-size: 1.25rem;
+        font-size: .8rem;
         color: #000000;
+        margin-left:15%;
+        margin-right:15%;
     }
 
     section{
@@ -87,6 +100,10 @@ class PVH extends React.Component{
         grid-gap: 20px;
     }
 
+    #support{
+        font-size: 1rem;
+    }
+
     @font-face{
         font-family: Klein-Regular;
         src: url(Fonts/Klein_Regular.otf);
@@ -106,7 +123,36 @@ class PVH extends React.Component{
     @font-face{
         font-family: Klein-Light;
         src: url(Fonts/Klein_Light.otf);
-    }`}
+    }
+
+    @media screen and (min-width: 600px) {
+        h2 {
+            font-size: 4rem;
+        }
+        h4{
+            font-family: Klein-Light;
+            font-size: 2.5rem;
+            padding-left: 5%;
+            padding-right: 5%;
+            margin-block-start: .4em;
+            margin-block-end: .4em;
+        }
+        #support{
+            font-size:2.5rem;
+        }
+        #mediaPics{
+            grid-template-columns: 25% 25% 25%;
+        }
+        p{
+            font-family: Klein-Regular;
+            font-size: 1.8rem;
+            color: #000000;
+        }
+        section{
+            display:block;
+        }
+    }    
+    `}
     </style>
 
         const html =<div id='content'>
@@ -146,14 +192,14 @@ class PVH extends React.Component{
         </section>
         <section id='goals'>    
             <h2>#GOALS</h2>
-            <h4>Interested in supporting <br/> brands that care?</h4>
+            <h4 id='support'>Interested in supporting <br/> brands that care?</h4>
             <h4>Click <a href='https://urldefense.proofpoint.com/v2/url?u=https-3A__responsibility.pvh.com_&d=DwMFAg&c=slrrB7dE8n7gBJbeO0g-IQ&r=EAdyeCaJvdjIn1KIyQGo1g&m=kN_7bXUCmItBePdIVDp1Cj4Mum7FO3WOWNRRfum9Zn4&s=B4ZCIUX8yPqT4XorTfzC-gKc0tTaEMG3gGBCwFVwhZw&e='
                 target = '_blank' style={{color:"red"}}>HERE</a> to learn more about 
                 <br/>PVH's sustainability goals</h4>
         </section>
         <section id='socialMedia'>
         <h2>FOLLOW US</h2>
-            <div id='mediaPics'>
+            <div id='mediaPics' ref={ref=>this.mediaContainer = ref}>
                 <img src='Klein/instagram.png' id='instagram' className="mediaButton"/>
                 <img src='Klein/twitter.png' id='twitter' className="mediaButton"/>
                 <img src='Klein/facebook.png' id='facebook' className="mediaButton"/>
