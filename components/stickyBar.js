@@ -8,6 +8,26 @@ import {faHome, faAddressCard,faEnvelope,faTasks} from "@fortawesome/free-solid-
 
 class StickyBar extends React.Component{
 
+    constructor(props){
+        super(props);
+
+        this.toggleTheme = this.toggleTheme.bind(this);
+
+        this.state={
+            theme: 'on'
+        }
+    }
+
+    toggleTheme(evt){
+        console.log(evt.target.value);
+        this.setState( (oldState)=>{
+           let newTheme = "";
+           oldState.theme==='on'? newTheme='off': newTheme='on';
+           return {theme:newTheme};
+        });
+       
+    }
+
     componentDidMount(){
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75,window.innerHeight/window.innerHeight,.1,1000);
@@ -76,6 +96,14 @@ class StickyBar extends React.Component{
             </Link>
             <FontAwesomeIcon className='barIcon' icon={faTasks}/> <Dropdown title="Projects" barDropdown>{projects}</Dropdown><br/>
             <FontAwesomeIcon className='barIcon' icon={faEnvelope}/> <Dropdown title='Contact and Media' barDropdown>{contact}</Dropdown>
+            <div id='toggleTheme'>
+                <span style={{visibility: this.state.theme==='on'? 'visible': 'hidden'}}>Light</span>
+                <label className="switch">
+                    <input type="checkbox" value={this.state.theme} onChange={this.toggleTheme}/>
+                    <span className="slider round"/>
+                </label>
+                <span style={{visibility: this.state.theme==='off'? 'visible': 'hidden'}}>Dark</span>
+            </div>
         </div>;
 
         const style = <style>{`
@@ -115,8 +143,95 @@ class StickyBar extends React.Component{
                 margin-inline-end: 0px;
                 font-weight: bold;
             }
+
+            #toggleTheme{
+                position:relative;
+                left:10%;
+            }
+            
+            #toggleTheme span{
+                padding:10px;
+            }
+
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 60px;
+                height: 34px;
+            }
+
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            input[type='checkbox']:not(:checked) + .slider{
+                background-color: #F78888;
+            }
+
+            input[type='checkbox']:checked + .slider {
+                background-color: #2F4454;
+            }
+
+            input:focus + .slider {
+                box-shadow: 0 0 1px #15DB95;
+            }
+
+            input:checked + .slider:before {
+                -webkit-transform: translateX(26px);
+                -ms-transform: translateX(26px);
+                transform: translateX(26px);
+            }
+
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
         `}</style>      
 
+
+        const light = <style global jsx>{`
+        `}</style>;
+
+        const dark = <style global jsx>{`
+        h1{
+            color: #FFCB9A;
+        }
+        h3{
+            color: #D9B08C;
+        }
+        p,a,span,li,div{
+            c
+        }
+        `}</style>
         return <>
             {style}
             {bar}

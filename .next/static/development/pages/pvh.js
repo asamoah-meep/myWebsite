@@ -2175,15 +2175,15 @@ function (_React$Component) {
       var images = this.mediaContainer.querySelectorAll("img");
 
       images[0].onclick = function () {
-        return window.open("https://twitter.com/CalvinKlein?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor", "_blank");
+        return window.open("https://www.instagram.com/calvinklein/?hl=en", "_blank");
       };
 
       images[1].onclick = function () {
-        return window.open("https://www.facebook.com/CalvinKlein/", "_blank");
+        return window.open("https://twitter.com/CalvinKlein?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor", "_blank");
       };
 
       images[2].onclick = function () {
-        return window.open("https://www.instagram.com/calvinklein/?hl=en", "_blank");
+        return window.open("https://www.facebook.com/CalvinKlein/", "_blank");
       };
     }
   }, {
@@ -2194,20 +2194,13 @@ function (_React$Component) {
       var style = __jsx("style", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 17
         },
         __self: this
-      }, "\n    \n    body, #content{\n        text-align: center;\n        justify-content: center;\n        background: #FFFFFF;\n    }\n\n    a{\n        text-decoration: none\n        font-family: Klein-Bold;\n    }\n\n    a:hover{\n        opacity: .5;\n    }\n\n    h2{\n        font-family: Klein-Medium;\n        margin-block-start: .5em;\n        margin-block-end: .5em;\n        color: #000000;\n    }\n\n    h4{\n        font-family: Klein-Light;\n        margin-block-start: .4em;\n        margin-block-end: .4em;\n        color: #000000;\n    }\n\n    p{\n        font-family: Klein-Regular;\n        color: #000000;\n        margin-left:10%;\n        margin-right:10%;\n    }\n\n    section{\n        border:none;\n        display:inline;\n    }\n\n    #contents h4{\n        text-align: left;\n    }\n\n    .mediaButton{\n        width: 100%;\n        height: auto;\n        cursor: pointer;\n    }\n\n    #mediaPics{\n        display: grid;\n        grid-template-rows: auto;\n        grid-template-columns: repeat(3,30%);\n        grid-gap: 10px;\n        justify-content:center;\n    }\n\n    .model{\n        width: 100%;\n        height: auto;\n    }\n\n    #modelContainer{\n        display: grid;\n        grid-template-rows: auto;\n        grid-template-columns: repeat(3,30%);\n        grid-gap: 5px;\n        justify-content: center;\n    }\n\n    @font-face{\n        font-family: Klein-Regular;\n        src: url(Klein/Fonts/Klein_Regular.otf);\n    }\n\n    @font-face{\n        font-family: Klein-Bold;\n        src: url(Klein/Fonts/Klein_Bold.otf);\n    }\n\n    @font-face{\n        font-family: Klein-Medium;\n        src: url(Klein/Fonts/Klein_Regular.otf);\n    }\n\n\n    @font-face{\n        font-family: Klein-Light;\n        src: url(Klein/Fonts/Klein_Light.otf);\n    }\n\n    @media screen and (max-width: 599px){\n        h2{\n            font-size: 2rem;\n        }\n        h4{\n            font-size: 1.2rem;\n\n        }\n        #goals h4{\n            font-size: 1.3rem;\n        }\n        p{\n            font-size: 1.2rem;\n        }\n        a{\n            font-size: 1.3rem;\n        }\n        iframe{\n            width: 320px;\n            height: 180px;\n        }\n\n    }\n\n    @media screen and (min-width: 600px) {\n        h2 {\n            font-size: 6rem;\n        }\n        h4{\n            font-size: 2.5rem;\n            padding-left: 5%;\n            padding-right: 5%;\n        }\n        #goals h4{\n            font-size:2.5rem;\n        }\n        a{\n            font-size: 2rem;\n        }\n        p{\n            font-size: 1.8rem;\n        }\n        iframe{\n            width: 512px;\n            height: 288px;\n        }\n    }    \n    ");
+      }, "\n    \n    body, #content{\n        text-align: center;\n        justify-content: center;\n        background: #FFFFFF;\n    }\n\n    a{\n        text-decoration: none;\n        font-family: Klein-Bold;\n    }\n\n    a:hover{\n        opacity: .5;\n    }\n\n    h2{\n        font-family: Klein-Medium;\n        margin-block-start: .5em;\n        margin-block-end: .5em;\n        color: #000000;\n    }\n\n    h4{\n        font-family: Klein-Light;\n        margin-block-start: .4em;\n        margin-block-end: .4em;\n        color: #000000;\n    }\n\n    p{\n        font-family: Klein-Regular;\n        color: #000000;\n        margin-left:10%;\n        margin-right:10%;\n    }\n\n    section{\n        border:none;\n        display:inline;\n    }\n\n    #contents h4{\n        text-align: left;\n    }\n\n    .mediaButton{\n        width: 100%;\n        height: auto;\n        cursor: pointer;\n    }\n\n    #mediaPics{\n        display: grid;\n        grid-template-rows: auto;\n        grid-template-columns: repeat(3,30%);\n        grid-gap: 10px;\n        justify-content:center;\n    }\n\n    .model{\n        width: 100%;\n        height: auto;\n    }\n\n    #modelContainer{\n        display: grid;\n        grid-template-rows: auto;\n        grid-template-columns: repeat(3,30%);\n        grid-gap: 5px;\n        justify-content: center;\n    }\n\n    @font-face{\n        font-family: Klein-Regular;\n        src: url(Klein/Fonts/Klein_Regular.otf);\n    }\n\n    @font-face{\n        font-family: Klein-Bold;\n        src: url(Klein/Fonts/Klein_Bold.otf);\n    }\n\n    @font-face{\n        font-family: Klein-Medium;\n        src: url(Klein/Fonts/Klein_Regular.otf);\n    }\n\n\n    @font-face{\n        font-family: Klein-Light;\n        src: url(Klein/Fonts/Klein_Light.otf);\n    }\n\n    @media screen and (max-width: 599px){\n        h2{\n            font-size: 2rem;\n        }\n        h4{\n            font-size: 1.2rem;\n\n        }\n        #goals h4{\n            font-size: 1.3rem;\n        }\n        p{\n            font-size: 1.2rem;\n        }\n        a{\n            font-size: 1.3rem;\n        }\n        iframe{\n            width: 320px;\n            height: 180px;\n        }\n\n    }\n\n    @media screen and (min-width: 600px) {\n        h2 {\n            font-size: 6rem;\n        }\n        h4{\n            font-size: 2.5rem;\n            padding-left: 5%;\n            padding-right: 5%;\n        }\n        #goals h4{\n            font-size:2.5rem;\n        }\n        a{\n            font-size: 2rem;\n        }\n        p{\n            font-size: 1.8rem;\n        }\n        iframe{\n            width: 512px;\n            height: 288px;\n        }\n    }    \n    ");
 
       var html = __jsx("div", {
         id: "content",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 161
-        },
-        __self: this
-      }, __jsx("section", {
-        id: "name",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 162
@@ -2216,16 +2209,27 @@ function (_React$Component) {
       }, __jsx("img", {
         src: "Klein/logo.png",
         width: "100%",
+        style: {
+          paddingTop: '1em',
+          paddingBottom: '1em'
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 163
         },
         __self: this
-      }), __jsx("div", {
-        id: "modelContainer",
+      }), __jsx("section", {
+        id: "name",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 165
+        },
+        __self: this
+      }, __jsx("div", {
+        id: "modelContainer",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 166
         },
         __self: this
       }, __jsx("img", {
@@ -2233,7 +2237,7 @@ function (_React$Component) {
         className: "model",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 166
+          lineNumber: 167
         },
         __self: this
       }), __jsx("img", {
@@ -2241,7 +2245,7 @@ function (_React$Component) {
         className: "model",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 167
+          lineNumber: 168
         },
         __self: this
       }), __jsx("img", {
@@ -2249,20 +2253,20 @@ function (_React$Component) {
         className: "model",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 168
+          lineNumber: 169
         },
         __self: this
       }))), __jsx("section", {
         id: "custom",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 171
+          lineNumber: 172
         },
         __self: this
       }, __jsx("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 172
+          lineNumber: 173
         },
         __self: this
       }, "#MYCALVINS CUSTOM"), __jsx("img", {
@@ -2341,7 +2345,7 @@ function (_React$Component) {
           lineNumber: 189
         },
         __self: this
-      }, "Modern Cotton Fabric: Teejy, Sri Lanka"), __jsx("h4", {
+      }, "Fabric: Teejy, Sri Lanka"), __jsx("h4", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 190
@@ -2353,7 +2357,7 @@ function (_React$Component) {
           lineNumber: 191
         },
         __self: this
-      }, " Manufacturing: MAS, Sri Lanka")), __jsx("section", {
+      }, "Manufacturing: MAS, Sri Lanka")), __jsx("section", {
         id: "video",
         __source: {
           fileName: _jsxFileName,

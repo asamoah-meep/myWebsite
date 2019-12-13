@@ -112,18 +112,18 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   componentDidMount() {
     const images = this.mediaContainer.querySelectorAll("img");
 
-    images[0].onclick = () => window.open("https://twitter.com/CalvinKlein?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor", "_blank");
+    images[0].onclick = () => window.open("https://www.instagram.com/calvinklein/?hl=en", "_blank");
 
-    images[1].onclick = () => window.open("https://www.facebook.com/CalvinKlein/", "_blank");
+    images[1].onclick = () => window.open("https://twitter.com/CalvinKlein?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor", "_blank");
 
-    images[2].onclick = () => window.open("https://www.instagram.com/calvinklein/?hl=en", "_blank");
+    images[2].onclick = () => window.open("https://www.facebook.com/CalvinKlein/", "_blank");
   }
 
   render() {
     const style = __jsx("style", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 17
       },
       __self: this
     }, `
@@ -135,7 +135,7 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     }
 
     a{
-        text-decoration: none
+        text-decoration: none;
         font-family: Klein-Bold;
     }
 
@@ -274,29 +274,33 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       id: "content",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 161
-      },
-      __self: this
-    }, __jsx("section", {
-      id: "name",
-      __source: {
-        fileName: _jsxFileName,
         lineNumber: 162
       },
       __self: this
     }, __jsx("img", {
       src: "Klein/logo.png",
       width: "100%",
+      style: {
+        paddingTop: '1em',
+        paddingBottom: '1em'
+      },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 163
       },
       __self: this
-    }), __jsx("div", {
-      id: "modelContainer",
+    }), __jsx("section", {
+      id: "name",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 165
+      },
+      __self: this
+    }, __jsx("div", {
+      id: "modelContainer",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 166
       },
       __self: this
     }, __jsx("img", {
@@ -304,7 +308,7 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       className: "model",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 166
+        lineNumber: 167
       },
       __self: this
     }), __jsx("img", {
@@ -312,7 +316,7 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       className: "model",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 167
+        lineNumber: 168
       },
       __self: this
     }), __jsx("img", {
@@ -320,20 +324,20 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       className: "model",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 168
+        lineNumber: 169
       },
       __self: this
     }))), __jsx("section", {
       id: "custom",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 171
+        lineNumber: 172
       },
       __self: this
     }, __jsx("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 172
+        lineNumber: 173
       },
       __self: this
     }, "#MYCALVINS CUSTOM"), __jsx("img", {
@@ -412,7 +416,7 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 189
       },
       __self: this
-    }, "Modern Cotton Fabric: Teejy, Sri Lanka"), __jsx("h4", {
+    }, "Fabric: Teejy, Sri Lanka"), __jsx("h4", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 190
@@ -424,7 +428,7 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 191
       },
       __self: this
-    }, " Manufacturing: MAS, Sri Lanka")), __jsx("section", {
+    }, "Manufacturing: MAS, Sri Lanka")), __jsx("section", {
       id: "video",
       __source: {
         fileName: _jsxFileName,

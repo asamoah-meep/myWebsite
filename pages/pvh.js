@@ -4,11 +4,12 @@ class PVH extends React.Component{
         const images = this.mediaContainer.querySelectorAll("img");
 
         images[0].onclick = () => window.open(
-            "https://twitter.com/CalvinKlein?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor", "_blank");
-        images[1].onclick = () => window.open(
-            "https://www.facebook.com/CalvinKlein/","_blank");
-        images[2].onclick = () => window.open(
             "https://www.instagram.com/calvinklein/?hl=en", "_blank");
+        images[1].onclick = () => window.open(
+            "https://twitter.com/CalvinKlein?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor", "_blank");
+        images[2].onclick = () => window.open(
+            "https://www.facebook.com/CalvinKlein/","_blank");
+
     }
 
     render(){
@@ -22,7 +23,7 @@ class PVH extends React.Component{
     }
 
     a{
-        text-decoration: none
+        text-decoration: none;
         font-family: Klein-Bold;
     }
 
@@ -159,9 +160,9 @@ class PVH extends React.Component{
     </style>
 
         const html =<div id='content'>
+        <img src='Klein/logo.png' width="100%" 
+            style={{paddingTop:'1em', paddingBottom:'1em'}}/>
         <section id="name">
-            <img src='Klein/logo.png' width="100%"/>
-            {/* <h1>CALVIN KLEIN</h1> */}
             <div id='modelContainer'>
                 <img src='Klein/brief.jpg' className='model'/>
                 <img src='Klein/panties.jpg' className="model"/>
@@ -170,7 +171,6 @@ class PVH extends React.Component{
         </section>
         <section id='custom'>
             <h2>#MYCALVINS CUSTOM</h2>
-
             <img src='Klein/map.png' width="90%" height="auto" margin='0'/>
             <h4>Sourced, manufactured, and customized locally in Sri
                 Lanka to optimize a small carbon footprint of XXXX
@@ -186,9 +186,9 @@ class PVH extends React.Component{
         </section>
         <section id='suppliers'>
             <h2>SUPPLIERS</h2>
-            <h4>Modern Cotton Fabric: Teejy, Sri Lanka</h4>
+            <h4>Fabric: Teejy, Sri Lanka</h4>
             <h4>CK Waistband: Strechline, Sri Lanka</h4>
-            <h4> Manufacturing: MAS, Sri Lanka</h4>
+            <h4>Manufacturing: MAS, Sri Lanka</h4>
         </section>
         <section id='video'>
             <h2>WATCH IT HAPPEN</h2>
