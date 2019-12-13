@@ -21,16 +21,8 @@ class PVH extends React.Component{
         background: #FFFFFF;
     }
 
-    h1{
-        font-family: Klein-Medium;
-        font-size: 4rem;
-        margin-block-end: .5em;
-        color: #000000;
-    }
-
     a{
         text-decoration: none
-        font-size: 1.1em;
         font-family: Klein-Bold;
     }
 
@@ -40,7 +32,6 @@ class PVH extends React.Component{
 
     h2{
         font-family: Klein-Medium;
-        font-size: 2rem;
         margin-block-start: .5em;
         margin-block-end: .5em;
         color: #000000;
@@ -48,7 +39,6 @@ class PVH extends React.Component{
 
     h4{
         font-family: Klein-Light;
-        font-size: .85rem;
         margin-block-start: .4em;
         margin-block-end: .4em;
         color: #000000;
@@ -56,15 +46,14 @@ class PVH extends React.Component{
 
     p{
         font-family: Klein-Regular;
-        font-size: .8rem;
         color: #000000;
-        margin-left:15%;
-        margin-right:15%;
+        margin-left:10%;
+        margin-right:10%;
     }
 
     section{
         border:none;
-        display:inline-block;
+        display:inline;
     }
 
     #contents h4{
@@ -80,9 +69,8 @@ class PVH extends React.Component{
     #mediaPics{
         display: grid;
         grid-template-rows: auto;
-        grid-template-columns: 25% 25% 25%;
-        row-gap: 10px;
-        grid-gap: 20px;
+        grid-template-columns: repeat(3,30%);
+        grid-gap: 10px;
         justify-content:center;
     }
 
@@ -94,14 +82,9 @@ class PVH extends React.Component{
     #modelContainer{
         display: grid;
         grid-template-rows: auto;
-        grid-template-columns: 25% 25% 25%;
-        row-gap: 10px;
+        grid-template-columns: repeat(3,30%);
+        grid-gap: 5px;
         justify-content: center;
-        grid-gap: 20px;
-    }
-
-    #support{
-        font-size: 1rem;
     }
 
     @font-face{
@@ -125,31 +108,51 @@ class PVH extends React.Component{
         src: url(Klein/Fonts/Klein_Light.otf);
     }
 
-    @media screen and (min-width: 600px) {
-        h2 {
-            font-size: 4rem;
+    @media screen and (max-width: 599px){
+        h2{
+            font-size: 2rem;
         }
         h4{
-            font-family: Klein-Light;
+            font-size: 1.2rem;
+
+        }
+        #goals h4{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+        a{
+            font-size: 1.3rem;
+        }
+        iframe{
+            width: 320px;
+            height: 180px;
+        }
+
+    }
+
+    @media screen and (min-width: 600px) {
+        h2 {
+            font-size: 6rem;
+        }
+        h4{
             font-size: 2.5rem;
             padding-left: 5%;
             padding-right: 5%;
-            margin-block-start: .4em;
-            margin-block-end: .4em;
         }
-        #support{
+        #goals h4{
             font-size:2.5rem;
         }
-        #mediaPics{
-            grid-template-columns: 25% 25% 25%;
+        a{
+            font-size: 2rem;
         }
         p{
-            font-family: Klein-Regular;
             font-size: 1.8rem;
-            color: #000000;
         }
-        section{
-            display:block;
+        iframe{
+            width: 512px;
+            height: 288px;
         }
     }    
     `}
@@ -157,7 +160,8 @@ class PVH extends React.Component{
 
         const html =<div id='content'>
         <section id="name">
-            <h1>CALVIN KLEIN</h1>
+            <img src='Klein/logo.png' width="100%"/>
+            {/* <h1>CALVIN KLEIN</h1> */}
             <div id='modelContainer'>
                 <img src='Klein/brief.jpg' className='model'/>
                 <img src='Klein/panties.jpg' className="model"/>
@@ -174,7 +178,7 @@ class PVH extends React.Component{
         </section>  
         <section id='contents'>
         <h2>CONTENTS</h2>
-            <img src='Klein/contents.png' style={{width:"75%", height:"auto"}}/>
+            <img src='Klein/contents.png' style={{width:"90%", height:"auto"}}/>
             <p>All Calvin Klein products are made with
                 <a href='https://urldefense.proofpoint.com/v2/url?u=https-3A__www.oeko-2Dtex.com_en_our-2Dstandards_standard-2D100-2Dby-2Doeko-2Dtex&d=DwMFAg&c=slrrB7dE8n7gBJbeO0g-IQ&r=EAdyeCaJvdjIn1KIyQGo1g&m=kN_7bXUCmItBePdIVDp1Cj4Mum7FO3WOWNRRfum9Zn4&s=1IUyBTSQ5FgxWSqJwH047h0w25BCWFOxUzmOs0xjMNI&e='
                  target='_blank' style={{color:"rgb(214, 19, 19)"}}> Oeko-tex</a> certified fabrics and trims
@@ -188,11 +192,11 @@ class PVH extends React.Component{
         </section>
         <section id='video'>
             <h2>WATCH IT HAPPEN</h2>
-            <iframe width="256" height="144" src="https://www.youtube.com/embed/GKcLvNCl1Zk" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe src="https://www.youtube.com/embed/GKcLvNCl1Zk" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </section>
         <section id='goals'>    
             <h2>#GOALS</h2>
-            <h4 id='support'>Interested in supporting <br/> brands that care?</h4>
+            <h4>Interested in supporting <br/> brands that care?</h4>
             <h4>Click <a href='https://urldefense.proofpoint.com/v2/url?u=https-3A__responsibility.pvh.com_&d=DwMFAg&c=slrrB7dE8n7gBJbeO0g-IQ&r=EAdyeCaJvdjIn1KIyQGo1g&m=kN_7bXUCmItBePdIVDp1Cj4Mum7FO3WOWNRRfum9Zn4&s=B4ZCIUX8yPqT4XorTfzC-gKc0tTaEMG3gGBCwFVwhZw&e='
                 target = '_blank' style={{color:"red"}}>HERE</a> to learn more about 
                 <br/>PVH's sustainability goals</h4>
