@@ -219,23 +219,23 @@ class PVH extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
     @font-face{
         font-family: Klein-Regular;
-        src: url(Fonts/Klein_Regular.otf);
+        src: url(Klein/Fonts/Klein_Regular.otf);
     }
 
     @font-face{
         font-family: Klein-Bold;
-        src: url(Fonts/Klein_Bold.otf);
+        src: url(Klein/Fonts/Klein_Bold.otf);
     }
 
     @font-face{
         font-family: Klein-Medium;
-        src: url(Fonts/Klein_Regular.otf);
+        src: url(Klein/Fonts/Klein_Regular.otf);
     }
 
 
     @font-face{
         font-family: Klein-Light;
-        src: url(Fonts/Klein_Light.otf);
+        src: url(Klein/Fonts/Klein_Light.otf);
     }
 
     @media screen and (min-width: 600px) {
