@@ -1,6 +1,5 @@
 import 'styles.css';
 import Bar from 'components/stickyBar.js';
-import Layout from 'components/layout.js';
 import Helmet from 'react-helmet';
 import Link from 'next/link';
 import Dropdown from 'components/dropdown.js';
@@ -10,8 +9,7 @@ class Index extends React.Component{
     render(){
 
         return <>
-        <Bar/>
-        <Layout>
+        <Bar>
             <Helmet>
                 <title>Home</title>
             </Helmet>
@@ -69,7 +67,15 @@ class Index extends React.Component{
             </section>
             <section id='QRHeader'>
                 <Dropdown title='QR Marketing Project'>
-                    <p>Calvin Klein marketing project utilizing QR codes</p>
+                    <p>This project was to build a mobile-friendly web page to demo the use of QR codes in advertising. QR codes are functionally
+                        2-D bar codes and since most mobile phones come equipped to scan them, it makes sense to leverage them for quick access
+                        to a web page. The page makes use of CSS media queries to be responsive to different devices in order to be visually appealing
+                        across all devices.
+                    </p>
+                    <ul>
+                        <li>Build for <a href='https://www.pvh.com/' target='_blank'>PVH</a></li>
+                        <li>Using <a href='https://en.wikipedia.org/wiki/QR_code' target='blank'>QR codes</a> for easy mobile marketing</li>
+                    </ul>
                 </Dropdown>
                 <Link href='/pvh'>
                         <a target='_blank'>QR Project</a>
@@ -86,7 +92,7 @@ class Index extends React.Component{
                     </ul>
                 </Dropdown>
             </section>
-        </Layout>
+        </Bar>
         </>
     }
 }

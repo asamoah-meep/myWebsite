@@ -10,7 +10,7 @@ class Dropdown extends React.Component{
         this.title = this.props.title;
         this.expand = this.expand.bind(this);
         this.state={
-            show:this.props.openOnStart
+            show:this.props.openOnStart,
         }
     }
 
@@ -21,13 +21,11 @@ class Dropdown extends React.Component{
     }
 
     render(){
-
         const arrow = this.state.show? faCaretSquareUp : faCaretSquareDown;
 
         const style = <style>{`
             .myFAIcon{
                 position:relative;
-                color: #D9B08C;
                 left:10px;
             }
             h3{

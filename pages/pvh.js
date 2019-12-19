@@ -130,6 +130,10 @@ class PVH extends React.Component{
             width: 320px;
             height: 180px;
         }
+        #logo{
+            padding-top: 1em;
+            padding-bottom:1em;
+        }
 
     }
 
@@ -155,13 +159,16 @@ class PVH extends React.Component{
             width: 512px;
             height: 288px;
         }
+        #logo{
+            padding-top: 3em;
+            padding-bottom:3em;
+        }
     }    
     `}
     </style>
 
         const html =<div id='content'>
-        <img src='Klein/logo.png' width="100%" 
-            style={{paddingTop:'1em', paddingBottom:'1em'}}/>
+        <img src='Klein/logo.png' width="100%" id='logo'/>
         <section id="name">
             <div id='modelContainer'>
                 <img src='Klein/brief.jpg' className='model'/>

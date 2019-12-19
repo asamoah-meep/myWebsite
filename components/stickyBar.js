@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import 'styles.css';
+import Cookie from 'js-cookie';
 import * as THREE from 'three';
+import themeValues from '../public/theme.js';
 import Dropdown from 'components/dropdown.js';
 import GLTFLoader from 'three-gltf-loader';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -12,19 +14,38 @@ class StickyBar extends React.Component{
         super(props);
 
         this.toggleTheme = this.toggleTheme.bind(this);
-
-        this.state={
-            theme: 'on'
-        }
+        this.state = themeValues(Cookie.get('theme'));
     }
 
     toggleTheme(evt){
-        console.log(evt.target.value);
-        this.setState( (oldState)=>{
-           let newTheme = "";
-           oldState.theme==='on'? newTheme='off': newTheme='on';
-           return {theme:newTheme};
+
+        let background, text,headings,subheadings,theme;
+
+        if(evt.target.value==='light'){ //change to dark
+            background = '#2F4454';
+            text = '#D1E8E2';
+            headings = '#FFCB9A';
+            subheadings = '#D9B08c';
+            theme = 'dark';
+            Cookie.set('theme','dark');
+        }else{ //change to light
+            background = 'rgba(223,240,255,0.9)';
+            text = 'rgb(58,118,158)';
+            headings = '#5DA2D5';
+            subheadings = '#CB669E';
+            theme = 'light';
+            Cookie.set('theme','light');
+        }
+
+
+        this.setState({
+            background,
+            text,
+            headings,
+            subheadings,
+            theme
         });
+
        
     }
 
@@ -71,8 +92,7 @@ class StickyBar extends React.Component{
             <a href="https://github.com/asamoah-meep" target="_blank">Github</a>
         </>
 
-        const projects =             
-        <ul>
+        const projects = <ul>
             <li><Link href="/#TimelineHeader">
                 <a>Tutor Timeline</a>
             </Link></li>
@@ -94,17 +114,38 @@ class StickyBar extends React.Component{
             <Link href="/about">
                 <a className='subHeading'><FontAwesomeIcon className='barIcon' icon={faAddressCard}/> About</a>
             </Link>
-            <FontAwesomeIcon className='barIcon' icon={faTasks}/> <Dropdown title="Projects" barDropdown>{projects}</Dropdown><br/>
-            <FontAwesomeIcon className='barIcon' icon={faEnvelope}/> <Dropdown title='Contact and Media' barDropdown>{contact}</Dropdown>
+            <FontAwesomeIcon className='barIcon' icon={faTasks}/> <Dropdown theme={this.state.theme} title="Projects" barDropdown>{projects}</Dropdown><br/>
+            <FontAwesomeIcon className='barIcon' icon={faEnvelope}/> <Dropdown theme={this.state.theme} title='Contact / Media' barDropdown>{contact}</Dropdown>
             <div id='toggleTheme'>
-                <span style={{visibility: this.state.theme==='on'? 'visible': 'hidden'}}>Light</span>
+                <span style={{visibility: this.state.theme==='light'? 'visible': 'hidden'}}>Light</span>
                 <label className="switch">
                     <input type="checkbox" value={this.state.theme} onChange={this.toggleTheme}/>
                     <span className="slider round"/>
                 </label>
-                <span style={{visibility: this.state.theme==='off'? 'visible': 'hidden'}}>Dark</span>
+                <span style={{visibility: this.state.theme==='dark'? 'visible': 'hidden'}}>Dark</span>
             </div>
         </div>;
+
+        const globalStyle=  <style>{`
+        body{
+            background: ${this.state.background}
+        }
+
+        h1{
+            color: ${this.state.headings}
+        }
+
+        h3, div svg{
+            color: ${this.state.subheadings}
+        }
+
+        p,a,span,li,div,form,text{
+            color: ${this.state.text}
+        }
+
+        section{
+            boder-bottom: solid 2px ${this.state.subheadings};
+        }`}</style>;
 
         const style = <style>{`
 
@@ -113,7 +154,7 @@ class StickyBar extends React.Component{
             }
 
             .barIcon{
-                color: #D9B08C;
+                color: ${this.state.subheadings};
                 display:inline-block;
                 position:relative;
                 right:5px;
@@ -121,6 +162,17 @@ class StickyBar extends React.Component{
 
             .barDropdown{
                 display:inline-block;
+            }
+
+            #content{
+                display:inline-block;
+                margin-top:5px;
+                position:relative;
+                left: 30px;
+                width:75%;
+                padding-left: 15px;
+                vertical-align:top;
+                border-left: solid 2px ${this.state.subheadings};
             }
 
             #stickyBar{
@@ -134,7 +186,7 @@ class StickyBar extends React.Component{
             }
             .subHeading{
                 font-family: NunitoItalic;
-                color: #D9B08C;
+                color: ${this.state.subheadings};
                 display: block;
                 font-size: 1.5rem;
                 margin-block-start: 1em;
@@ -191,7 +243,7 @@ class StickyBar extends React.Component{
             }
 
             input[type='checkbox']:not(:checked) + .slider{
-                background-color: #F78888;
+                background-color: rgba(223,240,255,0.9);
             }
 
             input[type='checkbox']:checked + .slider {
@@ -217,24 +269,11 @@ class StickyBar extends React.Component{
             }
         `}</style>      
 
-
-        const light = <style global jsx>{`
-        `}</style>;
-
-        const dark = <style global jsx>{`
-        h1{
-            color: #FFCB9A;
-        }
-        h3{
-            color: #D9B08C;
-        }
-        p,a,span,li,div{
-            c
-        }
-        `}</style>
         return <>
             {style}
+            {globalStyle}
             {bar}
+            <div id='content'>{this.props.children}</div>
         </>;
     }
 }

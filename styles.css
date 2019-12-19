@@ -1,23 +1,19 @@
 h1{
-    color: #FFCB9A;
     font-family: NunitoBold;
     font-size:2.5rem;
 }
 
 h3{
     font-family: NunitoItalic;
-    color: #D9B08C;
     font-size: 1.5rem;
 }
 
 p,a,span, li,div{
-    color:#D1E8E2;
     font-family: Nunito;
     font-size: 1.3rem;
 }
 
 form,text{
-    color:#D1E8E2;
     font-family: Nunito;
 }
 
@@ -30,14 +26,12 @@ input[type='submit']{
 }
 
 body{
-    background:#2F4454;
     overflow-x: auto;
 }      
 
 section{
     width: 70%;
     padding-bottom: 10px;
-    border-bottom: solid 2px #D9B08C;
 }
 
 @font-face{

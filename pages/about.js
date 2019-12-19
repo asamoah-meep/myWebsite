@@ -2,7 +2,6 @@ import Link from 'next/link';
 import 'styles.css';
 import Bar from 'components/stickyBar.js';
 import Dropdown from 'components/dropdown.js';
-import Layout from 'components/layout.js';
 import Helmet from 'react-helmet';
 
 class About extends React.Component{
@@ -38,7 +37,7 @@ class About extends React.Component{
         
         const education = <div className='aboutMe'>
             <p>High School(2012-2016): Byram Hills High School</p>
-            <p>Undergraduage(2016-2020): Mathematics and Computer Science at NYU</p>
+            <p>Undergraduate(2016-2020): Mathematics and Computer Science at NYU</p>
         </div>
         
         const work = <div className='aboutMe'>
@@ -66,8 +65,7 @@ class About extends React.Component{
 
         return <>
             {style}
-            <Bar/>
-            <Layout >
+            <Bar>
                 <Helmet>
                     <title>About</title>
                 </Helmet>
@@ -77,7 +75,7 @@ class About extends React.Component{
                 <Dropdown title="Relevant Coursework">{courses}</Dropdown>
                 <Dropdown title="Hobbies">{hobbies}</Dropdown>
                 {resume}
-            </Layout>
+            </Bar>
         </>;
     }
 
