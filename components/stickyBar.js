@@ -1,19 +1,19 @@
 import Link from 'next/link';
 import 'styles.css';
 import Cookie from 'js-cookie';
-import * as THREE from 'three';
 import themeValues from '../public/theme.js';
 import Dropdown from 'components/dropdown.js';
-import GLTFLoader from 'three-gltf-loader';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHome, faAddressCard,faEnvelope,faTasks} from "@fortawesome/free-solid-svg-icons";
-
+import ProjectHeader from 'components/projectHeader.js';
+import Model from '../public/model.js';
 class StickyBar extends React.Component{
 
     constructor(props){
         super(props);
 
         this.toggleTheme = this.toggleTheme.bind(this);
+        this.openDropdown = this.openDropdown.bind(this);
         this.state = themeValues(Cookie.get('theme'));
     }
 
@@ -37,7 +37,6 @@ class StickyBar extends React.Component{
             Cookie.set('theme','light');
         }
 
-
         this.setState({
             background,
             text,
@@ -50,39 +49,16 @@ class StickyBar extends React.Component{
     }
 
     componentDidMount(){
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75,window.innerHeight/window.innerHeight,.1,1000);
+        const logoModel = new Model(this.state.theme);
+        this.mount.appendChild(logoModel.renderer.domElement);
+        logoModel.load();
+    }
 
-        camera.position.z = 5;
-        camera.position.x = -1;
-        const renderer = new THREE.WebGLRenderer({antialias:true,alpha:true});
-        renderer.setSize(100,100);
-        renderer.setClearColor(0xffffff,0);
-        renderer.gammaOutput=true;
-        renderer.gammaFactor=2.2;
-        this.mount.appendChild( renderer.domElement );
-       
-        const loader = new GLTFLoader();
-        let logo = undefined;
-        
-        const animate = function () {
-            requestAnimationFrame( animate );
-            renderer.render( scene, camera );
-          };
-
-        loader.load('/Logo.gltf', function(gltf){
-            logo = gltf.scene;
-            logo.rotation.x=-Math.PI/12;
-            logo.rotation.y=Math.PI/12;
-            logo.rotation.z=Math.PI/6;
-            logo.scale.set(2,2,2);
-            scene.add(logo);
-            animate();
-
-        },undefined,function(error){
-            console.error(error);
-        });
-
+    openDropdown(ele){
+        const myDrops = this.props.children.slice(1).map(ele=>ele.props.children[0]);
+        const selectedDrop = myDrops[0];
+        console.log(myDrops,selectedDrop);
+        //selectedDrop.expand();
     }
 
     render(){
@@ -93,19 +69,16 @@ class StickyBar extends React.Component{
         </>
 
         const projects = <ul>
-            <li><Link href="/#TimelineHeader">
-                <a>Tutor Timeline</a>
-            </Link></li>
-            <li><Link href="/#KMeansHeader">
-                <a>K-Means Demo</a>
-            </Link></li>
-            <li><Link href="/#WebsiteHeader">
-                <a>This Website</a>    
-            </Link></li>
+            <ProjectHeader subject='Timeline' name='Tutor Timeline'/>
+            <ProjectHeader subject='KMeans' name='K-Means Demo'/>
+            <ProjectHeader subject='Website' name='This Website'/>
+            <ProjectHeader subject='QR' name='QR Marketing Project'/>
         </ul>
 
         const bar = <div id='stickyBar'>
-            <div id="logoMount" ref={ref=>(this.mount = ref)}/>
+            <div id="logoMount" ref={ref=>(this.mount = ref)}>
+                <p>Rotate me!</p>
+            </div>
             <h1 style={{position:"relative", left:"12px"}}>Jeffrey</h1>
             <h1 style={{position:"relative", left:"25px"}}>Asamoah</h1>
             <Link href='/'>
@@ -116,14 +89,14 @@ class StickyBar extends React.Component{
             </Link>
             <FontAwesomeIcon className='barIcon' icon={faTasks}/> <Dropdown theme={this.state.theme} title="Projects" barDropdown>{projects}</Dropdown><br/>
             <FontAwesomeIcon className='barIcon' icon={faEnvelope}/> <Dropdown theme={this.state.theme} title='Contact / Media' barDropdown>{contact}</Dropdown>
-            <div id='toggleTheme'>
+            {/* <div id='toggleTheme'>
                 <span style={{visibility: this.state.theme==='light'? 'visible': 'hidden'}}>Light</span>
                 <label className="switch">
                     <input type="checkbox" value={this.state.theme} onChange={this.toggleTheme}/>
                     <span className="slider round"/>
                 </label>
                 <span style={{visibility: this.state.theme==='dark'? 'visible': 'hidden'}}>Dark</span>
-            </div>
+            </div> */}
         </div>;
 
         const globalStyle=  <style>{`
@@ -151,6 +124,29 @@ class StickyBar extends React.Component{
 
             #logoMount{
                 height:75px;
+                position:relative;
+            }
+
+            #logoMount p{
+                visibility: hidden;
+                width:120px;
+                opacity: .4;
+                text-align:center;
+                animation-name: fadeIn;
+                animation-duration: 5s;
+                padding: 5px 0;
+                border-radius: 6px;
+                position: absolute;
+                top:-30px;
+            }
+
+            @keyframes fadeIn{
+                from {visibility: visible;}
+                to {visibility: hidden;}
+            }
+
+            #logoMount:hover p{
+                visibility: visible;
             }
 
             .barIcon{
@@ -169,7 +165,7 @@ class StickyBar extends React.Component{
                 margin-top:5px;
                 position:relative;
                 left: 30px;
-                width:75%;
+                width:730px;
                 padding-left: 15px;
                 vertical-align:top;
                 border-left: solid 2px ${this.state.subheadings};
@@ -180,7 +176,7 @@ class StickyBar extends React.Component{
                 position: relative;
                 display:inline-block;
                 left:20px;
-                width:250px;
+                // width:200px;
                 margin-right: 5px;
                 margin-top:5px;
             }
@@ -269,6 +265,7 @@ class StickyBar extends React.Component{
             }
         `}</style>      
 
+        console.log(this.props.children);
         return <>
             {style}
             {globalStyle}

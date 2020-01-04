@@ -84,8 +84,16 @@ class Index extends React.Component{
             <section id="WebsiteHeader">
                 <Dropdown title='This Website'>
                     <p>
-                        More to come...
+                        The website you see here was built using Next.js. a server-side framework built on top of React. I wanted to create
+                        a website to showcase all of projects and work that I am proud of. Since it is important to demo projects as transparently
+                        and seemlessly as possible it made sense to host it all on a single website. This website will continuously be a work in progress
+                        as I try to implement and add both new features and new projects.
                     </p>
+                    <p>In Progress:</p>
+                    <ul>
+                        <li>Light and Dark Theme</li>
+                        <li>Responsive Design</li>
+                    </ul>
                     <ul>
                         <li>Built using <a href="https://nextjs.org/" target="_blank">Next.js</a></li>
                         <li>Hosted using <a href="https://zeit.co/docs#related" target="_blank">Zeit</a></li>

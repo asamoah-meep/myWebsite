@@ -35,6 +35,8 @@ class Dropdown extends React.Component{
 
         const eleStyle = this.props.barDropdown? "barDropdown" : "drop";
 
+        console.log(this);
+
         return <div className={eleStyle}>
             {style}
             <h3>{this.props.title}</h3>
