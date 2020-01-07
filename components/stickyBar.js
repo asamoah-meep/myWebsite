@@ -49,9 +49,16 @@ class StickyBar extends React.Component{
     }
 
     componentDidMount(){
-        const logoModel = new Model(this.state.theme);
-        this.mount.appendChild(logoModel.renderer.domElement);
-        logoModel.load();
+        this.logoModel = new Model(this.state.theme);
+        this.mount.appendChild(this.logoModel.renderer.domElement);
+        this.logoModel.load();
+    }
+
+    componentDidUpdate(){
+        this.mount.removeChild(this.logoModel.renderer.domElement);
+        this.logoModel = new Model(this.state.theme);
+        this.mount.appendChild(this.logoModel.renderer.domElement);
+        this.logoModel.load();
     }
 
     openDropdown(ele){
@@ -89,14 +96,14 @@ class StickyBar extends React.Component{
             </Link>
             <FontAwesomeIcon className='barIcon' icon={faTasks}/> <Dropdown theme={this.state.theme} title="Projects" barDropdown>{projects}</Dropdown><br/>
             <FontAwesomeIcon className='barIcon' icon={faEnvelope}/> <Dropdown theme={this.state.theme} title='Contact / Media' barDropdown>{contact}</Dropdown>
-            {/* <div id='toggleTheme'>
+            <div id='toggleTheme'>
                 <span style={{visibility: this.state.theme==='light'? 'visible': 'hidden'}}>Light</span>
                 <label className="switch">
                     <input type="checkbox" value={this.state.theme} onChange={this.toggleTheme}/>
                     <span className="slider round"/>
                 </label>
                 <span style={{visibility: this.state.theme==='dark'? 'visible': 'hidden'}}>Dark</span>
-            </div> */}
+            </div>
         </div>;
 
         const globalStyle=  <style>{`
