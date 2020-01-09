@@ -4,7 +4,12 @@ import * as THREE from 'three';
 
 class Model{
     
-    constructor(fileName){
+    constructor(fileName,isThemed){
+        if(isThemed)
+            this.filePath = `Logo_${fileName}.gltf`;
+        else
+            this.filePath = fileName;
+
         this.scene = new THREE.Scene();
 
         this.camera = new THREE.PerspectiveCamera(75,window.innerHeight/window.innerHeight,.1,1000);
@@ -23,7 +28,6 @@ class Model{
         this.bottomLight.position.set(0,0,-7);
 
         this.loader = new GLTFLoader();
-        this.logoPath = `Logo_${fileName}.gltf`;
     }
 
     load(){
@@ -39,7 +43,7 @@ class Model{
 
         console.log(this);
 
-        this.loader.load(this.logoPath, (gltf) =>{
+        this.loader.load(this.filePath, (gltf) =>{
             this.logo = gltf.scene;
             this.logo.rotation.y=-Math.PI/2;
             this.logo.scale.set(2,2,2);

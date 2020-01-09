@@ -4,7 +4,7 @@ import Cookie from 'js-cookie';
 import themeValues from '../public/theme.js';
 import Dropdown from 'components/dropdown.js';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHome, faAddressCard,faEnvelope,faTasks} from "@fortawesome/free-solid-svg-icons";
+import {faHome, faAddressCard,faEnvelope,faTasks,faCube} from "@fortawesome/free-solid-svg-icons";
 import ProjectHeader from 'components/projectHeader.js';
 import Model from '../public/model.js';
 class StickyBar extends React.Component{
@@ -49,14 +49,14 @@ class StickyBar extends React.Component{
     }
 
     componentDidMount(){
-        this.logoModel = new Model(this.state.theme);
+        this.logoModel = new Model(this.state.theme,true);
         this.mount.appendChild(this.logoModel.renderer.domElement);
         this.logoModel.load();
     }
 
     componentDidUpdate(){
         this.mount.removeChild(this.logoModel.renderer.domElement);
-        this.logoModel = new Model(this.state.theme);
+        this.logoModel = new Model(this.state.theme,true);
         this.mount.appendChild(this.logoModel.renderer.domElement);
         this.logoModel.load();
     }
@@ -89,13 +89,16 @@ class StickyBar extends React.Component{
             <h1 style={{position:"relative", left:"12px"}}>Jeffrey</h1>
             <h1 style={{position:"relative", left:"25px"}}>Asamoah</h1>
             <Link href='/'>
-                <a className='subHeading'><FontAwesomeIcon className='barIcon' icon={faHome}/> Home</a>
+                <a className='subHeading'><FontAwesomeIcon className='barIcon' icon={faHome}/>Home</a>
             </Link>
             <Link href="/about">
-                <a className='subHeading'><FontAwesomeIcon className='barIcon' icon={faAddressCard}/> About</a>
+                <a className='subHeading'><FontAwesomeIcon className='barIcon' icon={faAddressCard}/>About</a>
             </Link>
-            <FontAwesomeIcon className='barIcon' icon={faTasks}/> <Dropdown theme={this.state.theme} title="Projects" barDropdown>{projects}</Dropdown><br/>
-            <FontAwesomeIcon className='barIcon' icon={faEnvelope}/> <Dropdown theme={this.state.theme} title='Contact / Media' barDropdown>{contact}</Dropdown>
+            <Link href='/gallery'>
+                <a className='subHeading'><FontAwesomeIcon className='barIcon' icon={faCube}/>3D Gallery</a>
+            </Link>
+            <FontAwesomeIcon className='barIcon' icon={faTasks}/> <Dropdown title="Projects" barDropdown>{projects}</Dropdown><br/>
+            <FontAwesomeIcon className='barIcon' icon={faEnvelope}/> <Dropdown title='Contact / Media' barDropdown>{contact}</Dropdown>
             <div id='toggleTheme'>
                 <span style={{visibility: this.state.theme==='light'? 'visible': 'hidden'}}>Light</span>
                 <label className="switch">
@@ -272,7 +275,6 @@ class StickyBar extends React.Component{
             }
         `}</style>      
 
-        console.log(this.props.children);
         return <>
             {style}
             {globalStyle}

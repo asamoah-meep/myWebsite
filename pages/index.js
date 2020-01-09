@@ -12,7 +12,9 @@ class Index extends React.Component{
         <Bar>
             <Helmet>
                 <title>Home</title>
+                <link rel='icon' href='/butterfly.png'/>
             </Helmet>
+            <h1>Home</h1>
             <section id='AboutMe'>
                 <Dropdown title="About Me" openOnStart>
                 <p>Hey, looks like you found my website!</p>

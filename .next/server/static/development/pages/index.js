@@ -122,6 +122,7 @@ class Dropdown extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     super(props);
     this.title = this.props.title;
     this.expand = this.expand.bind(this);
+    this.addChild = this.addChild.bind(this);
     this.state = {
       show: this.props.openOnStart
     };
@@ -133,13 +134,31 @@ class Dropdown extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     });
   }
 
+  addChild(ele) {
+    console.log(ele);
+    this.setState({
+      test: ele
+    });
+  }
+
+  componentDidUpdate() {
+    if (this.state.test) {
+      if (this.state.show) {
+        this.model.appendChild(this.state.test.renderer.domElement);
+        this.state.test.load();
+      } else if (!this.state.show && this.model.hasChildNodes()) {
+        this.model.removeChild(this.state.test.renderer.domElement);
+      }
+    }
+  }
+
   render() {
     const arrow = this.state.show ? _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faCaretSquareUp"] : _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faCaretSquareDown"];
 
     const style = __jsx("style", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 47
       },
       __self: this
     }, `
@@ -153,18 +172,26 @@ class Dropdown extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         `);
 
     const eleStyle = this.props.barDropdown ? "barDropdown" : "drop";
-    console.log(this);
+    const model = this.state.test ? __jsx("div", {
+      ref: ref => this.model = ref,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 60
+      },
+      __self: this
+    }) : null;
+    console.log(this.state);
     return __jsx("div", {
       className: eleStyle,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40
+        lineNumber: 63
       },
       __self: this
     }, style, __jsx("h3", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42
+        lineNumber: 65
       },
       __self: this
     }, this.props.title), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
@@ -173,10 +200,10 @@ class Dropdown extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       onClick: this.expand,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 66
       },
       __self: this
-    }), this.state.show && this.props.children);
+    }), this.state.show && this.props.children, model);
   }
 
 }
@@ -322,14 +349,14 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   }
 
   componentDidMount() {
-    this.logoModel = new _public_model_js__WEBPACK_IMPORTED_MODULE_9__["default"](this.state.theme);
+    this.logoModel = new _public_model_js__WEBPACK_IMPORTED_MODULE_9__["default"](this.state.theme, true);
     this.mount.appendChild(this.logoModel.renderer.domElement);
     this.logoModel.load();
   }
 
   componentDidUpdate() {
     this.mount.removeChild(this.logoModel.renderer.domElement);
-    this.logoModel = new _public_model_js__WEBPACK_IMPORTED_MODULE_9__["default"](this.state.theme);
+    this.logoModel = new _public_model_js__WEBPACK_IMPORTED_MODULE_9__["default"](this.state.theme, true);
     this.mount.appendChild(this.logoModel.renderer.domElement);
     this.logoModel.load();
   }
@@ -466,7 +493,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 92
       },
       __self: this
-    }), " Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    }), "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "/about",
       __source: {
         fileName: _jsxFileName,
@@ -488,27 +515,48 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 95
       },
       __self: this
-    }), " About")), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
-      className: "barIcon",
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faTasks"],
+    }), "About")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/gallery",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 97
       },
       __self: this
+    }, __jsx("a", {
+      className: "subHeading",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 98
+      },
+      __self: this
+    }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+      className: "barIcon",
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faCube"],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 98
+      },
+      __self: this
+    }), "3D Gallery")), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+      className: "barIcon",
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faTasks"],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 100
+      },
+      __self: this
     }), " ", __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      theme: this.state.theme,
       title: "Projects",
       barDropdown: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97
+        lineNumber: 100
       },
       __self: this
     }, projects), __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97
+        lineNumber: 100
       },
       __self: this
     }), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
@@ -516,23 +564,22 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faEnvelope"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98
+        lineNumber: 101
       },
       __self: this
     }), " ", __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      theme: this.state.theme,
       title: "Contact / Media",
       barDropdown: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98
+        lineNumber: 101
       },
       __self: this
     }, contact), __jsx("div", {
       id: "toggleTheme",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 99
+        lineNumber: 102
       },
       __self: this
     }, __jsx("span", {
@@ -541,14 +588,14 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 100
+        lineNumber: 103
       },
       __self: this
     }, "Light"), __jsx("label", {
       className: "switch",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 101
+        lineNumber: 104
       },
       __self: this
     }, __jsx("input", {
@@ -557,14 +604,14 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       onChange: this.toggleTheme,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 102
+        lineNumber: 105
       },
       __self: this
     }), __jsx("span", {
       className: "slider round",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 103
+        lineNumber: 106
       },
       __self: this
     })), __jsx("span", {
@@ -573,7 +620,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 105
+        lineNumber: 108
       },
       __self: this
     }, "Dark")));
@@ -581,7 +628,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     const globalStyle = __jsx("style", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 109
+        lineNumber: 112
       },
       __self: this
     }, `
@@ -608,7 +655,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     const style = __jsx("style", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 130
+        lineNumber: 133
       },
       __self: this
     }, `
@@ -756,12 +803,11 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
             }
         `);
 
-    console.log(this.props.children);
     return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, style, globalStyle, bar, __jsx("div", {
       id: "content",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 280
+        lineNumber: 282
       },
       __self: this
     }, this.props.children));
@@ -2556,11 +2602,25 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 14
       },
       __self: this
-    }, "Home")), __jsx("section", {
+    }, "Home"), __jsx("link", {
+      rel: "icon",
+      href: "/butterfly.png",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    })), __jsx("h1", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, "Home"), __jsx("section", {
       id: "AboutMe",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 18
       },
       __self: this
     }, __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -2568,64 +2628,64 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       openOnStart: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 19
       },
       __self: this
     }, __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18
+        lineNumber: 20
       },
       __self: this
     }, "Hey, looks like you found my website!"), __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 21
       },
       __self: this
     }, "My name is Jeffrey Asamoah, and I'm currently living in the NYC metropolitan area. I'm studying Mathematics and Computer Science at New York University and plan to graduate in May 2020. My hobbies include running, coding, and 3-D modelling.")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
       href: "/about",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 26
       },
       __self: this
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
+        lineNumber: 27
       },
       __self: this
     }, "See more here"))), __jsx("section", {
       id: "TimelineHeader",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 30
       },
       __self: this
     }, __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
       title: "Timeline App",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
+        lineNumber: 31
       },
       __self: this
     }, __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 32
       },
       __self: this
     }, "I created this timeline app to emulate the project I worked on during my Comcast Internship. At my internship my project was to create a foward-facing visual to display how the Xfinity Fraud Managment (XFM) team monitored and mitigated fraud activity. For my internship I displayed the ~40 use cases of potentially fraudulent activity and plotted the occurences of each usecase. The app allowed for you to filter which items you wanted to look at as well as select the timeframe on which you were looking. I recreated that project using data from my tutoring experience at NYU. Here I display when each student would approach various tutors and the success of the tutoring session."), __jsx("ul", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37
+        lineNumber: 39
       },
       __self: this
     }, __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 40
       },
       __self: this
     }, "Built using ", __jsx("a", {
@@ -2633,13 +2693,13 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 40
       },
       __self: this
     }, " React.js")), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 41
       },
       __self: this
     }, "Data was read from", __jsx("a", {
@@ -2647,13 +2707,13 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 41
       },
       __self: this
     }, " Cassandra DB (now static data)")), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40
+        lineNumber: 42
       },
       __self: this
     }, "Used ", __jsx("a", {
@@ -2661,13 +2721,13 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40
+        lineNumber: 42
       },
       __self: this
     }, "D3 libraries"), " to scale and plot data points according to their dates"), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41
+        lineNumber: 43
       },
       __self: this
     }, "Used D3 libraries to create a window frame to adjust the date window of viewing"))), __jsx("a", {
@@ -2675,46 +2735,46 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 46
       },
       __self: this
     }, "View source"), __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 46
       },
       __self: this
     }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
       href: "/101Timeline",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45
+        lineNumber: 47
       },
       __self: this
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46
+        lineNumber: 48
       },
       __self: this
     }, "Live Demo"))), __jsx("section", {
       id: "KMeansHeader",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 49
+        lineNumber: 51
       },
       __self: this
     }, __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
       title: "K-Means Demo",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 50
+        lineNumber: 52
       },
       __self: this
     }, __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51
+        lineNumber: 53
       },
       __self: this
     }, "This ", __jsx("a", {
@@ -2722,13 +2782,13 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51
+        lineNumber: 53
       },
       __self: this
     }, "K-Means"), " project is a self-made data clustering algorithm that I created for my predictive analytics class. The algorithm takes in 24 documents roughly concerned with 3 topics (Mouth and Foot Diseases, Airline Safety, and International Housing Prices) and clusters them into k centroids. The data is 1", __jsx("sup", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53
+        lineNumber: 55
       },
       __self: this
     }, "st"), " converted into a TF-IDF matrix adjusted for the lengths of the respective documents. The data is then trimmed by removing low intra-dimensional words, combining highly correlated dimensions, and then adjusting the matrix using ", __jsx("a", {
@@ -2736,7 +2796,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 57
       },
       __self: this
     }, "PCA"), ".The similarity is measured using ", __jsx("a", {
@@ -2744,7 +2804,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 58
       },
       __self: this
     }, "cosine similarity"), " into clusted determined by initial means furthest away from each other (see ", __jsx("a", {
@@ -2752,19 +2812,19 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 59
       },
       __self: this
     }, "K-Means++"), "). After the data is clustered it is then transformed again by PCA onto 2 dimensions and plotted on a 2-D graph."), __jsx("ul", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60
+        lineNumber: 62
       },
       __self: this
     }, __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 61
+        lineNumber: 63
       },
       __self: this
     }, "Built in ", __jsx("a", {
@@ -2772,13 +2832,13 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 61
+        lineNumber: 63
       },
       __self: this
     }, "Java")), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 62
+        lineNumber: 64
       },
       __self: this
     }, "Used ", __jsx("a", {
@@ -2786,13 +2846,13 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 62
+        lineNumber: 64
       },
       __self: this
     }, "Apache Commons"), " Math for vector/matrix manipulation"), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63
+        lineNumber: 65
       },
       __self: this
     }, "Used ", __jsx("a", {
@@ -2800,7 +2860,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63
+        lineNumber: 65
       },
       __self: this
     }, "JFree charts"), " to create plots"))), __jsx("a", {
@@ -2808,39 +2868,39 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 68
       },
       __self: this
     }, "View source")), __jsx("section", {
       id: "QRHeader",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 70
       },
       __self: this
     }, __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
       title: "QR Marketing Project",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69
+        lineNumber: 71
       },
       __self: this
     }, __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 70
+        lineNumber: 72
       },
       __self: this
     }, "This project was to build a mobile-friendly web page to demo the use of QR codes in advertising. QR codes are functionally 2-D bar codes and since most mobile phones come equipped to scan them, it makes sense to leverage them for quick access to a web page. The page makes use of CSS media queries to be responsive to different devices in order to be visually appealing across all devices."), __jsx("ul", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75
+        lineNumber: 77
       },
       __self: this
     }, __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 76
+        lineNumber: 78
       },
       __self: this
     }, "Build for ", __jsx("a", {
@@ -2848,13 +2908,13 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 76
+        lineNumber: 78
       },
       __self: this
     }, "PVH")), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 77
+        lineNumber: 79
       },
       __self: this
     }, "Using ", __jsx("a", {
@@ -2862,77 +2922,77 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 77
+        lineNumber: 79
       },
       __self: this
     }, "QR codes"), " for easy mobile marketing"))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
       href: "/pvh",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 80
+        lineNumber: 82
       },
       __self: this
     }, __jsx("a", {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81
+        lineNumber: 83
       },
       __self: this
     }, "QR Project"))), __jsx("section", {
       id: "WebsiteHeader",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 84
+        lineNumber: 86
       },
       __self: this
     }, __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
       title: "This Website",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85
+        lineNumber: 87
       },
       __self: this
     }, __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86
+        lineNumber: 88
       },
       __self: this
     }, "The website you see here was built using Next.js. a server-side framework built on top of React. I wanted to create a website to showcase all of projects and work that I am proud of. Since it is important to demo projects as transparently and seemlessly as possible it made sense to host it all on a single website. This website will continuously be a work in progress as I try to implement and add both new features and new projects."), __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 92
+        lineNumber: 94
       },
       __self: this
     }, "In Progress:"), __jsx("ul", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 93
+        lineNumber: 95
       },
       __self: this
     }, __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94
+        lineNumber: 96
       },
       __self: this
     }, "Light and Dark Theme"), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 95
+        lineNumber: 97
       },
       __self: this
     }, "Responsive Design")), __jsx("ul", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97
+        lineNumber: 99
       },
       __self: this
     }, __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98
+        lineNumber: 100
       },
       __self: this
     }, "Built using ", __jsx("a", {
@@ -2940,13 +3000,13 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98
+        lineNumber: 100
       },
       __self: this
     }, "Next.js")), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 99
+        lineNumber: 101
       },
       __self: this
     }, "Hosted using ", __jsx("a", {
@@ -2954,7 +3014,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 99
+        lineNumber: 101
       },
       __self: this
     }, "Zeit")))))));
@@ -2986,7 +3046,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class Model {
-  constructor(fileName) {
+  constructor(fileName, isThemed) {
+    if (isThemed) this.filePath = `Logo_${fileName}.gltf`;else this.filePath = fileName;
     this.scene = new three__WEBPACK_IMPORTED_MODULE_2__["Scene"]();
     this.camera = new three__WEBPACK_IMPORTED_MODULE_2__["PerspectiveCamera"](75, window.innerHeight / window.innerHeight, .1, 1000);
     this.camera.position.z = 5;
@@ -3003,7 +3064,6 @@ class Model {
     this.bottomLight = new three__WEBPACK_IMPORTED_MODULE_2__["PointLight"](0xffffff, 4);
     this.bottomLight.position.set(0, 0, -7);
     this.loader = new three_gltf_loader__WEBPACK_IMPORTED_MODULE_0___default.a();
-    this.logoPath = `Logo_${fileName}.gltf`;
   }
 
   load() {
@@ -3017,7 +3077,7 @@ class Model {
     };
 
     console.log(this);
-    this.loader.load(this.logoPath, gltf => {
+    this.loader.load(this.filePath, gltf => {
       this.logo = gltf.scene;
       this.logo.rotation.y = -Math.PI / 2;
       this.logo.scale.set(2, 2, 2);

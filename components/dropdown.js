@@ -9,6 +9,8 @@ class Dropdown extends React.Component{
         
         this.title = this.props.title;
         this.expand = this.expand.bind(this);
+        this.addChild = this.addChild.bind(this);
+
         this.state={
             show:this.props.openOnStart,
         }
@@ -18,6 +20,25 @@ class Dropdown extends React.Component{
         this.setState({
             show:!this.state.show
         });
+    }
+
+    addChild(ele){
+        console.log(ele);
+        this.setState({
+            test:ele
+        });
+    }
+
+    componentDidUpdate(){
+        if(this.state.test){
+            if(this.state.show){
+                this.model.appendChild(this.state.test.renderer.domElement);
+                this.state.test.load();
+            }else if (!this.state.show && this.model.hasChildNodes()){
+                this.model.removeChild(this.state.test.renderer.domElement);
+            }
+        }
+
     }
 
     render(){
@@ -35,13 +56,16 @@ class Dropdown extends React.Component{
 
         const eleStyle = this.props.barDropdown? "barDropdown" : "drop";
 
-        console.log(this);
+        const model = this.state.test?
+            <div ref={ref=>this.model=ref}/>: null;
 
+        console.log(this.state);
         return <div className={eleStyle}>
             {style}
             <h3>{this.props.title}</h3>
             <FontAwesomeIcon className='myFAIcon' icon={arrow} onClick = {this.expand}/>
             {this.state.show && this.props.children}
+            {model}
         </div>
     }
 }
