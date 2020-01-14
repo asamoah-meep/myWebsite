@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2584,7 +2584,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 class Gallery extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   constructor(props) {
     super(props);
-    this.items = ['Logo_light', 'Logo_dark'];
+    this.items = ['Logo_light', 'Logo_dark', 'Torch'];
   }
 
   componentDidMount() {
@@ -2599,38 +2599,53 @@ class Gallery extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   }
 
   render() {
+    const style = __jsx("style", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, `
+            #grid{
+                display:grid;
+                grid-template-columns: 1fr 1f;
+                grid-gap: 100px;
+                grid-auto-rows: minmax(auto,150px);
+            }
+        `);
+
     this.models = this.items.map(ele => __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
       key: ele,
       ref: ref => this[ele] = ref,
       title: ele,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 39
       },
       __self: this
     }));
     return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(components_stickyBar_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 43
       },
       __self: this
     }, __jsx(react_helmet__WEBPACK_IMPORTED_MODULE_3___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35
+        lineNumber: 44
       },
       __self: this
     }, __jsx("title", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36
+        lineNumber: 45
       },
       __self: this
     }, "Gallery")), __jsx("h1", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 47
       },
       __self: this
     }, "Gallery"), this.models));
@@ -2701,7 +2716,9 @@ class Model {
       this.scene.add(this.topLight);
       this.scene.add(this.bottomLight);
       animate();
-    }, undefined, function (error) {
+    }, xhr => {
+      console.log(xhr.loaded);
+    }, error => {
       console.error(error);
     });
   }
@@ -2760,7 +2777,7 @@ function themeValues(theme) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!********************************!*\
   !*** multi ./pages/gallery.js ***!
   \********************************/

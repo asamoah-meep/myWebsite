@@ -76551,7 +76551,7 @@ function (_React$Component) {
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Gallery);
 
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Gallery).call(this, props));
-    _this.items = ['Logo_light', 'Logo_dark'];
+    _this.items = ['Logo_light', 'Logo_dark', 'Torch'];
     return _this;
   }
 
@@ -76593,6 +76593,14 @@ function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
+      var style = __jsx("style", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, "\n            #grid{\n                display:grid;\n                grid-template-columns: 1fr 1f;\n                grid-gap: 100px;\n                grid-auto-rows: minmax(auto,150px);\n            }\n        ");
+
       this.models = this.items.map(function (ele) {
         return __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
           key: ele,
@@ -76602,7 +76610,7 @@ function (_React$Component) {
           title: ele,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 30
+            lineNumber: 39
           },
           __self: this
         });
@@ -76610,25 +76618,25 @@ function (_React$Component) {
       return __jsx(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, __jsx(components_stickyBar_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 43
         },
         __self: this
       }, __jsx(react_helmet__WEBPACK_IMPORTED_MODULE_9___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 44
         },
         __self: this
       }, __jsx("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 45
         },
         __self: this
       }, "Gallery")), __jsx("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 47
         },
         __self: this
       }, "Gallery"), this.models));
@@ -76718,7 +76726,9 @@ function () {
         _this.scene.add(_this.bottomLight);
 
         animate();
-      }, undefined, function (error) {
+      }, function (xhr) {
+        console.log(xhr.loaded);
+      }, function (error) {
         console.error(error);
       });
     }
@@ -76768,7 +76778,7 @@ function themeValues(theme) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 3:
 /*!****************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fgallery&absolutePagePath=C%3A%5CUsers%5CUser%5CDocuments%5CmyWebsite%5Cpages%5Cgallery.js ***!
   \****************************************************************************************************************************************/
@@ -76791,5 +76801,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[3,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=gallery.js.map

@@ -8,7 +8,7 @@ class Gallery extends React.Component{
 
     constructor(props){
         super(props);
-        this.items = ['Logo_light','Logo_dark'];
+        this.items = ['Logo_light','Logo_dark','Torch'];
     }
 
     componentDidMount(){
@@ -25,6 +25,15 @@ class Gallery extends React.Component{
     }
 
     render(){
+
+        const style = <style>{`
+            #grid{
+                display:grid;
+                grid-template-columns: 1fr 1f;
+                grid-gap: 100px;
+                grid-auto-rows: minmax(auto,150px);
+            }
+        `}</style>
 
         this.models = this.items.map(ele=>
             <Dropdown key={ele} ref={ref=>(this[ele] = ref)} title={ele}/>

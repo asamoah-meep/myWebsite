@@ -77072,7 +77072,9 @@ function () {
         _this.scene.add(_this.bottomLight);
 
         animate();
-      }, undefined, function (error) {
+      }, function (xhr) {
+        console.log(xhr.loaded);
+      }, function (error) {
         console.error(error);
       });
     }

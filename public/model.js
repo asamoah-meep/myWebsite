@@ -52,7 +52,9 @@ class Model{
             this.scene.add(this.bottomLight);
             animate();
 
-        },undefined,function(error){
+        },(xhr)=>{
+            console.log(xhr.loaded);
+        }, (error) =>{
             console.error(error);
         });
     }
