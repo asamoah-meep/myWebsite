@@ -21,6 +21,7 @@ class About extends React.Component{
                 <li>Theory of Probability</li>
                 <li>Ordinary Differential Equations</li>
                 <li>Math of Finance</li>
+                <li>Analytical Statistics</li>
             </ul>
         </div>
 
@@ -41,9 +42,11 @@ class About extends React.Component{
         </div>
         
         const work = <div className='aboutMe'>
-            <p>Laguardia Studio(2017-2018)</p>
-            <p>Computer Science Tutoring(2017-2019)</p>
-            <p>Comcast(Summer 2019)</p>
+            <p>Laguardia Studio(July 2017- September 2018)</p>
+            <p>Computer Science Tutoring(September 2017- May 2019)</p>
+            <p>Comcast(May 2019 - August 2019)</p>
+            <p>PVH Contractor (October 2019 - December 2019)</p>
+            <p>Full Stack Engineer at GEP(January 2019-Present)</p>
         </div>
         const style = <style>{`
             #test{

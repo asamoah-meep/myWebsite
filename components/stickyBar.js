@@ -72,6 +72,7 @@ class StickyBar extends React.Component{
         const contact = <>
             <p>E-mail: ja3180@nyu.edu</p>
             <p>Telephone: 914-224-6241</p>
+            <a href="https://www.linkedin.com/in/jeffrey-asamoah-07991a125/" target="_blank">LinkedIn</a><br/>
             <a href="https://github.com/asamoah-meep" target="_blank">Github</a>
         </>
 

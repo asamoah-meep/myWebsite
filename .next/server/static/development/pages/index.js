@@ -381,11 +381,25 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       },
       __self: this
     }, "Telephone: 914-224-6241"), __jsx("a", {
-      href: "https://github.com/asamoah-meep",
+      href: "https://www.linkedin.com/in/jeffrey-asamoah-07991a125/",
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 75
+      },
+      __self: this
+    }, "LinkedIn"), __jsx("br", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75
+      },
+      __self: this
+    }), __jsx("a", {
+      href: "https://github.com/asamoah-meep",
+      target: "_blank",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76
       },
       __self: this
     }, "Github"));
@@ -393,7 +407,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     const projects = __jsx("ul", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 78
+        lineNumber: 79
       },
       __self: this
     }, __jsx(components_projectHeader_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -401,7 +415,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       name: "Tutor Timeline",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 79
+        lineNumber: 80
       },
       __self: this
     }), __jsx(components_projectHeader_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -409,7 +423,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       name: "K-Means Demo",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 80
+        lineNumber: 81
       },
       __self: this
     }), __jsx(components_projectHeader_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -417,7 +431,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       name: "This Website",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81
+        lineNumber: 82
       },
       __self: this
     }), __jsx(components_projectHeader_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -425,7 +439,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       name: "QR Marketing Project",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 82
+        lineNumber: 83
       },
       __self: this
     }));
@@ -434,7 +448,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       id: "stickyBar",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85
+        lineNumber: 86
       },
       __self: this
     }, __jsx("div", {
@@ -442,13 +456,13 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       ref: ref => this.mount = ref,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86
+        lineNumber: 87
       },
       __self: this
     }, __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 87
+        lineNumber: 88
       },
       __self: this
     }, "Rotate me!")), __jsx("h1", {
@@ -458,7 +472,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 89
+        lineNumber: 90
       },
       __self: this
     }, "Jeffrey"), __jsx("h1", {
@@ -468,21 +482,21 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 90
+        lineNumber: 91
       },
       __self: this
     }, "Asamoah"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "/",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 91
+        lineNumber: 92
       },
       __self: this
     }, __jsx("a", {
       className: "subHeading",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 92
+        lineNumber: 93
       },
       __self: this
     }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
@@ -490,21 +504,21 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faHome"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 92
+        lineNumber: 93
       },
       __self: this
     }), "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "/about",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94
+        lineNumber: 95
       },
       __self: this
     }, __jsx("a", {
       className: "subHeading",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 95
+        lineNumber: 96
       },
       __self: this
     }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
@@ -512,21 +526,21 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faAddressCard"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 95
+        lineNumber: 96
       },
       __self: this
     }), "About")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "/gallery",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97
+        lineNumber: 98
       },
       __self: this
     }, __jsx("a", {
       className: "subHeading",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98
+        lineNumber: 99
       },
       __self: this
     }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
@@ -534,7 +548,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faCube"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98
+        lineNumber: 99
       },
       __self: this
     }), "3D Gallery")), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
@@ -542,7 +556,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faTasks"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 100
+        lineNumber: 101
       },
       __self: this
     }), " ", __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -550,13 +564,13 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       barDropdown: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 100
+        lineNumber: 101
       },
       __self: this
     }, projects), __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 100
+        lineNumber: 101
       },
       __self: this
     }), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
@@ -564,7 +578,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faEnvelope"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 101
+        lineNumber: 102
       },
       __self: this
     }), " ", __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -572,14 +586,14 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       barDropdown: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 101
+        lineNumber: 102
       },
       __self: this
     }, contact), __jsx("div", {
       id: "toggleTheme",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 102
+        lineNumber: 103
       },
       __self: this
     }, __jsx("span", {
@@ -588,14 +602,14 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 103
+        lineNumber: 104
       },
       __self: this
     }, "Light"), __jsx("label", {
       className: "switch",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 104
+        lineNumber: 105
       },
       __self: this
     }, __jsx("input", {
@@ -604,14 +618,14 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       onChange: this.toggleTheme,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 105
+        lineNumber: 106
       },
       __self: this
     }), __jsx("span", {
       className: "slider round",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 106
+        lineNumber: 107
       },
       __self: this
     })), __jsx("span", {
@@ -620,7 +634,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 108
+        lineNumber: 109
       },
       __self: this
     }, "Dark")));
@@ -628,7 +642,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     const globalStyle = __jsx("style", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 112
+        lineNumber: 113
       },
       __self: this
     }, `
@@ -655,7 +669,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     const style = __jsx("style", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 133
+        lineNumber: 134
       },
       __self: this
     }, `
@@ -807,7 +821,7 @@ class StickyBar extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       id: "content",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 282
+        lineNumber: 283
       },
       __self: this
     }, this.props.children));
@@ -2977,22 +2991,28 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 96
       },
       __self: this
-    }, "Light and Dark Theme"), __jsx("li", {
+    }, "About Me"), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 97
       },
       __self: this
+    }, "Implementing more 3D models to gallery"), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 98
+      },
+      __self: this
     }, "Responsive Design")), __jsx("ul", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 99
+        lineNumber: 100
       },
       __self: this
     }, __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 100
+        lineNumber: 101
       },
       __self: this
     }, "Built using ", __jsx("a", {
@@ -3000,13 +3020,13 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 100
+        lineNumber: 101
       },
       __self: this
     }, "Next.js")), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 101
+        lineNumber: 102
       },
       __self: this
     }, "Hosted using ", __jsx("a", {
@@ -3014,10 +3034,30 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       target: "_blank",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 101
+        lineNumber: 102
       },
       __self: this
-    }, "Zeit")))))));
+    }, "Zeit"))))), __jsx("section", {
+      id: "ocrAPI",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 106
+      },
+      __self: this
+    }, __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      title: "OCR API",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 107
+      },
+      __self: this
+    }, __jsx("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 108
+      },
+      __self: this
+    }, "My 1st project at GEP was to help construct an API for our Optical Code Recognition (OCR) project. Our API would recieve data from the AI that read the data (in our case invoices), identify key elements and information, save it into our database, and try to create the invoice on our service with the data. My role was was to create unit tests for new components, migrate data accessing points to seperate API calls for security/independence, and implement new errors for missing information within the documents. This project is one of the 1st enterprise projects I've worked on with a team and it has taught me a lot about the importance of communication, both in clarity of code and working with colleges. ")))));
   }
 
 }
@@ -3086,7 +3126,7 @@ class Model {
       this.scene.add(this.bottomLight);
       animate();
     }, xhr => {
-      console.log(xhr.loaded);
+      return undefined; //TODO: add loading animation
     }, error => {
       console.error(error);
     });

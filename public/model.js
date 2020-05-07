@@ -53,7 +53,7 @@ class Model{
             animate();
 
         },(xhr)=>{
-            console.log(xhr.loaded);
+            return undefined; //TODO: add loading animation
         }, (error) =>{
             console.error(error);
         });

@@ -93,13 +93,24 @@ class Index extends React.Component{
                     </p>
                     <p>In Progress:</p>
                     <ul>
-                        <li>Light and Dark Theme</li>
+                        <li>About Me</li>
+                        <li>Implementing more 3D models to gallery</li>
                         <li>Responsive Design</li>
                     </ul>
                     <ul>
                         <li>Built using <a href="https://nextjs.org/" target="_blank">Next.js</a></li>
                         <li>Hosted using <a href="https://zeit.co/docs#related" target="_blank">Zeit</a></li>
                     </ul>
+                </Dropdown>
+            </section>
+            <section id="ocrAPI">
+                <Dropdown title='OCR API'>
+                    <p>My 1st project at GEP was to help construct an API for our Optical Code Recognition (OCR) project. Our API would recieve data
+                        from the AI that read the data (in our case invoices), identify key elements and information, save it into our database, and try
+                        to create the invoice on our service with the data. My role was was to create unit tests for new components, migrate data accessing
+                        points to seperate API calls for security/independence, and implement new errors for missing information within the documents. This 
+                        project is one of the 1st enterprise projects I've worked on with a team and it has taught me a lot about the importance of communication,
+                        both in clarity of code and working with colleges. </p>
                 </Dropdown>
             </section>
         </Bar>

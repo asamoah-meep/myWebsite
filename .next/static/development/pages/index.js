@@ -365,11 +365,25 @@ function (_React$Component) {
         },
         __self: this
       }, "Telephone: 914-224-6241"), __jsx("a", {
-        href: "https://github.com/asamoah-meep",
+        href: "https://www.linkedin.com/in/jeffrey-asamoah-07991a125/",
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 75
+        },
+        __self: this
+      }, "LinkedIn"), __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 75
+        },
+        __self: this
+      }), __jsx("a", {
+        href: "https://github.com/asamoah-meep",
+        target: "_blank",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76
         },
         __self: this
       }, "Github"));
@@ -377,7 +391,7 @@ function (_React$Component) {
       var projects = __jsx("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 79
         },
         __self: this
       }, __jsx(components_projectHeader_js__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -385,7 +399,7 @@ function (_React$Component) {
         name: "Tutor Timeline",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 80
         },
         __self: this
       }), __jsx(components_projectHeader_js__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -393,7 +407,7 @@ function (_React$Component) {
         name: "K-Means Demo",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 81
         },
         __self: this
       }), __jsx(components_projectHeader_js__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -401,7 +415,7 @@ function (_React$Component) {
         name: "This Website",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 82
         },
         __self: this
       }), __jsx(components_projectHeader_js__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -409,7 +423,7 @@ function (_React$Component) {
         name: "QR Marketing Project",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 83
         },
         __self: this
       }));
@@ -418,7 +432,7 @@ function (_React$Component) {
         id: "stickyBar",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 86
         },
         __self: this
       }, __jsx("div", {
@@ -428,13 +442,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 87
         },
         __self: this
       }, __jsx("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 88
         },
         __self: this
       }, "Rotate me!")), __jsx("h1", {
@@ -444,7 +458,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 90
         },
         __self: this
       }, "Jeffrey"), __jsx("h1", {
@@ -454,21 +468,21 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 91
         },
         __self: this
       }, "Asamoah"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 92
         },
         __self: this
       }, __jsx("a", {
         className: "subHeading",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 93
         },
         __self: this
       }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
@@ -476,21 +490,21 @@ function (_React$Component) {
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faHome"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 93
         },
         __self: this
       }), "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
         href: "/about",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 95
         },
         __self: this
       }, __jsx("a", {
         className: "subHeading",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 96
         },
         __self: this
       }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
@@ -498,21 +512,21 @@ function (_React$Component) {
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faAddressCard"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 96
         },
         __self: this
       }), "About")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
         href: "/gallery",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 98
         },
         __self: this
       }, __jsx("a", {
         className: "subHeading",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 99
         },
         __self: this
       }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
@@ -520,7 +534,7 @@ function (_React$Component) {
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faCube"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 99
         },
         __self: this
       }), "3D Gallery")), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
@@ -528,7 +542,7 @@ function (_React$Component) {
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faTasks"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 101
         },
         __self: this
       }), " ", __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -536,13 +550,13 @@ function (_React$Component) {
         barDropdown: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 101
         },
         __self: this
       }, projects), __jsx("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 101
         },
         __self: this
       }), __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_12__["FontAwesomeIcon"], {
@@ -550,7 +564,7 @@ function (_React$Component) {
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faEnvelope"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 102
         },
         __self: this
       }), " ", __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -558,14 +572,14 @@ function (_React$Component) {
         barDropdown: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 102
         },
         __self: this
       }, contact), __jsx("div", {
         id: "toggleTheme",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 103
         },
         __self: this
       }, __jsx("span", {
@@ -574,14 +588,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 104
         },
         __self: this
       }, "Light"), __jsx("label", {
         className: "switch",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104
+          lineNumber: 105
         },
         __self: this
       }, __jsx("input", {
@@ -590,14 +604,14 @@ function (_React$Component) {
         onChange: this.toggleTheme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105
+          lineNumber: 106
         },
         __self: this
       }), __jsx("span", {
         className: "slider round",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 107
         },
         __self: this
       })), __jsx("span", {
@@ -606,7 +620,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 109
         },
         __self: this
       }, "Dark")));
@@ -614,7 +628,7 @@ function (_React$Component) {
       var globalStyle = __jsx("style", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 113
         },
         __self: this
       }, "\n        body{\n            background: ".concat(this.state.background, "\n        }\n\n        h1{\n            color: ").concat(this.state.headings, "\n        }\n\n        h3, div svg{\n            color: ").concat(this.state.subheadings, "\n        }\n\n        p,a,span,li,div,form,text{\n            color: ").concat(this.state.text, "\n        }\n\n        section{\n            boder-bottom: solid 2px ").concat(this.state.subheadings, ";\n        }"));
@@ -622,7 +636,7 @@ function (_React$Component) {
       var style = __jsx("style", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 133
+          lineNumber: 134
         },
         __self: this
       }, "\n\n            #logoMount{\n                height:75px;\n                position:relative;\n            }\n\n            #logoMount p{\n                visibility: hidden;\n                width:120px;\n                opacity: .4;\n                text-align:center;\n                animation-name: fadeIn;\n                animation-duration: 5s;\n                padding: 5px 0;\n                border-radius: 6px;\n                position: absolute;\n                top:-30px;\n            }\n\n            @keyframes fadeIn{\n                from {visibility: visible;}\n                to {visibility: hidden;}\n            }\n\n            #logoMount:hover p{\n                visibility: visible;\n            }\n\n            .barIcon{\n                color: ".concat(this.state.subheadings, ";\n                display:inline-block;\n                position:relative;\n                right:5px;\n            }\n\n            .barDropdown{\n                display:inline-block;\n            }\n\n            #content{\n                display:inline-block;\n                margin-top:5px;\n                position:relative;\n                left: 30px;\n                width:730px;\n                padding-left: 15px;\n                vertical-align:top;\n                border-left: solid 2px ").concat(this.state.subheadings, ";\n            }\n\n            #stickyBar{\n                vertical-align:top;\n                position: relative;\n                display:inline-block;\n                left:20px;\n                // width:200px;\n                margin-right: 5px;\n                margin-top:5px;\n            }\n            .subHeading{\n                font-family: NunitoItalic;\n                color: ").concat(this.state.subheadings, ";\n                display: block;\n                font-size: 1.5rem;\n                margin-block-start: 1em;\n                margin-block-end: 1em;\n                margin-inline-start: 0px;\n                margin-inline-end: 0px;\n                font-weight: bold;\n            }\n\n            #toggleTheme{\n                position:relative;\n                left:10%;\n            }\n            \n            #toggleTheme span{\n                padding:10px;\n            }\n\n            .switch {\n                position: relative;\n                display: inline-block;\n                width: 60px;\n                height: 34px;\n            }\n\n            .switch input {\n                opacity: 0;\n                width: 0;\n                height: 0;\n            }\n\n            .slider {\n                position: absolute;\n                cursor: pointer;\n                top: 0;\n                left: 0;\n                right: 0;\n                bottom: 0;\n                background-color: #ccc;\n                -webkit-transition: .4s;\n                transition: .4s;\n            }\n\n            .slider:before {\n                position: absolute;\n                content: \"\";\n                height: 26px;\n                width: 26px;\n                left: 4px;\n                bottom: 4px;\n                background-color: white;\n                -webkit-transition: .4s;\n                transition: .4s;\n            }\n\n            input[type='checkbox']:not(:checked) + .slider{\n                background-color: rgba(223,240,255,0.9);\n            }\n\n            input[type='checkbox']:checked + .slider {\n                background-color: #2F4454;\n            }\n\n            input:focus + .slider {\n                box-shadow: 0 0 1px #15DB95;\n            }\n\n            input:checked + .slider:before {\n                -webkit-transform: translateX(26px);\n                -ms-transform: translateX(26px);\n                transform: translateX(26px);\n            }\n\n            .slider.round {\n                border-radius: 34px;\n            }\n\n            .slider.round:before {\n                border-radius: 50%;\n            }\n        "));
@@ -631,7 +645,7 @@ function (_React$Component) {
         id: "content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 282
+          lineNumber: 283
         },
         __self: this
       }, this.props.children));
@@ -76945,22 +76959,28 @@ function (_React$Component) {
           lineNumber: 96
         },
         __self: this
-      }, "Light and Dark Theme"), __jsx("li", {
+      }, "About Me"), __jsx("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 97
         },
         __self: this
+      }, "Implementing more 3D models to gallery"), __jsx("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 98
+        },
+        __self: this
       }, "Responsive Design")), __jsx("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 100
         },
         __self: this
       }, __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 101
         },
         __self: this
       }, "Built using ", __jsx("a", {
@@ -76968,13 +76988,13 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 101
         },
         __self: this
       }, "Next.js")), __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 102
         },
         __self: this
       }, "Hosted using ", __jsx("a", {
@@ -76982,10 +77002,30 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 102
         },
         __self: this
-      }, "Zeit")))))));
+      }, "Zeit"))))), __jsx("section", {
+        id: "ocrAPI",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 106
+        },
+        __self: this
+      }, __jsx(components_dropdown_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        title: "OCR API",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 107
+        },
+        __self: this
+      }, __jsx("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 108
+        },
+        __self: this
+      }, "My 1st project at GEP was to help construct an API for our Optical Code Recognition (OCR) project. Our API would recieve data from the AI that read the data (in our case invoices), identify key elements and information, save it into our database, and try to create the invoice on our service with the data. My role was was to create unit tests for new components, migrate data accessing points to seperate API calls for security/independence, and implement new errors for missing information within the documents. This project is one of the 1st enterprise projects I've worked on with a team and it has taught me a lot about the importance of communication, both in clarity of code and working with colleges. ")))));
     }
   }]);
 
@@ -77073,7 +77113,7 @@ function () {
 
         animate();
       }, function (xhr) {
-        console.log(xhr.loaded);
+        return undefined; //TODO: add loading animation
       }, function (error) {
         console.error(error);
       });
