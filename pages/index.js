@@ -19,8 +19,8 @@ class Index extends React.Component{
                 <Dropdown title="About Me" openOnStart>
                 <p>Hey, looks like you found my website!</p>
                 <p>My name is Jeffrey Asamoah, and I'm currently living in the NYC metropolitan area.
-                    I'm studying Mathematics and Computer Science at New York University and plan
-                    to graduate in May 2020. My hobbies include running, coding, and 3-D modelling.
+                    I studied Mathematics and Computer Science at New York University and recently graduated 
+                    in May 2020. My hobbies include running, coding, and 3-D modelling.
                 </p>
                 </Dropdown>
                 <Link href="/about">
@@ -69,10 +69,12 @@ class Index extends React.Component{
             </section>
             <section id='QRHeader'>
                 <Dropdown title='QR Marketing Project'>
-                    <p>This project was to build a mobile-friendly web page to demo the use of QR codes in advertising. QR codes are functionally
-                        2-D bar codes and since most mobile phones come equipped to scan them, it makes sense to leverage them for quick access
-                        to a web page. The page makes use of CSS media queries to be responsive to different devices in order to be visually appealing
-                        across all devices.
+                    <p>
+                        This project was to build a mobile-friendly web page to demo the use of <a href="https://en.wikipedia.org/wiki/QR_code" target="_blank">QR codes </a> 
+                        in advertising. QR codes are functionally 2-D bar codes and since most mobile phones come equipped to scan them, it makes sense to leverage them for 
+                        quick access to a web page. The page makes use of CSS media queries and 
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank"> Responsive Design Practices</a> to be responsive 
+                        to different devices in order to be visually appealing across all devices.
                     </p>
                     <ul>
                         <li>Build for <a href='https://www.pvh.com/' target='_blank'>PVH</a></li>
@@ -105,12 +107,20 @@ class Index extends React.Component{
             </section>
             <section id="ocrAPI">
                 <Dropdown title='OCR API'>
-                    <p>My 1st project at GEP was to help construct an API for our Optical Code Recognition (OCR) project. Our API would recieve data
-                        from the AI that read the data (in our case invoices), identify key elements and information, save it into our database, and try
+                    <p>My 1st project at GEP was to help construct an <a href="https://en.wikipedia.org/wiki/Application_programming_interface" target="_blank">API </a> 
+                        for our <a href="https://en.wikipedia.org/wiki/Optical_character_recognition" target="_blank"> Optical Code Recognition (OCR)</a> project. 
+                        Our API would recieve data from the AI that read the data (in our case invoices), identify key elements and information, save it into our database, and try
                         to create the invoice on our service with the data. My role was was to create unit tests for new components, migrate data accessing
                         points to seperate API calls for security/independence, and implement new errors for missing information within the documents. This 
                         project is one of the 1st enterprise projects I've worked on with a team and it has taught me a lot about the importance of communication,
                         both in clarity of code and working with colleges. </p>
+                        <ul>
+                            <li>Front End done in <a href="https://angular.io/" target="_blank">Angular5/</a></li>
+                            <li>Back End done in <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">C# .NET framework</a></li>
+                            <li>API hosted with <a href="https://docs.microsoft.com/en-us/iis/extensions/introduction-to-iis-express/iis-express-overview"
+                                target="_blank">IIS Express</a></li>
+                            <li>Using <a href="https://www.oracle.com/mysql/" target="_blank">MySQL database</a></li>
+                        </ul>
                 </Dropdown>
             </section>
         </Bar>

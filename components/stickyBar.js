@@ -4,7 +4,9 @@ import Cookie from 'js-cookie';
 import themeValues from '../public/theme.js';
 import Dropdown from 'components/dropdown.js';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHome, faAddressCard,faEnvelope,faTasks,faCube} from "@fortawesome/free-solid-svg-icons";
+import {faHome, faAddressCard,faEnvelope,faTasks,faCube,
+        faPhoneSquare, faInbox} from "@fortawesome/free-solid-svg-icons";
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import ProjectHeader from 'components/projectHeader.js';
 import Model from '../public/model.js';
 class StickyBar extends React.Component{
@@ -70,10 +72,10 @@ class StickyBar extends React.Component{
 
     render(){
         const contact = <>
-            <p>E-mail: ja3180@nyu.edu</p>
-            <p>Telephone: 914-224-6241</p>
-            <a href="https://www.linkedin.com/in/jeffrey-asamoah-07991a125/" target="_blank">LinkedIn</a><br/>
-            <a href="https://github.com/asamoah-meep" target="_blank">Github</a>
+            <p><FontAwesomeIcon className='barIcon' icon={faEnvelope}/>E-mail: ja3180@nyu.edu</p>
+            <p><FontAwesomeIcon className='barIcon' icon={faPhoneSquare} />Telephone: 914-224-6241</p>
+            <p><FontAwesomeIcon className='barIcon' icon={faLinkedin}/><a href="https://www.linkedin.com/in/jeffrey-asamoah-07991a125/" target="_blank">LinkedIn</a><br/></p>
+            <p><FontAwesomeIcon className='barIcon' icon={faGithub}/><a href="https://github.com/asamoah-meep" target="_blank">Github</a></p>
         </>
 
         const projects = <ul>
@@ -98,8 +100,10 @@ class StickyBar extends React.Component{
             <Link href='/gallery'>
                 <a className='subHeading'><FontAwesomeIcon className='barIcon' icon={faCube}/>3D Gallery</a>
             </Link>
-            <FontAwesomeIcon className='barIcon' icon={faTasks}/> <Dropdown title="Projects" barDropdown>{projects}</Dropdown><br/>
-            <FontAwesomeIcon className='barIcon' icon={faEnvelope}/> <Dropdown title='Contact / Media' barDropdown>{contact}</Dropdown>
+            <div><FontAwesomeIcon className='barIcon expandableIcon' 
+                icon={faTasks}/> <Dropdown title="Projects" barDropdown>{projects}</Dropdown></div>
+            <div><FontAwesomeIcon className='barIcon expandableIcon' 
+                icon={faInbox}/> <Dropdown title='Contact / Media' barDropdown>{contact}</Dropdown></div>
             <div id='toggleTheme'>
                 <span style={{visibility: this.state.theme==='light'? 'visible': 'hidden'}}>Light</span>
                 <label className="switch">
@@ -165,6 +169,11 @@ class StickyBar extends React.Component{
                 display:inline-block;
                 position:relative;
                 right:5px;
+            }
+
+            .expandableIcon{
+                vertical-align:top;
+                top:30px;
             }
 
             .barDropdown{
