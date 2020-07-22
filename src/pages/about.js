@@ -46,7 +46,7 @@ class About extends React.Component{
             <p>Computer Science Tutoring(September 2017- May 2019)</p>
             <p>Comcast(May 2019 - August 2019)</p>
             <p>PVH Contractor (October 2019 - December 2019)</p>
-            <p>Full Stack Engineer at GEP(January 2019-Present)</p>
+            <p>Full Stack Engineer at GEP(January 2019-July 2020)</p>
         </div>
         const style = <style>{`
             #test{
