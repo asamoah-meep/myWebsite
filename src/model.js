@@ -39,7 +39,6 @@ class Model{
         };
 
 
-        console.log(this.filePath);
         this.loader.load(this.filePath, (gltf) =>{
             this.logo = gltf.scene;
             this.logo.rotation.y=-Math.PI/2;
