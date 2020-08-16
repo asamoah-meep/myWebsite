@@ -46,16 +46,18 @@ class About extends React.Component{
             <p>Computer Science Tutoring(September 2017- May 2019)</p>
             <p>Comcast(May 2019 - August 2019)</p>
             <p>PVH Contractor (October 2019 - December 2019)</p>
-            <p>Full Stack Engineer at GEP(January 2019-July 2020)</p>
+            <p>Full Stack Engineer at GEP(January 2020-July 2020)</p>
         </div>
         const style = <style>{`
-            #test{
-                width:200px;
-                height:200px;
-            }
 
             .aboutMe ul{
                 display:inline-block;
+            }
+
+            #me{
+                position: relative;
+                left: 100px;
+                top: 50px;
             }
 
 
@@ -72,7 +74,8 @@ class About extends React.Component{
                 <Helmet>
                     <title>About</title>
                 </Helmet>
-                <h1>About Me</h1>
+                <h1 style= {{display:"inline"}}>About Me</h1>
+                <img src="/misc/Jeff.png" alt="Jeff Asamoah" width="15%" height="15%" id="me"></img>
                 <Dropdown title='Education'>{education}</Dropdown>
                 <Dropdown title='Work Experience'>{work}</Dropdown>
                 <Dropdown title="Relevant Coursework">{courses}</Dropdown>

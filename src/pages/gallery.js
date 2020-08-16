@@ -8,7 +8,7 @@ class Gallery extends React.Component{
 
     constructor(props){
         super(props);
-        this.items = ['Logo_light','Logo_dark','Torch'];
+        this.items = ['Logo_light','Logo_dark','Torch', 'Controller'];
     }
 
     componentDidMount(){
