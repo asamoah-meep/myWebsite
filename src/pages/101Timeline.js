@@ -1,9 +1,8 @@
-import 'src/styles.css';
 import fallData from 'public/Data/Fall2018.json';
 import springData from 'public/Data/Spring2019.json';
 import Bar from 'src/components/stickyBar.js';
-import Timeframe from 'src/components/Timeframe.js';
-import UseCaseRow from 'src/components/Usecase.js';
+import Timeframe from 'src/components/timeframe.js';
+import UseCaseRow from 'src/components/usecase.js';
 import Helmet from 'react-helmet';
 import moment from 'moment';
 import * as d3Selection from "d3-selection";

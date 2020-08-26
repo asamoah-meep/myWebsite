@@ -1,4 +1,3 @@
-import 'src/styles.css';
 import Bar from 'src/components/stickyBar.js';
 import Helmet from 'react-helmet';
 import Link from 'next/link';
@@ -81,8 +80,8 @@ class Index extends React.Component{
                         <li>Using <a href='https://en.wikipedia.org/wiki/QR_code' target='blank'>QR codes</a> for easy mobile marketing</li>
                     </ul>
                 </Dropdown>
-                <Link href='/pvh'>
-                        <a target='_blank'>QR Project</a>
+                <Link href='/Klein/pvh.html'>
+                    <a target='_blank'>QR Project</a>
                 </Link>
             </section>
             <section id="WebsiteHeader">

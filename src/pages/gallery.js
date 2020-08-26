@@ -1,8 +1,7 @@
-import 'src/styles.css';
 import Bar from 'src/components/stickyBar.js';
 import Helmet from 'react-helmet';
 import Dropdown from 'src/components/dropdown.js';
-import Model from 'src/model';
+import Model from 'src/services/model';
 
 class Gallery extends React.Component{
 
@@ -22,15 +21,6 @@ class Gallery extends React.Component{
     }
 
     render(){
-
-        const style = <style>{`
-            #grid{
-                display:grid;
-                grid-template-columns: 1fr 1f;
-                grid-gap: 100px;
-                grid-auto-rows: minmax(auto,150px);
-            }
-        `}</style>
 
         this.models = this.items.map(ele=>
             <Dropdown key={ele} ref={ref=>(this[ele] = ref)} title={ele}/>

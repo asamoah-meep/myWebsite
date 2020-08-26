@@ -5,6 +5,7 @@ import * as d3Scale from 'd3-scale';
 import * as d3Brush from 'd3-brush';
 import * as d3TimeFormat from 'd3-time-format';
 import moment from "moment";
+import styles from "./timeframe.module.css";
 
 class Timeframe extends React.Component{
 
@@ -135,11 +136,11 @@ class Timeframe extends React.Component{
             .attr('y',(d,i) => yScale(i));
 
         d3Selection.selectAll('.pointRow')
-            .selectAll('circle [class=scalePoint]')
+            .selectAll(`circle [class=${styles.scalePoint}]`)
             .data(d => d.filter(ele=>ele.date!==null))
             .enter()
             .append('circle')
-            .classed('scalePoint',true)
+            .classed(styles.scalePoint,true)
             .attr("cx",d=>scale(moment(d.date)))
             .attr("cy",function(d){
                 return +this.parentNode.getAttribute('y') + 10;
@@ -162,33 +163,8 @@ class Timeframe extends React.Component{
     }
 
     render(){
-        const style = <style>{`
-            .scalePoint{
-                r:3;
-            }
-          
-            #timeFrame span{
-                text-decoration:underline;
-                color: #D1E8E2;
-                cursor:pointer;
-            }
-
-            #timeframe span:hover{
-                color: #DA7B93;
-            }
-
-            .row .border{
-                fill:none;
-                stroke:black;
-            }
-
-            #zoomBox .selection{
-            stroke:#EAE7DC;
-            }
-          `}</style>
         return(            
             <>
-                {style}
                 <svg id = "timeBox" width={1100}>
                 </svg>
                 <br/>

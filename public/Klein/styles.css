@@ -1,0 +1,148 @@
+body{
+    text-align: center;
+    justify-content: center;
+    background: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+    font-family: Klein-Bold;
+}
+
+a:hover{
+    opacity: .5;
+}
+
+h2{
+    font-family: Klein-Medium;
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+    color: #000000;
+}
+
+h4{
+    font-family: Klein-Light;
+    margin-block-start: .4em;
+    margin-block-end: .4em;
+    color: #000000;
+}
+
+p{
+    font-family: Klein-Regular;
+    color: #000000;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+section{
+    border:none;
+    display:inline;
+}
+
+#contents h4{
+    text-align: left;
+}
+
+.mediaButton{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#mediaPics{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3,30%);
+    grid-gap: 10px;
+    justify-content:center;
+}
+
+.model{
+    width: 100%;
+    height: auto;
+}
+
+#modelContainer{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3,30%);
+    grid-gap: 5px;
+    justify-content: center;
+}
+
+@font-face{
+    font-family: Klein-Regular;
+    src: url(Klein/Fonts/Klein_Regular.otf);
+}
+
+@font-face{
+    font-family: Klein-Bold;
+    src: url(Klein/Fonts/Klein_Bold.otf);
+}
+
+@font-face{
+    font-family: Klein-Medium;
+    src: url(Klein/Fonts/Klein_Regular.otf);
+}
+
+
+@font-face{
+    font-family: Klein-Light;
+    src: url(Klein/Fonts/Klein_Light.otf);
+}
+
+@media screen and (max-width: 599px){
+    h2{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.2rem;
+
+    }
+    #goals h4{
+        font-size: 1.3rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    a{
+        font-size: 1.3rem;
+    }
+    iframe{
+        width: 320px;
+        height: 180px;
+    }
+    #logo{
+        padding-top: 1em;
+        padding-bottom:1em;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    h2 {
+        font-size: 6rem;
+    }
+    h4{
+        font-size: 2.5rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #goals h4{
+        font-size:2.5rem;
+    }
+    a{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    iframe{
+        width: 512px;
+        height: 288px;
+    }
+    #logo{
+        padding-top: 3em;
+        padding-bottom:3em;
+    }
+}

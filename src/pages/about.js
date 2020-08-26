@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import 'src/styles.css';
+import styles from "./about.module.css";
 import Bar from 'src/components/stickyBar.js';
 import Dropdown from 'src/components/dropdown.js';
 import Helmet from 'react-helmet';
@@ -8,7 +8,7 @@ class About extends React.Component{
 
     render(){
 
-        const courses = <div className='aboutMe'>
+        const courses = <div className={styles.aboutMe}>
             <ul>
                 <li>Data structures</li>
                 <li>Basic Algorithms</li>
@@ -25,7 +25,7 @@ class About extends React.Component{
             </ul>
         </div>
 
-        const hobbies = <div className='aboutMe'>
+        const hobbies = <div className={styles.aboutMe}>
             <ul>
                 <li>Running</li>
                 <li>3-D Modelling</li>
@@ -36,46 +36,31 @@ class About extends React.Component{
             </ul>
         </div>
         
-        const education = <div className='aboutMe'>
+        const education = <div>
             <p>High School(2012-2016): Byram Hills High School</p>
             <p>Undergraduate(2016-2020): Mathematics and Computer Science at NYU</p>
         </div>
         
-        const work = <div className='aboutMe'>
+        const work = <div>
             <p>Laguardia Studio(July 2017- September 2018)</p>
             <p>Computer Science Tutoring(September 2017- May 2019)</p>
             <p>Comcast(May 2019 - August 2019)</p>
             <p>PVH Contractor (October 2019 - December 2019)</p>
             <p>Full Stack Engineer at GEP(January 2020-July 2020)</p>
         </div>
-        const style = <style>{`
 
-            .aboutMe ul{
-                display:inline-block;
-            }
-
-            #me{
-                position: relative;
-                left: 100px;
-                top: 50px;
-            }
-
-
-        `}</style>
-
-        const resume =             
-        <Link href="/misc/resume.pdf">
+        const resume =
+        <Link href="/misc/Resume.pdf">
             <a target="_blank">My Resume</a>
         </Link>
 
         return <>
-            {style}
             <Bar>
                 <Helmet>
                     <title>About</title>
                 </Helmet>
                 <h1 style= {{display:"inline"}}>About Me</h1>
-                <img src="/misc/Jeff.png" alt="Jeff Asamoah" width="15%" height="15%" id="me"></img>
+                <img src="/misc/Jeff.png" alt="Jeff Asamoah" width="15%" height="15%" className={styles.me}></img>
                 <Dropdown title='Education'>{education}</Dropdown>
                 <Dropdown title='Work Experience'>{work}</Dropdown>
                 <Dropdown title="Relevant Coursework">{courses}</Dropdown>

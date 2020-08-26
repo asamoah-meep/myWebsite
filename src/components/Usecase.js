@@ -2,8 +2,7 @@ import React from 'react';
 import * as d3Scale from "d3-scale";
 import * as d3Selection from "d3-selection";
 import moment from "moment";
-
-
+import styles from "./usecase.module.css";
 
 class UseCaseRow extends React.Component{
 
@@ -99,7 +98,7 @@ class UseCaseRow extends React.Component{
             .attr('text',d=>d.tutor);
 
         d3Selection.select(`#${this.rowName}`)
-            .classed("ucRow",true)
+            .classed(styles.ucRow,true)
             .append("text")
             .attr("x",5)
             .attr("y",75)
@@ -127,18 +126,8 @@ class UseCaseRow extends React.Component{
 
     render(){
         const iconStyle = <style>{this.props.styling}</style>;
-        const style = <style>{`          
-        .ucRow text{
-            cursor:pointer;
-        }
-        
-        .ucRow rect{
-            stroke:#8E8D8A;
-        }`    
-      }</style>
         return <>
             {iconStyle}
-            <styles jsx>{style}</styles>
             <svg id={this.rowName} className="row" width={this.props.width+150} height={140}>
                 <rect className="border" width={this.props.width+150} height={140}/>
             </svg>

@@ -1,6 +1,6 @@
-import 'src/styles.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCaretSquareDown, faCaretSquareUp} from "@fortawesome/free-solid-svg-icons";
+import styles from "./dropdown.module.css";
 
 class Dropdown extends React.Component{
 
@@ -42,26 +42,14 @@ class Dropdown extends React.Component{
 
     render(){
         const arrow = this.state.show? faCaretSquareUp : faCaretSquareDown;
-
-        const style = <style>{`
-            .myFAIcon{
-                position:relative;
-                left:10px;
-            }
-            h3{
-                display:inline-block;
-            }
-        `}</style>      
-
         const eleStyle = this.props.barDropdown? "barDropdown" : "drop";
 
         const model = this.state.test?
             <div ref={ref=>this.model=ref}/>: null;
 
         return <div className={eleStyle}>
-            {style}
-            <h3>{this.props.title}</h3>
-            <FontAwesomeIcon className='myFAIcon' icon={arrow} onClick = {this.expand}/>
+            <h3 className={styles.dropdownTitle}>{this.props.title}</h3>
+            <FontAwesomeIcon className={styles.myFAIcon} icon={arrow} onClick = {this.expand}/>
             {this.state.show && this.props.children}
             {model}
         </div>

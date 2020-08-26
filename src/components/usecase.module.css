@@ -1,0 +1,8 @@
+.ucRow text{
+    cursor:pointer;
+}
+
+.ucRow rect{
+    stroke:#8E8D8A;
+    fill: none;
+}
