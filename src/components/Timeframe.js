@@ -38,7 +38,7 @@ class Timeframe extends React.Component{
         this.createZoom();
 
         const that = this;
-        d3Selection.selectAll("#timeFrame span")
+        d3Selection.selectAll(`#${styles.timeFrame} span`)
             .on("click",function(){
                 that.props.setFrame(this.innerHTML,that.f.bind(that));
             });
@@ -170,7 +170,7 @@ class Timeframe extends React.Component{
                 <br/>
                 <div className="datePicker" id="startDate">Start Date:<br/><input type='date' value={this.props.start.format('YYYY-MM-DD')} onChange={date=>this.updateStart(date)} min='2018-09-01'/></div>
                 <div className="datePicker">End Date:<br/><input type='date' value={this.props.end.format('YYYY-MM-DD')} onChange={date=>this.updateEnd(date)} max='2019-05-20'/></div>
-                <div id="timeFrame"><span>1 day</span> |  <span>1 week</span> |  <span>1 month</span> |  
+                <div id={styles.timeFrame}><span>1 day</span> |  <span>1 week</span> |  <span>1 month</span> |  
                 <span>Fall Semester</span> |  <span>Spring Semester</span> |  <span>All</span></div>
         </>);
     }

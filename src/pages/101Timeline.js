@@ -1,5 +1,6 @@
 import fallData from 'public/Data/Fall2018.json';
 import springData from 'public/Data/Spring2019.json';
+import axios from "axios";
 import Bar from 'src/components/stickyBar.js';
 import Timeframe from 'src/components/timeframe.js';
 import UseCaseRow from 'src/components/usecase.js';
@@ -7,6 +8,7 @@ import Helmet from 'react-helmet';
 import moment from 'moment';
 import * as d3Selection from "d3-selection";
 import * as d3Scale from "d3-scale";
+import styles from "./101Timeline.module.css";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faDragon, faLemon, faCat, faDog, faHippo, faCrow, faCheese, 
     faHorse, faFrog, faSpider, faBreadSlice, faFish, faAppleAlt } from '@fortawesome/free-solid-svg-icons';
@@ -48,86 +50,12 @@ class Timeline extends React.Component{
             queryStudent:"",
             queryTutor:""
           }
+   }
 
-        this.style = <style>{`
-
-          .datePicker{
-            display:inline-block;
-            position:relative;
-            left:15px;
-          }
-          
-          #filter{
-            padding-right:10px;
-            padding-bottom:10px;
-            display:inline-block;
-            width:467.5px;
-            vertical-align:bottom;
-            border-right: 2px solid #FFCB9A;
-            border-bottom: 2px solid #FFCB9A;
-            margin-bottom:20px;
-
-          }
-          
-          .hideInfo{
-            visibility: hidden;
-          }
-          
-          #legend{
-            vertical-align:top;
-            display: inline-block;
-            border:2px solid #FFCB9A;
-            padding:10px;
-            margin-left:20px;
-            position:relative;
-            width:500px;
-            padding:2px;
-            margin-bottom:20px;
-          }
-                    
-          #info{
-            text-align:left;
-            display:inline-block;
-            padding:5px;
-            margin:3px;
-            border:2px solid #FFCB9A;
-            overflow-x:auto;
-            position:relative;
-            bottom:60px;
-            left:710px;
-            width:300px;
-          }
-          
-          #info p{
-            font-size:.8em;
-            margin-block-start:.5em;
-            margin-block-end:.5em;
-          
-          }
-          
-          input{
-            background-color:#D8C3A5;
-          }
-
-          #studentForm{
-              position:relative;
-              left:8px;
-          }
-
-          #tutorForm{
-              position:relative;
-              left:27px;
-          }
-
-          #ucContainer{
-            overflow-y:auto;
-            height:350px;
-            width:1030px;
-            display:inline-block;
-          }
-          
-        `}</style>
-    }
+  //  async componentDidMount(){
+  //    const data = await axios.get("/api/initData");
+  //    console.log(data);
+  //  }
 
     resetZoom(f){
         if(d3Selection.event.selection === null){
@@ -153,9 +81,10 @@ class Timeline extends React.Component{
       mergeData(fData,sData){
         const allData = {};
     
-        for(let f in fData)
+        for(let f in fData){
           allData[f] = fData[f];
-        
+          console.log(f);
+        }
         for(let s in sData){
           if(s in allData)
             allData[s] = allData[s].concat(sData[s]);
@@ -163,6 +92,7 @@ class Timeline extends React.Component{
             allData[s] = sData[s];
         }
     
+        console.log(allData);
         return allData;
     }
 
@@ -303,7 +233,7 @@ class Timeline extends React.Component{
     }
     resetFilter(evt){
         evt.preventDefault();
-        d3Selection.select("#info").classed('hideInfo',true);
+        d3Selection.select(styles.info).classed('hideInfo',true);
         this.setState({
           filteredData:this.state.initData,
           queryStudent:"",
@@ -362,28 +292,28 @@ class Timeline extends React.Component{
           profData.push(uc);
         }
     
-        const ucContainer = <div id="ucContainer">
+        const ucContainer = <div id={styles.ucContainer}>
           {profData}
         </div>
 
-        const info = <div id="info" className='hideInfo'></div>    
+        const info = <div id={styles.info} className={styles.hideInfo}></div>    
 
 
         const timeLine = <Timeframe width={850}start={this.state.start} end = {this.state.end} 
         updateZoom = {this.updateZoom}updateEnd = {this.updateEnd} updateStart={this.updateStart} 
         setFrame={this.updateFrame} data={this.state.filteredData} key='Timeline'/>;
 
-        const filter = <div id='filter'> <form onSubmit={this.filterStudent}>
-            Enter the Student Name: <input type="text" id="studentForm" value={this.state.queryStudent} onChange={this.enterStudent}/>
+        const filter = <div id={styles.filter}> <form onSubmit={this.filterStudent}>
+            Enter the Student Name: <input type="text" id={styles.studentForm} value={this.state.queryStudent} onChange={this.enterStudent}/>
             <input type='submit'/> </form>
             <form onSubmit={this.filterTutor} onReset = {this.resetFilter}>
-                Enter the Tutor Name:  <input type="text" id="tutorForm" value={this.state.queryTutor} onChange={this.enterTutor}/>
+                Enter the Tutor Name:  <input type="text" id={styles.tutorForm} value={this.state.queryTutor} onChange={this.enterTutor}/>
                 <input type='submit'/> <br/>
                 <input type='reset'/>
             </form>
         </div>
 
-        const legend = <div id='legend'>
+        const legend = <div id={styles.legend}>
         <h3>LEGEND</h3>
         <p>Jeff: <FontAwesomeIcon icon={faDragon}/>  Julia: <FontAwesomeIcon icon={faCat}/> Bella: <FontAwesomeIcon icon={faLemon}/>
         Alex: <FontAwesomeIcon icon={faDog}/> Alan: <FontAwesomeIcon icon={faCrow}/> Hari: <FontAwesomeIcon icon={faCheese}/>Ilias: <FontAwesomeIcon icon={faHippo}/> </p>

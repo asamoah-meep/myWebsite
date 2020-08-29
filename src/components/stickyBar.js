@@ -59,6 +59,7 @@ class StickyBar extends React.Component{
 
         const expandableBarIconClassNam= `${styles.barIcon} ${styles.expandableIcon}`;
         const sliderRoundClassName = `${styles.slider} ${styles.round}`;
+        console.log(this.state.theme, Cookie.get('theme'), this.state.theme==='light');
         const bar = <div className={styles.stickyBar}>
             <div className={styles.logoMount} ref={ref=>(this.mount = ref)}>
                 <p>Rotate me!</p>
@@ -78,8 +79,9 @@ class StickyBar extends React.Component{
                 icon={faTasks}/> <Dropdown title="Projects" barDropdown>{projects}</Dropdown></div>
             <div><FontAwesomeIcon className={expandableBarIconClassNam} 
                 icon={faInbox}/> <Dropdown title='Contact / Media' barDropdown>{contact}</Dropdown></div>
+            
             <div className={styles.toggleTheme}>
-                <span style={{visibility: this.state.theme==='light'? 'visible': 'hidden'}}>Light</span>
+                <span style={{visibility: (!this.state.theme) || this.state.theme==='light'? 'visible': 'hidden'}}>Light</span>
                 <label className={styles.switch}>
                     <input type="checkbox" value={this.state.theme} onChange={ async () => {this.updateTheme()}}/>
                     <span className= {sliderRoundClassName}/>

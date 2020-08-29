@@ -42,7 +42,7 @@ class Dropdown extends React.Component{
 
     render(){
         const arrow = this.state.show? faCaretSquareUp : faCaretSquareDown;
-        const eleStyle = this.props.barDropdown? "barDropdown" : "drop";
+        const eleStyle = this.props.barDropdown? styles.barDropdown : styles.drop;
 
         const model = this.state.test?
             <div ref={ref=>this.model=ref}/>: null;

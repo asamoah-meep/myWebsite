@@ -1,0 +1,75 @@
+.datePicker{
+    display:inline-block;
+    position:relative;
+    left:15px;
+  }
+  
+  #filter{
+    padding-right:10px;
+    padding-bottom:10px;
+    display:inline-block;
+    width:33%;
+    vertical-align:bottom;
+    border-right: 2px solid #FFCB9A;
+    border-bottom: 2px solid #FFCB9A;
+    margin-bottom:20px;
+
+  }
+  
+  .hideInfo{
+    visibility: hidden;
+  }
+  
+  #legend{
+    vertical-align:top;
+    display: inline-block;
+    border:2px solid #FFCB9A;
+    padding:10px;
+    margin-left:20px;
+    position:relative;
+    /* width:40%; */
+    padding:2px;
+    margin-bottom:20px;
+  }
+            
+  #info{
+    text-align:left;
+    display:inline-block;
+    padding:5px;
+    margin:3px;
+    border:2px solid #FFCB9A;
+    overflow-x:auto;
+    position:relative;
+    bottom:60px;
+    left:710px;
+    width:300px;
+  }
+  
+  #info p{
+    font-size:.8em;
+    margin-block-start:.5em;
+    margin-block-end:.5em;
+  
+  }
+  
+  /* input{
+    background-color:#D8C3A5;
+  } */
+
+  /* #studentForm{
+      position:relative;
+      left:8px;
+  }
+
+  #tutorForm{
+      position:relative;
+      left:27px;
+  } */
+
+  #ucContainer{
+    overflow-y:auto;
+    height:350px;
+    width:1030px;
+    display:inline-block;
+  }
+  
