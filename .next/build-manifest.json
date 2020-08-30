@@ -1,18 +1,14 @@
 {
   "devFiles": [
     "static/runtime/react-refresh.js",
-    "static/development/dll/dll_bc8ee12fc9d154ec970e.js",
-    "static/development/dll/dll_bc8ee12fc9d154ec970e.js.map"
+    "static/development/dll/dll_4c71d9b26d4dd578d4ac.js",
+    "static/development/dll/dll_4c71d9b26d4dd578d4ac.js.map"
   ],
   "lowPriorityFiles": [
     "static/development/_buildManifest.js",
     "static/development/_ssgManifest.js"
   ],
   "pages": {
-    "/": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/101Timeline": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
@@ -27,10 +23,6 @@
     ],
     "/_polyfills": [
       "static/runtime/polyfills.js"
-    ],
-    "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
     ]
   }
 }

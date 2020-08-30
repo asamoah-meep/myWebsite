@@ -3,19 +3,16 @@ import springData from 'public/Data/Spring2019.json';
 
 export default (req,res) => {
     res.status = 200;
-
-    console.log("!");
     const d = [...fallData, ...springData];
 
-    profData = d.reduce( (acc,curr) =>{
+    const profData = d.reduce( (acc,curr) =>{
         if(!acc[curr.professor])
             acc[curr.professor] = [];
 
         acc[curr.professor].push(curr);
-    }, []);
+        return acc;
+    }, {} );
 
-    //console.log(d);
-
-    res.send(d);
+    res.json(profData);
 
 }

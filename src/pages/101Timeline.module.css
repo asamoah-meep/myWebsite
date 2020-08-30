@@ -8,7 +8,6 @@
     padding-right:10px;
     padding-bottom:10px;
     display:inline-block;
-    width:33%;
     vertical-align:bottom;
     border-right: 2px solid #FFCB9A;
     border-bottom: 2px solid #FFCB9A;
@@ -19,6 +18,20 @@
   .hideInfo{
     visibility: hidden;
   }
+
+  #legend ul{
+    display: inline-block;
+  }
+
+#legend h3{
+    vertical-align: top;
+}
+
+#legend div > svg {
+  vertical-align: top;
+  position: relative;
+  top:30px;
+}
   
   #legend{
     vertical-align:top;

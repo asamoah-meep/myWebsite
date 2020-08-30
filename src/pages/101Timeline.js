@@ -1,9 +1,8 @@
-import fallData from 'public/Data/Fall2018.json';
-import springData from 'public/Data/Spring2019.json';
 import axios from "axios";
 import Bar from 'src/components/stickyBar.js';
 import Timeframe from 'src/components/timeframe.js';
 import UseCaseRow from 'src/components/usecase.js';
+import Dropdown from 'src/components/dropdown.js';
 import Helmet from 'react-helmet';
 import moment from 'moment';
 import * as d3Selection from "d3-selection";
@@ -30,32 +29,24 @@ class Timeline extends React.Component{
       this.resetFilter = this.resetFilter.bind(this);
       this.filterStudent = this.filterStudent.bind(this);
       this.filterTutor = this.filterTutor.bind(this);
-      this.enterStudent = this.enterStudent.bind(this);
-      this.enterTutor = this.enterTutor.bind(this);
-      this.parseData = this.parseData.bind(this);
-      this.mergeData = this.mergeData.bind(this);
-
-
-        const fData = this.parseData(fallData);
-        const sData = this.parseData(springData);
-
-        const allData = this.mergeData(fData,sData);
 
         this.state={
             start:moment("2018-09-02"),
             end: moment("2019-05-21"),   
             scale:scale,
-            filteredData:allData,
-            initData:allData,
             queryStudent:"",
             queryTutor:""
           }
    }
 
-  //  async componentDidMount(){
-  //    const data = await axios.get("/api/initData");
-  //    console.log(data);
-  //  }
+   async componentDidMount(){
+     const res = await axios.get("/api/initData");
+     const data = res.data;
+     this.setState({
+       filteredData: data,
+       initData: data
+     });
+   }
 
     resetZoom(f){
         if(d3Selection.event.selection === null){
@@ -64,36 +55,6 @@ class Timeline extends React.Component{
               end: moment('2019-05-21')
           },f);
         }
-    }
-    
-    parseData(semesterData){
-        const profData = [];
-        for(let student of semesterData){
-          if(profData[student.professor] === undefined)
-            profData[student.professor] = [];
-    
-          profData[student.professor].push(student); 
-        }
-    
-        return profData;
-    }
-    
-      mergeData(fData,sData){
-        const allData = {};
-    
-        for(let f in fData){
-          allData[f] = fData[f];
-          console.log(f);
-        }
-        for(let s in sData){
-          if(s in allData)
-            allData[s] = allData[s].concat(sData[s]);
-          else
-            allData[s] = sData[s];
-        }
-    
-        console.log(allData);
-        return allData;
     }
 
     updateZoom(scale,f){
@@ -239,12 +200,6 @@ class Timeline extends React.Component{
           queryStudent:"",
           queryTutor:""});
     }
-    enterStudent(evt){
-        this.setState({queryStudent:evt.target.value});
-    }
-    enterTutor(evt){
-        this.setState({queryTutor:evt.target.value});
-    }
 
     render(){
         
@@ -298,38 +253,59 @@ class Timeline extends React.Component{
 
         const info = <div id={styles.info} className={styles.hideInfo}></div>    
 
-
         const timeLine = <Timeframe width={850}start={this.state.start} end = {this.state.end} 
         updateZoom = {this.updateZoom}updateEnd = {this.updateEnd} updateStart={this.updateStart} 
         setFrame={this.updateFrame} data={this.state.filteredData} key='Timeline'/>;
 
         const filter = <div id={styles.filter}> <form onSubmit={this.filterStudent}>
-            Enter the Student Name: <input type="text" id={styles.studentForm} value={this.state.queryStudent} onChange={this.enterStudent}/>
+            Enter the Student Name: <input type="text" id={styles.studentForm} value={this.state.queryStudent} 
+              onChange={(evt) => {this.setState({queryStudent:evt.target.value})}}/>
             <input type='submit'/> </form>
             <form onSubmit={this.filterTutor} onReset = {this.resetFilter}>
-                Enter the Tutor Name:  <input type="text" id={styles.tutorForm} value={this.state.queryTutor} onChange={this.enterTutor}/>
+                Enter the Tutor Name:  <input type="text" id={styles.tutorForm} value={this.state.queryTutor} 
+                onChange={(evt)=>{this.setState({queryTutor:evt.target.value});}}/>
                 <input type='submit'/> <br/>
                 <input type='reset'/>
             </form>
         </div>
 
+        const tutors1 = <ul>
+            <li>Alan: <FontAwesomeIcon icon={faCrow}/> </li> <li>Cindy: <FontAwesomeIcon icon={faSpider}/> </li>
+            <li>Hari: <FontAwesomeIcon icon={faCheese}/> </li> <li>Jonathan: <FontAwesomeIcon icon={faAppleAlt}/> </li>
+            <li>Aashish: <FontAwesomeIcon icon={faHorse}/> </li> <li>Gilad: <FontAwesomeIcon icon={faFrog}/> </li>
+            <li>Rahul: <FontAwesomeIcon icon={faFish}/> </li>
+        </ul>
+        const tutors2 = <ul>
+          <li>Jeff: <FontAwesomeIcon icon={faDragon}/> </li> <li>Alex: <FontAwesomeIcon icon={faDog}/> </li>
+          <li>Julia: <FontAwesomeIcon icon={faCat}/> </li> <li>Ilias: <FontAwesomeIcon icon={faHippo}/> </li>
+          <li>Bella: <FontAwesomeIcon icon={faLemon}/> </li> <li>Santiago: <FontAwesomeIcon icon={faBreadSlice}/> </li>
+        </ul>
+        const prof2 = <ul>
+          <li> Nassar </li>
+          <li> Bloomberg </li>
+          <li> Moody </li>
+          <li> Locklear </li>
+        </ul>
+        const prof1 = <ul>
+          <li> Bari </li>
+          <li> Schneider </li>
+          <li> McIntosh </li>
+          <li> Cabo </li>
+        </ul>
+
         const legend = <div id={styles.legend}>
         <h3>LEGEND</h3>
-        <p>Jeff: <FontAwesomeIcon icon={faDragon}/>  Julia: <FontAwesomeIcon icon={faCat}/> Bella: <FontAwesomeIcon icon={faLemon}/>
-        Alex: <FontAwesomeIcon icon={faDog}/> Alan: <FontAwesomeIcon icon={faCrow}/> Hari: <FontAwesomeIcon icon={faCheese}/>Ilias: <FontAwesomeIcon icon={faHippo}/> </p>
-        <p> Aashish: <FontAwesomeIcon icon={faHorse}/>Gilad: <FontAwesomeIcon icon={faFrog}/>Cindy: <FontAwesomeIcon icon={faSpider}/> Santiago: <FontAwesomeIcon icon={faBreadSlice}/>  
-        Rahul: <FontAwesomeIcon icon={faFish}/> Jonathan: <FontAwesomeIcon icon={faAppleAlt}/> </p>
+        <Dropdown title="Tutors:">{tutors1} {tutors2} </Dropdown>
+        <Dropdown title="Professors:">{prof1} {prof2}</Dropdown>
         <br/>
         <p><span style={{color:'#CF142B'}}>Red</span>: Unresolved
-        <span style={{color:"#FAD201"}}>     Yellow</span>: Partially Resolved
-        <span style={{color:"#33A532"}}>     Green</span>: Resolved</p>
+        <span style={{color:"#FAD201"}}>Yellow</span>: Partially Resolved
+        <span style={{color:"#33A532"}}>Green</span>: Resolved</p>
       </div>
 
         return <Bar>
                 {this.style}
-                <Helmet>
-                    <title>Tutor Timeline</title>
-                </Helmet>
+                <Helmet> <title>Tutor Timeline</title> </Helmet>
                 <h1>2018-2019 CS101 Tutoring Timeline</h1>
                 {filter}
                 {legend} 
@@ -338,7 +314,6 @@ class Timeline extends React.Component{
                 {info}
           </Bar>;
     }
-
 }
 
 export default Timeline;

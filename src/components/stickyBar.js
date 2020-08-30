@@ -28,11 +28,14 @@ class StickyBar extends React.Component{
         this.setState(themeValues.data);
     }
 
-    componentDidUpdate(){
-        this.mount.removeChild(this.logoModel.renderer.domElement);
-        this.logoModel = new Model(`Logo_${this.state.theme}`);
-        this.mount.appendChild(this.logoModel.renderer.domElement);
-        this.logoModel.load();
+    componentDidUpdate(_,prevState){
+        if(prevState.theme !== this.state.theme){
+            console.log("!!!");
+            this.mount.removeChild(this.logoModel.renderer.domElement);
+            this.logoModel = new Model(`Logo_${this.state.theme}`);
+            this.mount.appendChild(this.logoModel.renderer.domElement);
+            this.logoModel.load();
+        }
     }
 
     async updateTheme(){
@@ -59,7 +62,6 @@ class StickyBar extends React.Component{
 
         const expandableBarIconClassNam= `${styles.barIcon} ${styles.expandableIcon}`;
         const sliderRoundClassName = `${styles.slider} ${styles.round}`;
-        console.log(this.state.theme, Cookie.get('theme'), this.state.theme==='light');
         const bar = <div className={styles.stickyBar}>
             <div className={styles.logoMount} ref={ref=>(this.mount = ref)}>
                 <p>Rotate me!</p>
