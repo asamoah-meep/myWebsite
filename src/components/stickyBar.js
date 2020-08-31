@@ -30,7 +30,6 @@ class StickyBar extends React.Component{
 
     componentDidUpdate(_,prevState){
         if(prevState.theme !== this.state.theme){
-            console.log("!!!");
             this.mount.removeChild(this.logoModel.renderer.domElement);
             this.logoModel = new Model(`Logo_${this.state.theme}`);
             this.mount.appendChild(this.logoModel.renderer.domElement);
