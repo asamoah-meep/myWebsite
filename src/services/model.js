@@ -3,8 +3,6 @@ import * as RawOrbitControls from 'three-orbit-controls';
 import * as THREE from 'three';
 
 class Model{
-
-    static renderer;
     
     constructor(fileName){
         this.filePath = `models/${fileName}.gltf`;
