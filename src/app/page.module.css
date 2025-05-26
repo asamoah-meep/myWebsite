@@ -1,0 +1,40 @@
+.home{
+  margin-left: 10%;
+}
+
+.description {
+  height: max-content;
+  display: inline-block;
+}
+
+.aboutMeDescription{
+  width: 40%;
+  display: inline-block;
+  /* width: fit-content; */
+  vertical-align: top;
+}
+
+.aboutMeImage {
+  display: inline-flex;
+  width: 40%;
+  margin-top: 2%;
+  float: right;
+  margin-right: 10%;
+  /* align-items: center; */
+}
+
+.aboutMeImage img{
+  max-height: 45rem;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.portrait{
+  display: inline-flex;
+}

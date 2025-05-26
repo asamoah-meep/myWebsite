@@ -1,0 +1,24 @@
+.skillBox{
+    display: inline-block;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 3px;
+    /* width: 20%; */
+    padding-left: 4px;
+    padding-right: 4px;
+    min-width: fit-content;
+    text-align: center;
+}
+
+.skillBox ul{
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+.skillBox ul li{
+    position: relative;
+    right: 20px;
+}

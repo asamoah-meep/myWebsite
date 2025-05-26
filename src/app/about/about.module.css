@@ -1,0 +1,9 @@
+.aboutMe ul{
+    display:inline-block;
+}
+
+.me{
+    position: relative;
+    left: 100px;
+    top: 50px;
+}

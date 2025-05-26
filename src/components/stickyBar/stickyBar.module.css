@@ -1,0 +1,114 @@
+.logoMount{
+    height:75px;
+    position:relative;
+}
+
+.logoMount p{
+    visibility: hidden;
+    width:120px;
+    opacity: .4;
+    text-align:center;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    top:-30px;
+}
+
+@keyframes fadeIn{
+    from {visibility: visible;}
+    to {visibility: hidden;}
+}
+
+.logoMount:hover p{
+    visibility: visible;
+}
+
+.barIcon{
+    color: #D18237;
+    display:inline-block;
+    position:relative;
+    right:5px;
+}
+
+.expandableIcon{
+    vertical-align:top;
+    top:30px;
+}
+
+.barDropdown{
+    display:inline-block;
+}
+
+.content{
+    display:inline-block;
+    margin-top:5px;
+    position:relative;
+    left: 30px;
+    width:60%;
+    padding-left: 15px;
+    vertical-align:top;
+    border-left: solid 2px #4AAA6A; 
+}
+
+.stickyBar{
+    /* vertical-align:top; */
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    z-index: 3;
+    /* padding: 10px 16px; */
+    text-align: center;
+    /* margin-left: 10%; */
+    background-color: #7b9785;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* left:20px;
+    margin-right: 5px;
+    margin-top:5px; */
+}
+
+.stickyBar svg{
+    color: #8b5421;
+}
+.subHeading{
+    font-family: NunitoItalic;
+    color: #8b5421;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: .5em;
+    font-weight: bold;
+}
+
+.subHeadingLeft{
+    float: left;
+}
+
+.subHeadingRight{
+   float: right;
+}
+
+.subHeadingSpacing{
+    display: inline-block;
+    /* width: 1em; */
+    padding: 2em;
+}
+
+.skills{
+    vertical-align: top;
+}
+
+input[type='checkbox']:not(:checked) + .slider{
+    background-color: rgba(223,240,255,0.9);
+}
+
+input[type='checkbox']:checked + .slider {
+    background-color: #2F4454;
+}

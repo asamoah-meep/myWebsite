@@ -1,0 +1,81 @@
+h1, h2{
+    font-family: NunitoBold;
+    font-size:2.5rem;
+    /* color: #D18237; */
+    color: #D66C44;
+
+}
+
+h3{
+    font-family: NunitoItalic;
+    font-size: 1.5rem;
+    /* color: #D18237; */
+    color: #D66C44;
+
+}
+
+p,a,span, li,div{
+    font-family: Nunito;
+    font-size: 1.3rem;
+}
+
+form,text{
+    font-family: Nunito;
+}
+
+a:hover{
+    color: #DA7B93;
+}
+
+input[type='submit']{
+    float: right;
+}
+
+body{
+    overflow-x: auto;
+    background: #324856;
+    margin: 0;
+}      
+    
+p,a,span,li,div,form,text{
+    /* color: #D66C44; */
+    color: #D18237;
+}
+
+section{
+    /* width: 70%; */
+    padding-bottom: 10px;
+}
+
+/* @font-face{
+    font-family: Nunito;
+    src: url(/Nunito/Nunito-Regular.ttf);
+}
+
+@font-face{
+    font-family: NunitoBold;
+    src: url(/Nunito/Nunito-Bold.ttf);
+}
+
+@font-face{
+    font-family: NunitoItalic;
+    src: url(/Nunito/Nunito-Italic.ttf);
+
+}
+
+/* @font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url("/FontAwesome/fa-regular-400.eot");
+    src: url("/FontAwesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("/FontAwesome/fa-regular-400.woff2") format("woff2"), url("/FontAwesome/fa-regular-400.woff") format("woff"), url("/FontAwesome/fa-regular-400.ttf") format("truetype"), url("/FontAwesome/fa-regular-400.svg#fontawesome") format("svg"); 
+} */
+/* @font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url("/FontAwesome/fa-solid-900.eot");
+    src: url("/FontAwesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/FontAwesome/fa-solid-900.woff2") format("woff2"), url("/FontAwesome/fa-solid-900.woff") format("woff"), url("/FontAwesome/fa-solid-900.ttf") format("truetype"), url("/FontAwesome/fa-solid-900.svg#fontawesome") format("svg"); 
+}   */ 
