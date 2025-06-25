@@ -17,16 +17,19 @@ interface ProfessorProps{
     num: number
 }
 
-function createInfo(session: TutorSession){
+function createInfo(event: PointerEvent, session: TutorSession){
+    console.log(session);
     const info = d3Selection.select("#info");
     info.classed('hideInfo',false);
     info.selectAll("*").remove();
 
-    info.append('p').text("Date: " + (session.date))
+    const formattedDate = new Date(session.date).toDateString();
+
+    info.append('p').text("Date: " + formattedDate)
         .append('p').text(`Student: ${session.name}`)
         .append('p').text(`Tutor: ${session.tutor}`)
         .append('p').text(`Professor: ${session.professor}`)
-        .append('p').text(session.info)
+        .append('p').text(`Info: ${session.info}`)
         .append('p').text(session.resolve);
 
     return info;

@@ -13,7 +13,7 @@ const Julia: Tutor = {
     icon: '\uf6be' //cat
 }
 
-const Ella: Tutor = {
+const Bella: Tutor = {
     name: "Ella",
     icon: '\uf094' // lemon
 }
@@ -66,8 +66,8 @@ const Rahul: Tutor = {
     icon: '\uf578' //fish
 }
 
-// export {Jeff, Julia, Ella, Alex, Alan, Hari, Ilias,
-//      Aashish, Gilad,  Cindy, Jonathan, Santiago, Rahul};
+export const tutors = [Jeff, Julia, Bella, Alex, Alan, Hari, Ilias, Aashish, Gilad, Cindy, Jonathan, Santiago, Rahul];
+
 export function fromTutor(tutorName: string){
     tutorName = tutorName.toLowerCase().trim();
     if(tutorName === "jeff")
@@ -75,7 +75,7 @@ export function fromTutor(tutorName: string){
     else if(tutorName === "julia")
         return Julia;
     else if (tutorName === "ella")
-        return Ella;
+        return Bella;
     else if(tutorName === "elex")
         return Alex;
     else if(tutorName === "alan")
