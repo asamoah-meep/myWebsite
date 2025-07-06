@@ -3,7 +3,7 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCaretSquareDown, faCaretSquareUp} from "@fortawesome/free-solid-svg-icons";
 import styles from "./modelFrame.module.css";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Model3D from "src/models/Model3D";
 import { WebGLRenderer } from "three";
 

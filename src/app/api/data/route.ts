@@ -1,11 +1,13 @@
 import fallData from 'public/Data/Fall2018.json';
 import springData from 'public/Data/Spring2019.json';
+import { TutorSession } from 'src/models/TutorSession';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function GET (req: Request): Response {
 
     const d = [...fallData, ...springData];
 
-    const profData: Record<string, any> = d.reduce( (acc,curr) =>{
+    const profData: Record<string, TutorSession> = d.reduce( (acc,curr) =>{
         if(!acc[curr.professor])
             acc[curr.professor] = [];
 

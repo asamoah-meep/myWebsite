@@ -1,7 +1,7 @@
 'use client';
 
-import * as d3Scale from "d3-scale";
-import {ChangeEvent, ReactElement, useEffect, useState} from 'react';
+// import * as d3Scale from "d3-scale";
+import React, {ChangeEvent, ReactElement, useEffect, useState} from 'react';
 import Professor from "src/components/professor/professor";
 import StickyBar from "src/components/stickyBar/stickyBar";
 import {TutorSession} from "src/models/TutorSession";
@@ -14,8 +14,8 @@ import * as constants from "../../util/constants";
 export default function TutorTimeline(){
     const [selectedRange, setSelectedRange] = useState<[Date, Date]>([constants.fallStart, constants.springEnd]);
     const [sessions, setSessions] = useState<Record<string, TutorSession[]>>({});
-    const startRange = 0;
-    const endRange = 1150;
+    // const startRange = 0;
+    // const endRange = 1150;
 
     function updateEnd(event: ChangeEvent<HTMLInputElement>){
         const endDateString: string = event.target.value;
@@ -29,9 +29,9 @@ export default function TutorTimeline(){
         setSelectedRange([newStartDate, selectedRange[1]]);
     }
 
-    const scale = d3Scale.scaleTime()
-        .domain(selectedRange)
-        .range([startRange, endRange]);
+    // const scale = d3Scale.scaleTime()
+    //     .domain(selectedRange)
+    //     .range([startRange, endRange]);
 
     useEffect( () => {
 
@@ -59,7 +59,7 @@ export default function TutorTimeline(){
     }
 
 
-    const tutorList = tutors.map(t => <li>{t.name}: <span>{t.icon}</span></li>)
+    const tutorList = tutors.map(t => <li key={t.name}>{t.name}: <span>{t.icon}</span></li>)
 
     
     // const tutors1 = <ul>

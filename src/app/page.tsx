@@ -31,18 +31,18 @@ export default function Page() {
             <div className={styles.home}>
                 <section id='AboutMe' className={styles.description}>
                     <div className={styles.aboutMeDescription}>
-                        <h2>I'm Jeffrey Asamoah</h2>
+                        <h2>I&apos;m Jeffrey Asamoah</h2>
                         <Dropdown title="About Me" openOnStart>
                             <p>Hey, looks like you found my website!</p>
-                            <p>My name is Jeffrey Asamoah, and I'm currently living in Queens, NY.
+                            <p>My name is Jeffrey Asamoah, and I&apos;m currently living in Queens, NY.
                                 I studied Mathematics and Computer Science at New York University and graduated 
                                 in May 2020.
                             </p>
                             <p> My hobbies include running, coding, and 3D modelling. In November 2024
-                                the NYC Marathon, and I'm hoping to get some more marathons under my belt in the coming years!
+                                the NYC Marathon, and I&apos;m hoping to get some more marathons under my belt in the coming years!
                                 For a list of my coding projects and recent 3D works, you can hit the projects and gallery tabs respectively.
                             </p>
-                            <p>Currently I am working at Amazon as an SDE II. I've been at Amazon since November 2021, working primarily on the DEX prime team.
+                            <p>Currently I am working at Amazon as an SDE II. I&apos;ve been at Amazon since November 2021, working primarily on the DEX prime team.
                                 This team is responsible for ensuring Amazon prime customers recieve an elevated delivery experience, and that their prime membership is worthwhile.
                                 We do this by ensuring sellers on Amazon.com are meeting certain criteria for prime eligibility, and promoting sellers with the best offerings.
                             </p>
@@ -106,8 +106,8 @@ export default function Page() {
                     <h3>Contact Me</h3>
                         <p><FontAwesomeIcon className={styles.barIcon} icon={faEnvelope}/>E-mail: meeplings@gmail.com</p>
                         <p><FontAwesomeIcon className={styles.barIcon} icon={faPhoneSquare} />Telephone: 914-224-6241</p>
-                        <p><FontAwesomeIcon className={styles.barIcon} icon={faLinkedin}/><a href="https://www.linkedin.com/in/jeffrey-asamoah-07991a125/" target="_blank">LinkedIn</a><br/></p>
-                        <p><FontAwesomeIcon className={styles.barIcon} icon={faGithub}/><a href="https://github.com/asamoah-meep" target="_blank">Github</a></p>
+                        <p><FontAwesomeIcon className={styles.barIcon} icon={faLinkedin}/><a href="https://www.linkedin.com/in/jeffrey-asamoah-07991a125/" target="_blank" rel="noreferrer">LinkedIn</a><br/></p>
+                        <p><FontAwesomeIcon className={styles.barIcon} icon={faGithub}/><a href="https://github.com/asamoah-meep" target="_blank" rel="noreferrer">Github</a></p>
                 </section>
             </div>
         </>

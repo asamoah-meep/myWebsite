@@ -1,3 +1,4 @@
+import { Resolutions } from "src/types/Resolutions"
 
 export interface TutorSession{
     date: string
