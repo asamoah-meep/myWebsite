@@ -11,9 +11,12 @@ import DropDown from "src/components/dropdown/dropdown";
 import { tutors } from "src/models/Tutor";
 import TimeAxis from "src/components/timeAxis/timeAxis";
 import * as constants from "../../util/constants";
+
 export default function TutorTimeline(){
     const [selectedRange, setSelectedRange] = useState<[Date, Date]>([constants.fallStart, constants.springEnd]);
     const [sessions, setSessions] = useState<Record<string, TutorSession[]>>({});
+    const [tutor, setTutor] = useState<string|null>(null);
+    const [professor, setProfessor] = useState<string|null>(null);
     const startRange = 0;
     const endRange = 1150;
 
@@ -36,17 +39,25 @@ export default function TutorTimeline(){
     useEffect( () => {
 
         const fetchData = async () => {
-            const rawResponse: Response = await fetch('/api/data');
+            const [startDate, endDate] = selectedRange;
+            const params: Record<string, string|null> = {};
+            if(startDate != null)
+                params['startDate'] = startDate.toISOString();
+            if(endDate != null)
+                params['endDate'] = endDate.toISOString();
+            if(tutor != null)
+                params['tutor'] = tutor;
+            if(professor != null)
+                params['professor'] = professor;
+            const searchParams = new URLSearchParams(params);
+            const rawResponse: Response = await fetch("/api/data?"+encodeURI(searchParams.toString()));
             const rawJson = await rawResponse.json();
             const tempSessions: Record<string,TutorSession[]> = JSON.parse(JSON.stringify(rawJson));
-            console.log(tempSessions);
-            if(sessions == null || Object.keys(sessions).length === 0)
-                setSessions(tempSessions);
-
+            setSessions(tempSessions);
         }
 
         fetchData();
-    });
+    }, [selectedRange]);
 
     let numProfs = 0;
 
@@ -59,7 +70,7 @@ export default function TutorTimeline(){
     }
 
 
-    const tutorList = tutors.map(t => <li>{t.name}: <span>{t.icon}</span></li>)
+    const tutorList = tutors.map(t => <li key={t.name}>{t.name}: <span>{t.icon}</span></li>)
 
     
     // const tutors1 = <ul>
@@ -91,9 +102,9 @@ export default function TutorTimeline(){
         <h1>2018-2019 CS101 Tutoring Timeline</h1>
         <div id={styles.legend}>
                 <h3>LEGEND</h3>
-                <DropDown title="Tutors:"><li>
+                <DropDown title="Tutors:"><ul>
                     {tutorList}
-                </li></DropDown>
+                </ul></DropDown>
                 <DropDown title="Professors:">{prof1}{prof2}</DropDown>
                 <br/>
                 <p><span style={{color:'#CF142B'}}>Red</span>: Unresolved

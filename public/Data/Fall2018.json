@@ -2,7 +2,7 @@
     {
         "date": "2018-09-06T11:00:00.000Z",
         "name": "Audrey Li",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "\"Install JDK test in terminal",
         "resolve": "Resolved: they get it!"
@@ -10,7 +10,7 @@
     {
         "date": "2018-09-07T02:00:00.000Z",
         "name": "Michael Nakamura",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Teseo Schneider",
         "info": "\"Installed JDK tested it in terminal\"",
         "resolve": "Resolved: they get it!"
@@ -18,7 +18,7 @@
     {
         "date": "2018-09-07T02:15:00.000Z",
         "name": "Haohao Zhang",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "\"Installed JDK tested it in terminal\"",
         "resolve": "Resolved: they get it!"
@@ -26,7 +26,7 @@
     {
         "date": "2018-09-07T03:00:00.000Z",
         "name": "Janice Zhou",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "\"Installed Sublime ran Hello World in terminal\"",
         "resolve": "Resolved: they get it!"
@@ -34,7 +34,7 @@
     {
         "date": "2018-09-07T03:00:00.000Z",
         "name": "Margaret Sohn",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Candido Cabo",
         "info": "\"Installed JDK tested it in terminal\"",
         "resolve": "Resolved: they get it!"
@@ -42,7 +42,7 @@
     {
         "date": "2018-09-07T03:30:00.000Z",
         "name": "Ziyuan Li",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "\"Installed JDK tested it in terminal\"",
         "resolve": "Resolved: they get it!"
@@ -50,7 +50,7 @@
     {
         "date": "2018-09-09T12:45:00.000Z",
         "name": "Jackson Lu",
-        "tutor": "Alexander Nguyen",
+        "tutor": "Alexander",
         "professor": "Nader Nassar",
         "info": "\"Installed JDK tested it in terminal\"",
         "resolve": "Resolved: they get it!"
@@ -58,7 +58,7 @@
     {
         "date": "2018-09-10T02:00:00.000Z",
         "name": "Hari Mohandas",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "\"Set Java Path helped with Homework 1\"",
         "resolve": "Resolved: they get it!"
@@ -66,7 +66,7 @@
     {
         "date": "2018-09-10T02:30:00.000Z",
         "name": "Sattwik Tripathy",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "\"Installed Eclipse ran Hello World in terminal\"",
         "resolve": "Resolved: they get it!"
@@ -74,7 +74,7 @@
     {
         "date": "2018-09-10T03:30:00.000Z",
         "name": "Esin Onal",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Teseo Schneider",
         "info": " Terminal Commands\"Helping with Terminal Commands",
         "resolve": "Resolved: they get it!"
@@ -82,7 +82,7 @@
     {
         "date": "2018-09-10T04:30:00.000Z",
         "name": "Nomuntuya Luehr",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Teseo Schneider",
         "info": " Terminal Commands\"\"Installed JDK",
         "resolve": "Resolved: they get it!"
@@ -90,7 +90,7 @@
     {
         "date": "2018-09-10T06:00:00.000Z",
         "name": "Michelle Luo",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": " Install Java",
         "resolve": "Resolved: they get it!"
@@ -98,7 +98,7 @@
     {
         "date": "2018-09-10T08:00:00.000Z",
         "name": "Elisha Ishaal",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": " Install Java",
         "resolve": "Resolved: they get it!"
@@ -106,7 +106,7 @@
     {
         "date": "2018-09-11T11:15:00.000Z",
         "name": "Janet Zhu",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Candido Cabo",
         "info": " Terminal\"Using terminal for compiling and running programs",
         "resolve": "Resolved: they get it!"
@@ -114,7 +114,7 @@
     {
         "date": "2018-09-11T01:45:00.000Z",
         "name": "Meetali Gupta",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Installing java and intro to terminal commands running programs\"",
         "resolve": "Resolved: they get it!"
@@ -122,7 +122,7 @@
     {
         "date": "2018-09-11T02:00:00.000Z",
         "name": "Tehzeeb Kajani ",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Teseo Schneider",
         "info": "\"Installing java intro to terminal",
         "resolve": "Resolved: they get it!"
@@ -130,7 +130,7 @@
     {
         "date": "2018-09-11T02:15:00.000Z",
         "name": "Junhan Xu",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Installing java intro to terminal",
         "resolve": "Resolved: they get it!"
@@ -138,7 +138,7 @@
     {
         "date": "2018-09-12T11:00:00.000Z",
         "name": "hubert  yang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "\"How to format monetary values by casting from float to int to float how to zip a file\"",
         "resolve": "Resolved: they get it!"
@@ -146,7 +146,7 @@
     {
         "date": "2018-09-12T07:15:00.000Z",
         "name": "Eileen Lee",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Anasse Bari",
         "info": "\"Screenshots for Ex0 terminal commands\"",
         "resolve": "Resolved: they get it!"
@@ -154,7 +154,7 @@
     {
         "date": "2018-09-13T11:30:00.000Z",
         "name": "Karishma Mohan",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "\"Basic Java Qs (i.e. Scanner types",
         "resolve": "Resolved: they get it!"
@@ -162,7 +162,7 @@
     {
         "date": "2018-09-16T03:30:00.000Z",
         "name": "Ellie Dempsey",
-        "tutor": "Isabella Steains",
+        "tutor": "Bella",
         "professor": "Amos Bloomberg",
         "info": "Problems running eclipse (keeps crashing) - Unresolved because we couldn't figure out why it was crashing. We tried reinstalling eclipse and looked at the version of JDK installed. Nothing worked",
         "resolve": "Other"
@@ -170,7 +170,7 @@
     {
         "date": "2018-09-16T03:30:00.000Z",
         "name": "Nikhil Patel",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "Compressing the files (which files to compress and if it should contain the package directories) and submitting it (what to name the zip file)",
         "resolve": "Resolved: they get it!"
@@ -178,7 +178,7 @@
     {
         "date": "2018-09-17T11:30:00.000Z",
         "name": "Byunghoon Jun",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Teseo Schneider",
         "info": "\"For loops Scanner\"",
         "resolve": "Resolved: they get it!"
@@ -186,7 +186,7 @@
     {
         "date": "2018-09-17T12:00:00.000Z",
         "name": "Jingyi Liang",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Setting up Eclipse",
         "resolve": "Resolved: they get it!"
@@ -194,7 +194,7 @@
     {
         "date": "2018-09-17T02:15:00.000Z",
         "name": "Parthvi Bhutani",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "\"Comparing Strings Scanner\"",
         "resolve": "Resolved: they get it!"
@@ -202,7 +202,7 @@
     {
         "date": "2018-09-17T02:45:00.000Z",
         "name": "Jingyi Liang",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Scanner",
         "resolve": "Resolved: they get it!"
@@ -210,7 +210,7 @@
     {
         "date": "2018-09-17T03:00:00.000Z",
         "name": "Madison Sievers",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Teseo Schneider",
         "info": "Scanner",
         "resolve": "Resolved: they get it!"
@@ -218,7 +218,7 @@
     {
         "date": "2018-09-17T03:45:00.000Z",
         "name": "Brendan Metz",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Teseo Schneider",
         "info": "\"Using Terminal command line args\"",
         "resolve": "Resolved: they get it!"
@@ -226,7 +226,7 @@
     {
         "date": "2018-09-17T04:00:00.000Z",
         "name": "Jackson Lu",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Nader Nassar",
         "info": "Fixing syntax errors",
         "resolve": "Resolved: they get it!"
@@ -234,7 +234,7 @@
     {
         "date": "2018-09-17T04:15:00.000Z",
         "name": "Paolla Bruno Dutra",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Teseo Schneider",
         "info": "\"Scanner printf\"",
         "resolve": "Resolved: they get it!"
@@ -242,7 +242,7 @@
     {
         "date": "2018-09-17T05:00:00.000Z",
         "name": "Ashfaque Sakib",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Explaining main method",
         "resolve": "Resolved: they get it!"
@@ -250,7 +250,7 @@
     {
         "date": "2018-09-18T01:00:00.000Z",
         "name": "Michele Luo",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Put \"\"double\"\" in front of every variable name throughout the program\"",
         "resolve": "Resolved: they get it!"
@@ -258,7 +258,7 @@
     {
         "date": "2018-09-18T02:00:00.000Z",
         "name": "Meetali Gupta",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Understanding switch statements & ambiguous else statements",
         "resolve": "Resolved: they get it!"
@@ -266,7 +266,7 @@
     {
         "date": "2018-09-18T02:15:00.000Z",
         "name": "Tehzeeb Kajani ",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Teseo Schneider",
         "info": "Syntax errors such as println vs printIn",
         "resolve": "Resolved: they get it!"
@@ -274,7 +274,7 @@
     {
         "date": "2018-09-18T02:30:00.000Z",
         "name": "Emma Sargent",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Syntax errors using wrong variable names\"",
         "resolve": "Resolved: they get it!"
@@ -282,7 +282,7 @@
     {
         "date": "2018-09-19T11:15:00.000Z",
         "name": "Hubert Yang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "How to use command line and logical conditions precedence",
         "resolve": "Resolved: they get it!"
@@ -290,7 +290,7 @@
     {
         "date": "2018-09-19T11:45:00.000Z",
         "name": "Junhan XU",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Understanding switch statements",
         "resolve": "Resolved: they get it!"
@@ -298,7 +298,7 @@
     {
         "date": "2018-09-19T12:30:00.000Z",
         "name": "Tracy Chen",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Teseo Schneider",
         "info": "\"Loops Terminal",
         "resolve": "Resolved: they get it!"
@@ -306,7 +306,7 @@
     {
         "date": "2018-09-19T06:30:00.000Z",
         "name": "Hari Mohandas",
-        "tutor": "Isabella Steains",
+        "tutor": "Bella",
         "professor": "Anasse Bari",
         "info": "Using the decimal format function and explicit casting",
         "resolve": "Resolved: they get it!"
@@ -314,7 +314,7 @@
     {
         "date": "2018-09-19T08:00:00.000Z",
         "name": "Yingxuan(Lynn) Lin",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Amos Bloomberg",
         "info": "\"Downloading learning how to run programs \"",
         "resolve": "Resolved: they get it!"
@@ -322,7 +322,7 @@
     {
         "date": "2018-09-19T07:45:00.000Z",
         "name": "Mayu Ranganathan",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Suzanne McIntosh",
         "info": "Properly calculating pi",
         "resolve": "Resolved: they get it!"
@@ -330,7 +330,7 @@
     {
         "date": "2018-09-20T12:00:00.000Z",
         "name": "Karishna Mlham",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "\"Using Math.random comparing 2 strings",
         "resolve": "Resolved: they get it!"
@@ -338,7 +338,7 @@
     {
         "date": "2018-09-20T12:15:00.000Z",
         "name": "Daniel Kaufman",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Using conditional statements",
         "resolve": "Resolved: they get it!"
@@ -346,7 +346,7 @@
     {
         "date": "2018-09-20T12:30:00.000Z",
         "name": "Tochi Agbo",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Syntax errors float vs double",
         "resolve": "Resolved: they get it!"
@@ -354,7 +354,7 @@
     {
         "date": "2018-09-21T02:00:00.000Z",
         "name": "Emma Saros",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "\"Formatting Strings understanding Blackjack logic\"",
         "resolve": "Resolved: they get it!"
@@ -362,7 +362,7 @@
     {
         "date": "2018-09-21T02:15:00.000Z",
         "name": "Hubert Yang",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "\"Explaining boolean logic == vs. .equals()\"",
         "resolve": "Resolved: they get it!"
@@ -370,7 +370,7 @@
     {
         "date": "2018-09-21T02:30:00.000Z",
         "name": "Jasmine Sun",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "\"Commenting understanding Sublime\"",
         "resolve": "Resolved: they get it!"
@@ -378,7 +378,7 @@
     {
         "date": "2018-09-21T02:30:00.000Z",
         "name": "Haohao Zhang",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "\"print vs. println() Math.pow()\"",
         "resolve": "Resolved: they get it!"
@@ -386,7 +386,7 @@
     {
         "date": "2018-09-21T03:00:00.000Z",
         "name": "Karishna Mohan",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Understanding blackjack",
         "resolve": "Resolved: they get it!"
@@ -394,7 +394,7 @@
     {
         "date": "2018-09-21T07:45:00.000Z",
         "name": "Marissa Posner",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Anasse Bari",
         "info": "\"Understanding scanner using the .nextInt",
         "resolve": "Resolved: they get it!"
@@ -402,7 +402,7 @@
     {
         "date": "2018-09-22T04:30:00.000Z",
         "name": "Gabriel Haberberg",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "\"Implementing the card game logic using loops declaring and using arrays",
         "resolve": "Resolved: they get it!"
@@ -410,7 +410,7 @@
     {
         "date": "2018-09-22T04:45:00.000Z",
         "name": "Ashmitha Mathukumar",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "\"Understanding Scanner booleans\"",
         "resolve": "Resolved: they get it!"
@@ -418,7 +418,7 @@
     {
         "date": "2018-09-22T05:15:00.000Z",
         "name": "Marissa Posner",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "Helping with homework 2",
         "resolve": "Resolved: they get it!"
@@ -426,7 +426,7 @@
     {
         "date": "2018-09-22T06:15:00.000Z",
         "name": "Melinda Cardenez",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "Wanted help with Data Structures HW1",
         "resolve": "Resolved: they get it!"
@@ -434,7 +434,7 @@
     {
         "date": "2018-09-23T03:15:00.000Z",
         "name": "Hubert Yang",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Amos Bloomberg",
         "info": "\"finding primes string concat\"",
         "resolve": "Resolved: they get it!"
@@ -442,7 +442,7 @@
     {
         "date": "2018-09-23T03:30:00.000Z",
         "name": "liyue Wang",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "\"Handeling the player and the dealer loops storing all the cards drawn as a string and just using a variable storing the total for game logic\"",
         "resolve": "Resolved: they get it!"
@@ -450,7 +450,7 @@
     {
         "date": "2018-09-23T04:15:00.000Z",
         "name": "Tracy Chen",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Teseo Schneider",
         "info": "\"using ascii art for rps math.random\"",
         "resolve": "Resolved: they get it!"
@@ -458,7 +458,7 @@
     {
         "date": "2018-09-23T04:15:00.000Z",
         "name": "yufei Fu",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Amos Bloomberg",
         "info": "win conditions",
         "resolve": "Resolved - they're still shaky"
@@ -466,7 +466,7 @@
     {
         "date": "2018-09-23T07:30:00.000Z",
         "name": "Tyler Reede",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Nader Nassar",
         "info": "\"string functions upper",
         "resolve": "Resolved: they get it!"
@@ -474,7 +474,7 @@
     {
         "date": "2018-09-24T11:45:00.000Z",
         "name": "Myles Agudelo",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Using package in a java class",
         "resolve": "Resolved: they get it!"
@@ -482,7 +482,7 @@
     {
         "date": "2018-09-24T11:45:00.000Z",
         "name": "Jasmine Sun",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Logic of the game and variable types",
         "resolve": "Resolved: they get it!"
@@ -490,7 +490,7 @@
     {
         "date": "2018-09-24T11:45:00.000Z",
         "name": "Jingyi Liang",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Logic of the game",
         "resolve": "Resolved: they get it!"
@@ -498,7 +498,7 @@
     {
         "date": "2018-09-24T02:00:00.000Z",
         "name": "Jingyi Liang",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Blackjack Logic",
         "resolve": "Resolved: they get it!"
@@ -506,7 +506,7 @@
     {
         "date": "2018-09-24T02:00:00.000Z",
         "name": "Emma Sargent",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Integer Division",
         "resolve": "Resolved: they get it!"
@@ -514,7 +514,7 @@
     {
         "date": "2018-09-24T03:30:00.000Z",
         "name": "Yijia Chen",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "\"Swing extra credit - never learned Swing in my 101 class but I sent him a tutorial\"",
         "resolve": "Resolved: they get it!"
@@ -522,7 +522,7 @@
     {
         "date": "2018-09-24T04:45:00.000Z",
         "name": "Paolla Bruno Dutra",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Teseo Schneider",
         "info": ".equals() vs. ==",
         "resolve": "Resolved: they get it!"
@@ -530,7 +530,7 @@
     {
         "date": "2018-09-24T05:00:00.000Z",
         "name": "Matthew Eng",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "INTEGER.MAX_VALUE",
         "resolve": "Resolved: they get it!"
@@ -538,7 +538,7 @@
     {
         "date": "2018-09-24T05:00:00.000Z",
         "name": "Ashfaque Sakib",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Integer Division",
         "resolve": "Resolved: they get it!"
@@ -546,7 +546,7 @@
     {
         "date": "2018-09-25T11:00:00.000Z",
         "name": "Emms Sargent",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Break case of do while loop",
         "resolve": "Resolved: they get it!"
@@ -554,7 +554,7 @@
     {
         "date": "2018-09-25T11:30:00.000Z",
         "name": "Byunghoon Jun",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Teseo Schneider",
         "info": "Calling methods from the main method",
         "resolve": "Resolved: they get it!"
@@ -562,7 +562,7 @@
     {
         "date": "2018-09-25T12:00:00.000Z",
         "name": "Michelle Luo",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Integer.MAX_VALUE as the initial value",
         "resolve": "Resolved: they get it!"
@@ -570,7 +570,7 @@
     {
         "date": "2018-09-25T12:15:00.000Z",
         "name": "Joy Deng",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Integer.MAX_VALUE as the initial value",
         "resolve": "Resolved: they get it!"
@@ -578,7 +578,7 @@
     {
         "date": "2018-09-25T12:45:00.000Z",
         "name": "Almazhan Abdukhat",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Most efficient way to check input conditions",
         "resolve": "Resolved: they get it!"
@@ -586,7 +586,7 @@
     {
         "date": "2018-09-25T01:00:00.000Z",
         "name": "Tess Koo",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Pi looping - confusion with int trucation",
         "resolve": "Resolved: they get it!"
@@ -594,7 +594,7 @@
     {
         "date": "2018-09-25T01:45:00.000Z",
         "name": "Brandon Borden",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "Blackjack Logic - breaks don't exist for if statements",
         "resolve": "Resolved: they get it!"
@@ -602,7 +602,7 @@
     {
         "date": "2018-09-25T02:30:00.000Z",
         "name": "Junhan XU",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Pi Looping - result was slightly off because she ended her for loop in a different spot",
         "resolve": "Resolved: they get it!"
@@ -610,7 +610,7 @@
     {
         "date": "2018-09-26T09:00:00.000Z",
         "name": "Ellie Dempsey",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "Didn't know method to compare strings",
         "resolve": "Resolved: they get it!"
@@ -618,7 +618,7 @@
     {
         "date": "2018-09-26T11:00:00.000Z",
         "name": "esin onal",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Teseo Schneider",
         "info": "\"Rock paper scissors hw understanding scope\"",
         "resolve": "Resolved: they get it!"
@@ -626,7 +626,7 @@
     {
         "date": "2018-09-26T12:30:00.000Z",
         "name": "Brendan Metz",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Teseo Schneider",
         "info": "\"Rock paper scissors hw Arrays",
         "resolve": "Resolved: they get it!"
@@ -634,7 +634,7 @@
     {
         "date": "2018-09-26T06:15:00.000Z",
         "name": "Carmen Liu",
-        "tutor": "Isabella Steains",
+        "tutor": "Bella",
         "professor": "Suzanne McIntosh",
         "info": "Just wanted the printf function and hexadecimal notation to be explained",
         "resolve": "Resolved: they get it!"
@@ -642,7 +642,7 @@
     {
         "date": "2018-09-26T06:15:00.000Z",
         "name": "janet lee",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Amos Bloomberg",
         "info": "\"storing data from a for loop using scanner for read data\"",
         "resolve": "Resolved: they get it!"
@@ -650,7 +650,7 @@
     {
         "date": "2018-09-26T08:00:00.000Z",
         "name": "Tehzeeb Kajani ",
-        "tutor": "Isabella Steains",
+        "tutor": "Bella",
         "professor": "Teseo Schneider",
         "info": "\"Rock paper scissors hw understanding scope\"",
         "resolve": "Resolved: they get it!"
@@ -658,7 +658,7 @@
     {
         "date": "2018-09-26T08:00:00.000Z",
         "name": "Olivia Huang",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Anasse Bari",
         "info": "practice 2",
         "resolve": "Resolved: they get it!"
@@ -666,7 +666,7 @@
     {
         "date": "2018-09-28T02:15:00.000Z",
         "name": "Karishma Mohan",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment - this student is still struggling with basic concepts",
         "resolve": "Resolved - they're still shaky"
@@ -674,7 +674,7 @@
     {
         "date": "2018-09-28T02:45:00.000Z",
         "name": "Ashfaque Sakib",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Explaining do while loops",
         "resolve": "Resolved: they get it!"
@@ -682,7 +682,7 @@
     {
         "date": "2018-09-28T03:00:00.000Z",
         "name": "Lawrence Liu",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Wrote if (int == 1) instead of if (num == 1)",
         "resolve": "Resolved: they get it!"
@@ -690,7 +690,7 @@
     {
         "date": "2018-09-28T03:15:00.000Z",
         "name": "Hubert Yang",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment",
         "resolve": "Resolved: they get it!"
@@ -698,7 +698,7 @@
     {
         "date": "2018-09-28T03:15:00.000Z",
         "name": "David Iosilevich",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Candido Cabo",
         "info": "\"Calculating PI print vs. println\"",
         "resolve": "Resolved: they get it!"
@@ -706,7 +706,7 @@
     {
         "date": "2018-09-28T11:45:00.000Z",
         "name": "Karishma Mohan",
-        "tutor": "Alexander Nguyen",
+        "tutor": "Alexander",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment",
         "resolve": "Resolved: they get it!"
@@ -714,7 +714,7 @@
     {
         "date": "2018-09-28T02:45:00.000Z",
         "name": "Jingyi Liang",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment",
         "resolve": "Resolved: they get it!"
@@ -722,7 +722,7 @@
     {
         "date": "2018-09-28T02:45:00.000Z",
         "name": "Hubert Yang",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment",
         "resolve": "Resolved: they get it!"
@@ -730,7 +730,7 @@
     {
         "date": "2018-09-28T03:30:00.000Z",
         "name": "Emma Saros",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment",
         "resolve": "Resolved: they get it!"
@@ -738,7 +738,7 @@
     {
         "date": "2018-09-29T03:15:00.000Z",
         "name": "Hubert Yang",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "\"Text Analysis Assignment - how to split the analasys logic between different functions how to use arrays (wasn't fully familiar with syntax and concepts)",
         "resolve": "Resolved: they get it!"
@@ -746,7 +746,7 @@
     {
         "date": "2018-09-29T04:45:00.000Z",
         "name": "Yingxuan(Lynn) Lin",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "\"Black Jack Assignment - how to structure the gameplay loops how to store card information",
         "resolve": "Resolved: they get it!"
@@ -754,7 +754,7 @@
     {
         "date": "2018-10-01T03:00:00.000Z",
         "name": "Ariff Ahmed",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Suzanne McIntosh",
         "info": "\"min max",
         "resolve": "Resolved: they get it!"
@@ -762,7 +762,7 @@
     {
         "date": "2018-10-02T03:30:00.000Z",
         "name": "Eirc He",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "\"Text Analysis Assignment - How to read a file from a path the user entered. Using different scanners that read from different input streams. How to split the file analasys between methods passing information between methods (pass value vs reference)",
         "resolve": "Resolved: they get it!"
@@ -770,7 +770,7 @@
     {
         "date": "2018-10-01T11:00:00.000Z",
         "name": "Jingyi Liang",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment",
         "resolve": "Resolved: they get it!"
@@ -778,7 +778,7 @@
     {
         "date": "2018-10-01T12:00:00.000Z",
         "name": "Duncan Lamont",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment",
         "resolve": "Resolved: they get it!"
@@ -786,7 +786,7 @@
     {
         "date": "2018-10-01T02:00:00.000Z",
         "name": "Gabriel Haberberg",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment",
         "resolve": "Resolved: they get it!"
@@ -794,7 +794,7 @@
     {
         "date": "2018-10-01T03:15:00.000Z",
         "name": "Julien Werzowa",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment",
         "resolve": "Resolved: they get it!"
@@ -802,7 +802,7 @@
     {
         "date": "2018-10-01T03:30:00.000Z",
         "name": "Phoebe Fu",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment",
         "resolve": "Resolved: they get it!"
@@ -810,7 +810,7 @@
     {
         "date": "2018-10-01T03:45:00.000Z",
         "name": "Jennifer Zhuang",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment",
         "resolve": "Resolved: they get it!"
@@ -818,7 +818,7 @@
     {
         "date": "2018-10-01T04:15:00.000Z",
         "name": "Aojie Yu",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment",
         "resolve": "Resolved: they get it!"
@@ -826,7 +826,7 @@
     {
         "date": "2018-10-01T05:00:00.000Z",
         "name": "Tej Chilukuri",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment",
         "resolve": "Resolved: they get it!"
@@ -834,7 +834,7 @@
     {
         "date": "2018-10-01T05:00:00.000Z",
         "name": "John Barron",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment",
         "resolve": "Resolved: they get it!"
@@ -842,7 +842,7 @@
     {
         "date": "2018-10-02T12:00:00.000Z",
         "name": "Tariq Abubakr",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignement",
         "resolve": "Resolved - they're still shaky"
@@ -850,7 +850,7 @@
     {
         "date": "2018-10-02T12:15:00.000Z",
         "name": "Jackson Lu",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Nader Nassar",
         "info": "Passing in arguments to methods",
         "resolve": "Resolved: they get it!"
@@ -858,7 +858,7 @@
     {
         "date": "2018-10-02T01:00:00.000Z",
         "name": "Ziqin Xu",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Teseo Schneider",
         "info": "How to remove duplicates from an array",
         "resolve": "Resolved: they get it!"
@@ -866,7 +866,7 @@
     {
         "date": "2018-10-02T01:15:00.000Z",
         "name": "Steven Hu",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "using .split() and parsing strings",
         "resolve": "Resolved: they get it!"
@@ -874,7 +874,7 @@
     {
         "date": "2018-10-02T01:30:00.000Z",
         "name": "Ari Mayhew",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "using scanners and closing them properly",
         "resolve": "Resolved: they get it!"
@@ -882,7 +882,7 @@
     {
         "date": "2018-10-02T01:45:00.000Z",
         "name": "Jennifer Zhuang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "using system.out.printf",
         "resolve": "Resolved: they get it!"
@@ -890,7 +890,7 @@
     {
         "date": "2018-10-02T02:00:00.000Z",
         "name": "Jenny Jiang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "parsing strings",
         "resolve": "Resolved: they get it!"
@@ -898,7 +898,7 @@
     {
         "date": "2018-10-02T02:15:00.000Z",
         "name": "Camilla Zang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "break statements and switch statements",
         "resolve": "Resolved: they get it!"
@@ -906,7 +906,7 @@
     {
         "date": "2018-10-02T02:30:00.000Z",
         "name": "Junheen Xe",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "break statements and using different .java files",
         "resolve": "Resolved: they get it!"
@@ -914,7 +914,7 @@
     {
         "date": "2018-10-02T02:45:00.000Z",
         "name": "Jingyi Liang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "splitting strings and reading files",
         "resolve": "Resolved: they get it!"
@@ -922,7 +922,7 @@
     {
         "date": "2018-10-02T02:45:00.000Z",
         "name": "Yingxuan Lin",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "\"Arrays of strings .split()",
         "resolve": "Resolved: they get it!"
@@ -930,7 +930,7 @@
     {
         "date": "2018-10-03T09:30:00.000Z",
         "name": "Ari Mayhew",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "\"Arrays how to make arrays of strings",
         "resolve": "Resolved: they get it!"
@@ -938,7 +938,7 @@
     {
         "date": "2018-10-03T10:00:00.000Z",
         "name": "Matthew Michelson",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Understanding Character methods & string methods",
         "resolve": "Resolved: they get it!"
@@ -946,7 +946,7 @@
     {
         "date": "2018-10-03T12:45:00.000Z",
         "name": "Zibin Zhen",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Comparing strings: .equals vs ==",
         "resolve": "Resolved: they get it!"
@@ -954,7 +954,7 @@
     {
         "date": "2018-10-03T06:15:00.000Z",
         "name": "Julia Zhang",
-        "tutor": "Isabella Steains",
+        "tutor": "Bella",
         "professor": "Anasse Bari",
         "info": "Describing exercise 3",
         "resolve": "Resolved: they get it!"
@@ -962,7 +962,7 @@
     {
         "date": "2018-10-03T06:15:00.000Z",
         "name": "Brandon Borden",
-        "tutor": "Isabella Steains",
+        "tutor": "Bella",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignement",
         "resolve": "Other"
@@ -970,7 +970,7 @@
     {
         "date": "2018-10-03T07:00:00.000Z",
         "name": "Ashfaque Sakib",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Suzanne McIntosh",
         "info": "Understanding methods and functions",
         "resolve": "Resolved: they get it!"
@@ -978,7 +978,7 @@
     {
         "date": "2018-10-03T07:45:00.000Z",
         "name": "Ziying Cao",
-        "tutor": "Isabella Steains",
+        "tutor": "Bella",
         "professor": "Suzanne McIntosh",
         "info": "Data types",
         "resolve": "Resolved: they get it!"
@@ -986,7 +986,7 @@
     {
         "date": "2018-10-03T07:15:00.000Z",
         "name": "Sophia Shi",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Teseo Schneider",
         "info": "Exercise 4 and 5",
         "resolve": "Resolved: they get it!"
@@ -994,7 +994,7 @@
     {
         "date": "2018-10-03T08:15:00.000Z",
         "name": "Yingxuan Lin",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignement",
         "resolve": "Resolved: they get it!"
@@ -1002,7 +1002,7 @@
     {
         "date": "2018-10-04T11:00:00.000Z",
         "name": "Mayu Ranganathan",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Debugging and indexing into arrays",
         "resolve": "Resolved: they get it!"
@@ -1010,7 +1010,7 @@
     {
         "date": "2018-10-04T11:15:00.000Z",
         "name": "Madison Sievers",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Teseo Schneider",
         "info": "Printing the O's and for loops",
         "resolve": "Resolved: they get it!"
@@ -1018,7 +1018,7 @@
     {
         "date": "2018-10-05T02:00:00.000Z",
         "name": "Ashfaque Sakib",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "\"Understanding Methods char vs String\"",
         "resolve": "Resolved: they get it!"
@@ -1026,7 +1026,7 @@
     {
         "date": "2018-10-05T02:30:00.000Z",
         "name": "Bella Demurguia",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "\"touch mkdir",
         "resolve": "Resolved: they get it!"
@@ -1034,7 +1034,7 @@
     {
         "date": "2018-10-05T03:15:00.000Z",
         "name": "Ethan Reznikoff",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Hexadecimal",
         "resolve": "Resolved: they get it!"
@@ -1042,7 +1042,7 @@
     {
         "date": "2018-10-05T03:30:00.000Z",
         "name": "David Iosilevich",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Candido Cabo",
         "info": "Understanding Methods",
         "resolve": "Resolved: they get it!"
@@ -1050,7 +1050,7 @@
     {
         "date": "2018-10-05T03:45:00.000Z",
         "name": "Mishaal Kirpalani",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Reading numbers on the same line",
         "resolve": "Resolved: they get it!"
@@ -1058,7 +1058,7 @@
     {
         "date": "2018-10-07T03:00:00.000Z",
         "name": "Hubert Yang",
-        "tutor": "Isabella Steains",
+        "tutor": "Bella",
         "professor": "Amos Bloomberg",
         "info": "\"Binary code/hexadecimal - converting to and from decimal how to use the terminal to navigate directories and compile+run java programs (how to run classes that are in a package from the command prompt)\"",
         "resolve": "Resolved: they get it!"
@@ -1066,7 +1066,7 @@
     {
         "date": "2018-10-07T04:00:00.000Z",
         "name": "Marissa Posner",
-        "tutor": "Isabella Steains",
+        "tutor": "Bella",
         "professor": "Anasse Bari",
         "info": "Char/int - formatting the printed output for chars in a range",
         "resolve": "Resolved: they get it!"
@@ -1074,7 +1074,7 @@
     {
         "date": "2018-10-09T02:00:00.000Z",
         "name": "Ellie Dempsey",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Text Analysis Assignment",
         "resolve": "Resolved: they get it!"
@@ -1082,7 +1082,7 @@
     {
         "date": "2018-10-09T02:00:00.000Z",
         "name": "Mayu Ranganathan",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Pass by value vs pass by reference",
         "resolve": "Resolved: they get it!"
@@ -1090,7 +1090,7 @@
     {
         "date": "2018-10-09T02:00:00.000Z",
         "name": "Nomuntuya Luehr",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Teseo Schneider",
         "info": "Handling index out of bounds errors",
         "resolve": "Resolved: they get it!"
@@ -1098,7 +1098,7 @@
     {
         "date": "2018-10-09T02:15:00.000Z",
         "name": "Jia Ju",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Converting hexadecimal to decimal",
         "resolve": "Unresolved - ran out of time"
@@ -1106,7 +1106,7 @@
     {
         "date": "2018-10-09T02:30:00.000Z",
         "name": "Jennifer Zhuang",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": ".indexOf()",
         "resolve": "Resolved: they get it!"
@@ -1114,7 +1114,7 @@
     {
         "date": "2018-10-09T03:30:00.000Z",
         "name": "David Iosilevich",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Loops",
         "resolve": "Resolved: they get it!"
@@ -1122,7 +1122,7 @@
     {
         "date": "2018-10-09T03:45:00.000Z",
         "name": "Ashley Sidoryk",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Do while loops",
         "resolve": "Resolved: they get it!"
@@ -1130,7 +1130,7 @@
     {
         "date": "2018-10-09T05:00:00.000Z",
         "name": "Matthew Michelson",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Hexadecimal to binary",
         "resolve": "Resolved: they get it!"
@@ -1138,7 +1138,7 @@
     {
         "date": "2018-10-09T05:00:00.000Z",
         "name": "Wangrui Hou",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "\"Stack heap problems\"",
         "resolve": "Resolved: they get it!"
@@ -1146,7 +1146,7 @@
     {
         "date": "2018-10-09T05:15:00.000Z",
         "name": "Phionna Teo",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Constants",
         "resolve": "Resolved: they get it!"
@@ -1154,7 +1154,7 @@
     {
         "date": "2018-10-10T09:30:00.000Z",
         "name": "Matt Michelson",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Practice Exam 1",
         "resolve": "Resolved: they get it!"
@@ -1162,7 +1162,7 @@
     {
         "date": "2018-10-10T10:00:00.000Z",
         "name": "Jong Heon Han",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Practice Exam 1",
         "resolve": "Resolved: they get it!"
@@ -1170,7 +1170,7 @@
     {
         "date": "2018-10-10T10:45:00.000Z",
         "name": "Almazahm Abtukhab",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Practice Exam 1",
         "resolve": "Resolved: they get it!"
@@ -1178,7 +1178,7 @@
     {
         "date": "2018-10-10T10:30:00.000Z",
         "name": "Eileen Lee",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Anasse Bari",
         "info": "for loops and printing characters",
         "resolve": "Resolved: they get it!"
@@ -1186,7 +1186,7 @@
     {
         "date": "2018-10-10T10:45:00.000Z",
         "name": "Ezra Cohen",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Practice Exam 1",
         "resolve": "Resolved: they get it!"
@@ -1194,7 +1194,7 @@
     {
         "date": "2018-10-10T10:00:00.000Z",
         "name": "Ashfaque Sakib ",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Practice Exam 1",
         "resolve": "Resolved: they get it!"
@@ -1202,7 +1202,7 @@
     {
         "date": "2018-10-10T11:45:00.000Z",
         "name": "Liyue Wang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "Practice Exam Questions",
         "resolve": "Resolved: they get it!"
@@ -1210,7 +1210,7 @@
     {
         "date": "2018-10-10T11:30:00.000Z",
         "name": "Jia Gu",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Practice Exam 1",
         "resolve": "Resolved: they get it!"
@@ -1218,7 +1218,7 @@
     {
         "date": "2018-10-10T12:15:00.000Z",
         "name": "Hubert Yang",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "\"Command line: making files compiling code",
         "resolve": "Resolved: they get it!"
@@ -1226,7 +1226,7 @@
     {
         "date": "2018-10-10T12:45:00.000Z",
         "name": "Jane Kim",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Practice Exam 1",
         "resolve": "Resolved: they get it!"
@@ -1234,7 +1234,7 @@
     {
         "date": "2018-10-10T12:30:00.000Z",
         "name": "Jong Heon Han",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Practice Exam 1",
         "resolve": "Resolved: they get it!"
@@ -1242,7 +1242,7 @@
     {
         "date": "2018-10-10T06:15:00.000Z",
         "name": "Soho Hong",
-        "tutor": "Isabella Steains",
+        "tutor": "Bella",
         "professor": "Anasse Bari",
         "info": "Help with the powers question",
         "resolve": "Resolved: they get it!"
@@ -1250,7 +1250,7 @@
     {
         "date": "2018-10-10T06:15:00.000Z",
         "name": "Hubert Yang",
-        "tutor": "Isabella Steains",
+        "tutor": "Bella",
         "professor": "Amos Bloomberg",
         "info": "Help with data types",
         "resolve": "Resolved: they get it!"
@@ -1258,7 +1258,7 @@
     {
         "date": "2018-10-12T02:15:00.000Z",
         "name": "Jia Ju",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": ".equals vs ==",
         "resolve": "Resolved: they get it!"
@@ -1266,7 +1266,7 @@
     {
         "date": "2018-10-15T11:30:00.000Z",
         "name": "Soho Hong",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "\"prime numbers methods\"",
         "resolve": "Resolved: they get it!"
@@ -1274,7 +1274,7 @@
     {
         "date": "2018-10-15T02:00:00.000Z",
         "name": "Holden Sinnard",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "\"Methods scope\"",
         "resolve": "Resolved: they get it!"
@@ -1282,7 +1282,7 @@
     {
         "date": "2018-10-17T12:15:00.000Z",
         "name": "Valeria Samame",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "\"Methods scope\"",
         "resolve": "Resolved: they get it!"
@@ -1290,7 +1290,7 @@
     {
         "date": "2018-10-17T12:30:00.000Z",
         "name": "Gabriel Haberberg",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Viewing csv in text file and how to import to 2-D array",
         "resolve": "Resolved: they get it!"
@@ -1298,7 +1298,7 @@
     {
         "date": "2018-10-18T12:15:00.000Z",
         "name": "Karishma Mohan",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Reading in csv file to program and saving in 2-D array",
         "resolve": "Resolved - they're still shaky"
@@ -1306,7 +1306,7 @@
     {
         "date": "2018-10-18T12:15:00.000Z",
         "name": "Hari Mohandas",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Handling variables and tranferring between multiple methods",
         "resolve": "Resolved: they get it!"
@@ -1314,7 +1314,7 @@
     {
         "date": "2018-10-18T12:30:00.000Z",
         "name": "Ilias Boujlil",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Global variables",
         "resolve": "Resolved: they get it!"
@@ -1322,7 +1322,7 @@
     {
         "date": "2018-10-18T12:15:00.000Z",
         "name": "Gabriel Haberberg",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Reading in csv file into 2-D array",
         "resolve": "Resolved: they get it!"
@@ -1330,7 +1330,7 @@
     {
         "date": "2018-10-18T12:15:00.000Z",
         "name": "Myles Agudelo",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Reading in csv file into 2-D array",
         "resolve": "Resolved: they get it!"
@@ -1338,7 +1338,7 @@
     {
         "date": "2018-10-18T12:30:00.000Z",
         "name": "Tochukwu Agbo",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "\"Methods scope\"",
         "resolve": "Resolved: they get it!"
@@ -1346,7 +1346,7 @@
     {
         "date": "2018-10-18T12:30:00.000Z",
         "name": "Jennifer Zhuang",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Reading in csv file into 2-D array",
         "resolve": "Resolved: they get it!"
@@ -1354,7 +1354,7 @@
     {
         "date": "2018-10-19T02:00:00.000Z",
         "name": "Karishma Mohan",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Reading in csv file into 2-D array",
         "resolve": "Resolved - they're still shaky"
@@ -1362,7 +1362,7 @@
     {
         "date": "2018-10-19T02:00:00.000Z",
         "name": "Revital Chavel",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Reading in csv file into 2-D array",
         "resolve": "Resolved: they get it!"
@@ -1370,7 +1370,7 @@
     {
         "date": "2018-10-19T07:00:00.000Z",
         "name": "Ellie Dempsey",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Amos Bloomberg",
         "info": "\"Parsing CSV file iterating through\"",
         "resolve": "Resolved: they get it!"
@@ -1378,7 +1378,7 @@
     {
         "date": "2018-10-19T07:00:00.000Z",
         "name": "Marissa Posner ",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Anasse Bari",
         "info": "Methods and how to call them from the main ",
         "resolve": "Resolved: they get it!"
@@ -1386,7 +1386,7 @@
     {
         "date": "2018-10-20T03:00:00.000Z",
         "name": "hubert yang",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "Reading the csv and storing it into the array. Using printf and printing out the result 10 at a time",
         "resolve": "Resolved: they get it!"
@@ -1394,15 +1394,15 @@
     {
         "date": "2018-10-20T03:30:00.000Z",
         "name": "Ruishan Lin",
-        "tutor": "Seunggun Lee",
+        "tutor": "Seunggun",
         "professor": "Amos Bloomberg",
-        "info": "Tutor: Seunggun Lee; Question about String concatenation / Decimal Format",
+        "info": "Tutor: Seunggun; Question about String concatenation / Decimal Format",
         "resolve": "Resolved: they get it!"
     },
     {
         "date": "2018-10-20T03:30:00.000Z",
         "name": "Eric He",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "Storing the data into an array and printing them out 10 at a time. Printf syntax",
         "resolve": "Resolved: they get it!"
@@ -1410,7 +1410,7 @@
     {
         "date": "2018-10-21T02:00:00.000Z",
         "name": "Carmen Liu",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Teseo Schneider",
         "info": "\"elipse error unable to fix\"",
         "resolve": "Resolved: they get it!"
@@ -1418,7 +1418,7 @@
     {
         "date": "2018-10-21T02:30:00.000Z",
         "name": "Ravital Chavel",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Reading csv file into 2D array",
         "resolve": "Resolved: they get it!"
@@ -1426,7 +1426,7 @@
     {
         "date": "2018-10-21T02:00:00.000Z",
         "name": "Marissa Posner ",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Prime number counter ",
         "resolve": "Resolved: they get it!"
@@ -1434,7 +1434,7 @@
     {
         "date": "2018-10-21T05:00:00.000Z",
         "name": "Marissa Posner ",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Anasse Bari",
         "info": "frequency of each character in an array. Treating chars as ints",
         "resolve": "Resolved: they get it!"
@@ -1442,7 +1442,7 @@
     {
         "date": "2018-10-21T11:45:00.000Z",
         "name": "Katie Musial",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Reading csv file into 2D array",
         "resolve": "Resolved: they get it!"
@@ -1450,7 +1450,7 @@
     {
         "date": "2018-10-21T12:00:00.000Z",
         "name": "David Iosilevich",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Candido Cabo",
         "info": "Splitting string into array",
         "resolve": "Resolved: they get it!"
@@ -1458,7 +1458,7 @@
     {
         "date": "2018-10-22T02:00:00.000Z",
         "name": "Jia Ju",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Summing 2D array by columns",
         "resolve": "Resolved - they're still shaky"
@@ -1466,7 +1466,7 @@
     {
         "date": "2018-10-22T02:15:00.000Z",
         "name": "Sarah White",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Balancing Brackets",
         "resolve": "Resolved: they get it!"
@@ -1474,7 +1474,7 @@
     {
         "date": "2018-10-22T02:15:00.000Z",
         "name": "Jane Kim",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "2D Array",
         "resolve": "Resolved: they get it!"
@@ -1482,7 +1482,7 @@
     {
         "date": "2018-10-22T02:30:00.000Z",
         "name": "Sophia Shi",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Teseo Schneider",
         "info": "Object Oriented Programming",
         "resolve": "Resolved: they get it!"
@@ -1490,7 +1490,7 @@
     {
         "date": "2018-10-22T03:00:00.000Z",
         "name": "Maria",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Teseo Schneider",
         "info": "Object Oriented Programming",
         "resolve": "Resolved - they're still shaky"
@@ -1498,7 +1498,7 @@
     {
         "date": "2018-10-22T03:30:00.000Z",
         "name": "David Iosilevich",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Candido Cabo",
         "info": "Flushing Scanner",
         "resolve": "Resolved: they get it!"
@@ -1506,7 +1506,7 @@
     {
         "date": "2018-10-22T03:45:00.000Z",
         "name": "Yijia Chen",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "2D Array",
         "resolve": "Resolved: they get it!"
@@ -1514,7 +1514,7 @@
     {
         "date": "2018-10-22T04:00:00.000Z",
         "name": "Prianka Saha",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "Password Validation",
         "resolve": "Resolved: they get it!"
@@ -1522,7 +1522,7 @@
     {
         "date": "2018-10-22T04:00:00.000Z",
         "name": "Marissa Posner ",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "Arrays",
         "resolve": "Resolved: they get it!"
@@ -1530,7 +1530,7 @@
     {
         "date": "2018-10-22T04:30:00.000Z",
         "name": "Katie Musial",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Strange error with file formatting and indexing",
         "resolve": "Unresolved - they didn't get it"
@@ -1538,7 +1538,7 @@
     {
         "date": "2018-10-22T01:00:00.000Z",
         "name": "Matt Michelson",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Matrices",
         "resolve": "Resolved: they get it!"
@@ -1546,7 +1546,7 @@
     {
         "date": "2018-10-22T01:30:00.000Z",
         "name": "Ziqin Xu",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Teseo Schneider",
         "info": "\"InfinitArray class separate file\"",
         "resolve": "Resolved: they get it!"
@@ -1554,7 +1554,7 @@
     {
         "date": "2018-10-22T02:00:00.000Z",
         "name": "Yifan Jiang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "Splitting strings and putting it into a matrix",
         "resolve": "Resolved: they get it!"
@@ -1562,7 +1562,7 @@
     {
         "date": "2018-10-22T02:00:00.000Z",
         "name": "Camilla Zhang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Matrices",
         "resolve": "Resolved: they get it!"
@@ -1570,7 +1570,7 @@
     {
         "date": "2018-10-22T02:30:00.000Z",
         "name": "John Barron",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "finding out number of lines in file",
         "resolve": "Resolved: they get it!"
@@ -1578,7 +1578,7 @@
     {
         "date": "2018-10-22T02:30:00.000Z",
         "name": "Tess Koo",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Matrices and how to manipulate columns/rows",
         "resolve": "Resolved: they get it!"
@@ -1586,7 +1586,7 @@
     {
         "date": "2018-10-22T02:30:00.000Z",
         "name": "Brendan Metz",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Teseo Schneider",
         "info": "InfinitArray class",
         "resolve": "Resolved: they get it!"
@@ -1594,7 +1594,7 @@
     {
         "date": null,
         "name": "Matthew Michelson",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "matrices and row reversals",
         "resolve": "Resolved: they get it!"
@@ -1602,7 +1602,7 @@
     {
         "date": null,
         "name": "Ari Mayhen",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "massaging data and handling corner cases",
         "resolve": "Resolved: they get it!"
@@ -1610,7 +1610,7 @@
     {
         "date": null,
         "name": "Nicholas Kong",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "Reading CSV file into a matrix",
         "resolve": "Resolved: they get it!"
@@ -1618,7 +1618,7 @@
     {
         "date": null,
         "name": "Esin Onal",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Teseo Schneider",
         "info": "static vs instance in classes",
         "resolve": "Resolved: they get it!"
@@ -1626,7 +1626,7 @@
     {
         "date": null,
         "name": "Elisha Ishaal",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "manipulating matrices",
         "resolve": "Resolved: they get it!"
@@ -1634,7 +1634,7 @@
     {
         "date": null,
         "name": "Happy Chen",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "\"Massaging data splitting strings\"",
         "resolve": "Resolved: they get it!"
@@ -1642,7 +1642,7 @@
     {
         "date": "2018-10-23T11:30:00.000Z",
         "name": "Liyue Wang",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "\"Pagination and having multiple scanners\"",
         "resolve": "Resolved: they get it!"
@@ -1650,7 +1650,7 @@
     {
         "date": "2018-10-28T01:00:00.000Z",
         "name": "Julia Skubisz",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "\"Reading csv into 2D array how to make classes and objects\"",
         "resolve": "Resolved: they get it!"
@@ -1658,7 +1658,7 @@
     {
         "date": "2018-10-28T03:15:00.000Z",
         "name": "Julia Skubisz",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "How to structure the input reading in a while loop to keep asking questions until the user parks. Implementing the auto drive. Printing fuel level without lots of decimals due to floating point imprecession",
         "resolve": "Resolved: they get it!"
@@ -1666,7 +1666,7 @@
     {
         "date": "2018-10-28T04:30:00.000Z",
         "name": "Jennifer Zhuang",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "Structuring the code between two classes. creating a moped object using a cunstroctor",
         "resolve": "Resolved: they get it!"
@@ -1674,7 +1674,7 @@
     {
         "date": "2018-10-29T11:45:00.000Z",
         "name": "Julia Skubisz",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "\"Direct travel to petite abeille logic when gas runs out\"",
         "resolve": "Resolved: they get it!"
@@ -1682,7 +1682,7 @@
     {
         "date": "2018-10-29T11:30:00.000Z",
         "name": "Myles Agudelo",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "How to tell the moped how to travel to petite abeille",
         "resolve": "Resolved - they're still shaky"
@@ -1690,7 +1690,7 @@
     {
         "date": "2018-10-29T11:15:00.000Z",
         "name": "Shinyoung Park",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Object oriented",
         "resolve": "Resolved: they get it!"
@@ -1698,7 +1698,7 @@
     {
         "date": "2018-10-29T02:00:00.000Z",
         "name": "Jia Ju",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Constructors",
         "resolve": "Resolved: they get it!"
@@ -1706,7 +1706,7 @@
     {
         "date": "2018-10-29T08:00:00.000Z",
         "name": "brandon borden",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Amos Bloomberg",
         "info": "multidimensional array",
         "resolve": "Resolved: they get it!"
@@ -1714,7 +1714,7 @@
     {
         "date": "2018-10-29T08:00:00.000Z",
         "name": "Julien WErzowa",
-        "tutor": "Isabella Steains",
+        "tutor": "Bella",
         "professor": "Amos Bloomberg",
         "info": "multidimensional array",
         "resolve": "Resolved - they're still shaky"
@@ -1722,7 +1722,7 @@
     {
         "date": "2018-10-29T08:00:00.000Z",
         "name": "Jingyi Liang",
-        "tutor": "Isabella Steains",
+        "tutor": "Bella",
         "professor": "Amos Bloomberg",
         "info": "object oriented ",
         "resolve": "Resolved: they get it!"
@@ -1730,7 +1730,7 @@
     {
         "date": "2018-10-29T11:30:00.000Z",
         "name": "Carmen Liu",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "OOP",
         "resolve": "Resolved: they get it!"
@@ -1738,7 +1738,7 @@
     {
         "date": "2018-10-29T01:15:00.000Z",
         "name": "Jenny Shaojun Jiang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "\"Reading files eclipse workspace problems\"",
         "resolve": "Resolved: they get it!"
@@ -1746,7 +1746,7 @@
     {
         "date": "2018-10-29T01:30:00.000Z",
         "name": "Ellie Park",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "\"Reading files counting lines",
         "resolve": "Resolved: they get it!"
@@ -1754,7 +1754,7 @@
     {
         "date": "2018-10-29T01:45:00.000Z",
         "name": "Jennifer Zhuang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "Moped printing and order of methods",
         "resolve": "Resolved: they get it!"
@@ -1762,7 +1762,7 @@
     {
         "date": "2018-10-29T02:00:00.000Z",
         "name": "Jingyi Liang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "Moped understanding orientation",
         "resolve": "Resolved: they get it!"
@@ -1770,7 +1770,7 @@
     {
         "date": "2018-10-29T02:15:00.000Z",
         "name": "Melody Lam",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Matrices and dot operators",
         "resolve": "Resolved: they get it!"
@@ -1778,7 +1778,7 @@
     {
         "date": "2018-10-29T02:30:00.000Z",
         "name": "Brendan Metz",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Teseo Schneider",
         "info": "sleep timer methods and separating files",
         "resolve": "Resolved: they get it!"
@@ -1786,7 +1786,7 @@
     {
         "date": "2018-10-29T02:45:00.000Z",
         "name": "Bryan Aman",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Creating different class for Matrix",
         "resolve": "Resolved: they get it!"
@@ -1794,7 +1794,7 @@
     {
         "date": "2018-10-31T09:00:00.000Z",
         "name": "Meetali Gupta",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Structure of classes and main",
         "resolve": "Resolved: they get it!"
@@ -1802,7 +1802,7 @@
     {
         "date": "2018-10-31T09:15:00.000Z",
         "name": "Ethan Renzihoff",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "Debugging OOP Matrix",
         "resolve": "Resolved: they get it!"
@@ -1810,7 +1810,7 @@
     {
         "date": "2018-10-31T09:30:00.000Z",
         "name": "Matt Michelson",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Matrices dot operators",
         "resolve": "Resolved: they get it!"
@@ -1818,7 +1818,7 @@
     {
         "date": "2018-10-31T09:45:00.000Z",
         "name": "Ellie Park",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "debugging pagenation",
         "resolve": "Resolved: they get it!"
@@ -1826,7 +1826,7 @@
     {
         "date": "2018-10-31T10:15:00.000Z",
         "name": "Katie Colleran",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Matrices understanding OOP",
         "resolve": "Resolved: they get it!"
@@ -1834,7 +1834,7 @@
     {
         "date": "2018-10-31T11:00:00.000Z",
         "name": "Esin Onal",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Teseo Schneider",
         "info": "java.util.date and instantiating it",
         "resolve": "Resolved: they get it!"
@@ -1842,7 +1842,7 @@
     {
         "date": "2018-11-01T12:00:00.000Z",
         "name": "Tochukwu Agbo",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "eclipse installation and learning how to use it",
         "resolve": "Resolved: they get it!"
@@ -1850,7 +1850,7 @@
     {
         "date": "2018-11-01T12:30:00.000Z",
         "name": "Daniel Sing",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Logic of counting appearances of a number in a list",
         "resolve": "Resolved: they get it!"
@@ -1858,7 +1858,7 @@
     {
         "date": "2018-11-02T02:00:00.000Z",
         "name": "Parthvi Bhutani",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "\"Counting appearances of a number in a list downloading Eclipse\"",
         "resolve": "Resolved: they get it!"
@@ -1866,7 +1866,7 @@
     {
         "date": "2018-11-02T02:15:00.000Z",
         "name": "Ashfaque Sakib",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Explanation of static",
         "resolve": "Resolved: they get it!"
@@ -1874,7 +1874,7 @@
     {
         "date": "2018-11-02T03:00:00.000Z",
         "name": "Emma Saros",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "\"Tried downgrading the JDK reinstalling jar",
         "resolve": "Resolved: they get it!"
@@ -1882,7 +1882,7 @@
     {
         "date": "2018-11-03T03:30:00.000Z",
         "name": "Mayu Ranganathan",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Suzanne McIntosh",
         "info": "\"Understanding Static vs Instance methods and vairables pass by reference vs pass by value",
         "resolve": "Resolved: they get it!"
@@ -1890,7 +1890,7 @@
     {
         "date": "2018-11-03T04:00:00.000Z",
         "name": "Maria Hatzioanidis",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Candido Cabo",
         "info": "Finding the coordinate that's most at center. There were some small bugs with the loop conditionals that led to the wrong result. Finding the largest sub-matrix. Helped with how to break down the problem by starting with a method that solves the smallest sub-problem.",
         "resolve": "Resolved: they get it!"
@@ -1898,7 +1898,7 @@
     {
         "date": "2018-11-04T01:00:00.000Z",
         "name": "Tariq Abubakr",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Moped edge cases",
         "resolve": "Resolved: they get it!"
@@ -1906,7 +1906,7 @@
     {
         "date": "2018-11-04T02:30:00.000Z",
         "name": "Aaliyah Jackson",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "compile errors",
         "resolve": "Unresolved - ran out of time"
@@ -1914,7 +1914,7 @@
     {
         "date": "2018-11-04T02:00:00.000Z",
         "name": "Julia Skubisz",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "overloaded constructors",
         "resolve": "Resolved: they get it!"
@@ -1922,7 +1922,7 @@
     {
         "date": "2018-11-04T03:00:00.000Z",
         "name": "Marissa Posner",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Debugging ",
         "resolve": "Resolved: they get it!"
@@ -1930,7 +1930,7 @@
     {
         "date": "2018-11-04T02:45:00.000Z",
         "name": "Carla Salguero",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Nader Nassar",
         "info": "review of arrays ",
         "resolve": "Resolved: they get it!"
@@ -1938,7 +1938,7 @@
     {
         "date": "2018-11-04T03:00:00.000Z",
         "name": "Mishaal Kirpalani",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "Fixing some bugs related to printing statements",
         "resolve": "Resolved: they get it!"
@@ -1946,7 +1946,7 @@
     {
         "date": "2018-11-05T03:15:00.000Z",
         "name": "Julia Skubisz",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "Eclipse troubles with importing and setting up the processing core. Had to give her an old project of mine where I had Processing3 all set up and working.",
         "resolve": "Resolved: they get it!"
@@ -1954,7 +1954,7 @@
     {
         "date": "2018-11-06T03:30:00.000Z",
         "name": "Marissa Posner",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Anasse Bari",
         "info": "Eclipse troubles. It looks like it wantes to create a module by default which then causes problems. Counting frequency of entered numbers problem. Showed the approach of not storing user input and just storing freqency",
         "resolve": "Resolved: they get it!"
@@ -1962,7 +1962,7 @@
     {
         "date": "2018-11-07T03:30:00.000Z",
         "name": "Carla Salguero",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Nader Nassar",
         "info": "How to make and use PhoneBookEntry objects in another class",
         "resolve": "Resolved: they get it!"
@@ -1970,7 +1970,7 @@
     {
         "date": "2018-11-08T03:45:00.000Z",
         "name": "Soho Hong",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Anasse Bari",
         "info": "The problem where the user inputs numbers from 1-100 and they need to count the frequency. Storing frequency in an array rather than user input",
         "resolve": "Resolved: they get it!"
@@ -1978,7 +1978,7 @@
     {
         "date": "2018-11-09T04:00:00.000Z",
         "name": "Emma Saros",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "Fixing bugs with the collision code. Processing's inverted Y axis was causing problems.",
         "resolve": "Resolved: they get it!"
@@ -1986,7 +1986,7 @@
     {
         "date": "2018-11-11T04:30:00.000Z",
         "name": "Sophia Shi",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Teseo Schneider",
         "info": "Association: Implementing the UML diagram with Students Classes and Professors",
         "resolve": "Resolved: they get it!"
@@ -1994,7 +1994,7 @@
     {
         "date": "2018-11-12T04:30:00.000Z",
         "name": "Paolla Bruno Dutra",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Teseo Schneider",
         "info": "Association: Implementing the UML diagram with Students Classes and Professors",
         "resolve": "Resolved: they get it!"
@@ -2002,7 +2002,7 @@
     {
         "date": "2018-11-05T11:30:00.000Z",
         "name": "David Losilevich",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Candido Cabo",
         "info": "Modifying static global variables and accessing in main",
         "resolve": "Resolved: they get it!"
@@ -2010,7 +2010,7 @@
     {
         "date": "2018-11-05T11:45:00.000Z",
         "name": "Julia Skubisz",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "\"Processing not working with Eclipse JDK not showing up after download\"",
         "resolve": "Resolved: they get it!"
@@ -2018,7 +2018,7 @@
     {
         "date": "2018-11-05T02:00:00.000Z",
         "name": "Yu Xu",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": " Objects\"yx1228@nyu.edu",
         "resolve": "Resolved: they get it!"
@@ -2026,7 +2026,7 @@
     {
         "date": "2018-11-05T02:30:00.000Z",
         "name": "Paolla Bruno Dutra",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Teseo Schneider",
         "info": "\"Explaining toString() datafields\"",
         "resolve": "Resolved: they get it!"
@@ -2034,7 +2034,7 @@
     {
         "date": "2018-11-05T02:30:00.000Z",
         "name": "Sophia Shi",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Teseo Schneider",
         "info": "\"Explaining toString() datafields\"",
         "resolve": "Resolved: they get it!"
@@ -2042,7 +2042,7 @@
     {
         "date": "2018-11-05T02:45:00.000Z",
         "name": "Carla Salguero",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Nader Nassar",
         "info": "Explaining object-oriented programming",
         "resolve": "Resolved: they get it!"
@@ -2050,7 +2050,7 @@
     {
         "date": "2018-11-06T01:00:00.000Z",
         "name": "Madison Sievers",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Teseo Schneider",
         "info": "Structuring the classes & interpreting UML Diagrams",
         "resolve": "Resolved: they get it!"
@@ -2058,7 +2058,7 @@
     {
         "date": "2018-11-06T01:15:00.000Z",
         "name": "Yiyne Lin",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "Needed to install/use JDK 8 instead of JDK 10 for processing",
         "resolve": "Resolved: they get it!"
@@ -2066,7 +2066,7 @@
     {
         "date": "2018-11-06T01:30:00.000Z",
         "name": "Ellie Park",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "\"Moped running it \"",
         "resolve": "Resolved: they get it!"
@@ -2074,7 +2074,7 @@
     {
         "date": "2018-11-06T01:45:00.000Z",
         "name": "Jong Heon Hau",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"static vs instance pass by reference vs pass by value\"",
         "resolve": "Resolved: they get it!"
@@ -2082,7 +2082,7 @@
     {
         "date": "2018-11-06T02:00:00.000Z",
         "name": "Sarah Zhao",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"static vs instance pass by reference vs pass by value\"",
         "resolve": "Resolved: they get it!"
@@ -2090,7 +2090,7 @@
     {
         "date": "2018-11-06T02:15:00.000Z",
         "name": "Jiu Gu",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"static vs instance pass by reference vs pass by value\"",
         "resolve": "Resolved: they get it!"
@@ -2098,7 +2098,7 @@
     {
         "date": "2018-11-06T02:30:00.000Z",
         "name": "Mayu Ronganathan",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"static vs instance pass by reference vs pass by value\"",
         "resolve": "Resolved: they get it!"
@@ -2106,7 +2106,7 @@
     {
         "date": "2018-11-06T02:45:00.000Z",
         "name": "Brendan Metz",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Teseo Schneider",
         "info": "Structuring the classes & interpreting UML Diagrams",
         "resolve": "Resolved: they get it!"
@@ -2114,7 +2114,7 @@
     {
         "date": "2018-11-07T09:30:00.000Z",
         "name": "Janice Zhou",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"static vs instance visibility modifiers\"",
         "resolve": "Resolved: they get it!"
@@ -2122,7 +2122,7 @@
     {
         "date": "2018-11-07T10:00:00.000Z",
         "name": "Katie Colleran",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"static vs. instance visibility modifiers \"",
         "resolve": "Resolved: they get it!"
@@ -2130,7 +2130,7 @@
     {
         "date": "2018-11-07T10:15:00.000Z",
         "name": "Ezra Cohen",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"static vs. instance visibility modifiers \"",
         "resolve": "Resolved: they get it!"
@@ -2138,7 +2138,7 @@
     {
         "date": "2018-11-07T10:30:00.000Z",
         "name": "Revital Chavel",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "Getting Processing to work w/ JDK 8 ",
         "resolve": "Resolved: they get it!"
@@ -2146,7 +2146,7 @@
     {
         "date": "2018-11-07T10:45:00.000Z",
         "name": "Ashfaque Sakib",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"static vs instance heap vs stack",
         "resolve": "Resolved: they get it!"
@@ -2154,7 +2154,7 @@
     {
         "date": "2018-11-07T11:00:00.000Z",
         "name": "Jingyi Liang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "Making processing installation",
         "resolve": "Resolved: they get it!"
@@ -2162,7 +2162,7 @@
     {
         "date": "2018-11-07T12:15:00.000Z",
         "name": "Daniel Sing",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Implementing a stack",
         "resolve": "Resolved: they get it!"
@@ -2170,7 +2170,7 @@
     {
         "date": "2018-11-08T11:30:00.000Z",
         "name": "Karishma Mohan",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "\"Getting started understanding how it works\"",
         "resolve": "Resolved: they get it!"
@@ -2178,7 +2178,7 @@
     {
         "date": "2018-11-08T01:00:00.000Z",
         "name": "Madison Sievers",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Teseo Schneider",
         "info": "Initializing arrays",
         "resolve": "Resolved: they get it!"
@@ -2186,7 +2186,7 @@
     {
         "date": "2018-11-10T03:15:00.000Z",
         "name": "Ellie Park",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "\"Creating a snake game. Using multiple classes and objects to make things easier. Using inheritance (calling the super constructor overwriting parent methods).\"",
         "resolve": "Resolved: they get it!"
@@ -2194,7 +2194,7 @@
     {
         "date": "2018-11-10T03:00:00.000Z",
         "name": "Eric He",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "Pac Man Game. How to do colissions",
         "resolve": "Resolved: they get it!"
@@ -2202,7 +2202,7 @@
     {
         "date": "2018-11-11T03:15:00.000Z",
         "name": "Ellie Park",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "Implementing snake movement by moving the square at the tail of the snake to the front",
         "resolve": "Resolved: they get it!"
@@ -2210,7 +2210,7 @@
     {
         "date": "2018-11-11T04:30:00.000Z",
         "name": "Myles Agudelo",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "Colission code bugs. How to check against bounds to detect colission",
         "resolve": "Resolved: they get it!"
@@ -2218,7 +2218,7 @@
     {
         "date": "2018-11-11T03:00:00.000Z",
         "name": "Eric He",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "Bugs with moving enemies. Have to move enemies back if they cross a threshold",
         "resolve": "Resolved: they get it!"
@@ -2226,7 +2226,7 @@
     {
         "date": "2018-11-11T04:30:00.000Z",
         "name": "Shaojun Jiang",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "How the update loop works and how to resize drawn images",
         "resolve": "Resolved: they get it!"
@@ -2234,7 +2234,7 @@
     {
         "date": "2018-11-12T11:15:00.000Z",
         "name": "Valeria Samame",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Dealing with searching through null array values",
         "resolve": "Resolved: they get it!"
@@ -2242,7 +2242,7 @@
     {
         "date": "2018-11-12T11:30:00.000Z",
         "name": "Revital Chavel",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Null pointer exception handling with custom objects",
         "resolve": "Unresolved - ran out of time"
@@ -2250,7 +2250,7 @@
     {
         "date": "2018-11-13T11:00:00.000Z",
         "name": "Carla Salguero",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Nader Nassar",
         "info": "understanding super and subclasses",
         "resolve": "Resolved: they get it!"
@@ -2258,7 +2258,7 @@
     {
         "date": "2018-11-13T12:30:00.000Z",
         "name": "Mishaal Kirpalani",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Understanding how different processing classes interact",
         "resolve": "Resolved - they're still shaky"
@@ -2266,7 +2266,7 @@
     {
         "date": "2018-11-13T01:00:00.000Z",
         "name": "Emma Saros",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "\"inheritance terminal commands",
         "resolve": "Resolved: they get it!"
@@ -2274,7 +2274,7 @@
     {
         "date": "2018-11-13T01:30:00.000Z",
         "name": "Ellie Park",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "\"inheritance terminal commands",
         "resolve": "Resolved: they get it!"
@@ -2282,7 +2282,7 @@
     {
         "date": "2018-11-13T02:00:00.000Z",
         "name": "Gabriel Haberberg",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "\"inheritance terminal commands",
         "resolve": "Resolved: they get it!"
@@ -2290,7 +2290,7 @@
     {
         "date": "2018-11-13T02:30:00.000Z",
         "name": "Marshall Kerpalni",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "\"inheritance terminal commands",
         "resolve": "Resolved: they get it!"
@@ -2298,7 +2298,7 @@
     {
         "date": "2018-11-14T09:30:00.000Z",
         "name": "Eileen Lee",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Anasse Bari",
         "info": "How to print an object",
         "resolve": "Resolved: they get it!"
@@ -2306,7 +2306,7 @@
     {
         "date": "2018-11-14T11:30:00.000Z",
         "name": "Aojie Yu",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Polymorphism",
         "resolve": "Resolved: they get it!"
@@ -2314,7 +2314,7 @@
     {
         "date": null,
         "name": "Olivia Huang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Anasse Bari",
         "info": "practice",
         "resolve": "Resolved: they get it!"
@@ -2322,7 +2322,7 @@
     {
         "date": null,
         "name": "Margaret Sohn",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Candido Cabo",
         "info": "\"UML diagrams classes",
         "resolve": "Resolved: they get it!"
@@ -2330,7 +2330,7 @@
     {
         "date": "2018-11-14T12:00:00.000Z",
         "name": "Sattwik Tripathy",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Polymorphism",
         "resolve": "Resolved: they get it!"
@@ -2338,7 +2338,7 @@
     {
         "date": "2018-11-15T12:00:00.000Z",
         "name": "prianka saha ",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Pass by reference vs value",
         "resolve": "Resolved: they get it!"
@@ -2346,7 +2346,7 @@
     {
         "date": "2018-11-15T11:30:00.000Z",
         "name": "nikhil massand",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "\"Pass by reference vs value static vs non-static\"",
         "resolve": "Resolved: they get it!"
@@ -2354,7 +2354,7 @@
     {
         "date": "2018-11-15T12:00:00.000Z",
         "name": "jessica xu",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Pass by reference vs value",
         "resolve": "Resolved: they get it!"
@@ -2362,7 +2362,7 @@
     {
         "date": "2018-11-18T01:30:00.000Z",
         "name": "Zi Ying Cao ",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Multiple classes and using Eclipse",
         "resolve": "Resolved: they get it!"
@@ -2370,7 +2370,7 @@
     {
         "date": "2018-11-19T11:15:00.000Z",
         "name": "Andy Huang",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "\"Deep copying vectors why use static methods",
         "resolve": "Resolved: they get it!"
@@ -2378,7 +2378,7 @@
     {
         "date": "2018-11-19T02:00:00.000Z",
         "name": "Jia Gu",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Explaining stacks",
         "resolve": "Resolved: they get it!"
@@ -2386,7 +2386,7 @@
     {
         "date": "2018-11-19T02:15:00.000Z",
         "name": "Ashmitha Mathukumar",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "Understanding how to use interface ",
         "resolve": "Resolved: they get it!"
@@ -2394,7 +2394,7 @@
     {
         "date": "2018-11-19T02:15:00.000Z",
         "name": "Carla Salguero",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Nader Nassar",
         "info": "ArrayLists",
         "resolve": "Resolved: they get it!"
@@ -2402,7 +2402,7 @@
     {
         "date": "2018-11-19T02:30:00.000Z",
         "name": "Byunghoon Jun",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Setting up processing",
         "resolve": "Resolved: they get it!"
@@ -2410,7 +2410,7 @@
     {
         "date": "2018-11-19T02:30:00.000Z",
         "name": "Christopher Khoo",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Linking main and classes",
         "resolve": "Resolved: they get it!"
@@ -2418,7 +2418,7 @@
     {
         "date": "2018-11-19T03:30:00.000Z",
         "name": "David Losilevich",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "\"Using BigDecimal explaining ArrayLists\"",
         "resolve": "Resolved: they get it!"
@@ -2426,7 +2426,7 @@
     {
         "date": "2018-11-19T03:45:00.000Z",
         "name": "Sarah White",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "\"Checking boundaries using mouseX and mouseY\"",
         "resolve": "Resolved: they get it!"
@@ -2434,7 +2434,7 @@
     {
         "date": "2018-11-19T03:45:00.000Z",
         "name": "John Barron",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "\"Checking boundaries using mouseX and mouseY\"",
         "resolve": "Resolved: they get it!"
@@ -2442,7 +2442,7 @@
     {
         "date": "2018-11-20T01:30:00.000Z",
         "name": "Ziqin Xu",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Teseo Schneider",
         "info": "setting up main with packageName.className & settings()",
         "resolve": "Resolved: they get it!"
@@ -2450,7 +2450,7 @@
     {
         "date": "2018-11-20T01:45:00.000Z",
         "name": "Brendan Metz",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Teseo Schneider",
         "info": "setting up main with packageName.className & settings()",
         "resolve": "Resolved: they get it!"
@@ -2458,7 +2458,7 @@
     {
         "date": "2018-11-26T02:00:00.000Z",
         "name": "Xiaoxu Deng",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Setting up Processing",
         "resolve": "Resolved: they get it!"
@@ -2466,7 +2466,7 @@
     {
         "date": "2018-11-26T02:15:00.000Z",
         "name": "Jessica Xu",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "Explaining Interfaces",
         "resolve": "Resolved: they get it!"
@@ -2474,7 +2474,7 @@
     {
         "date": "2018-11-27T11:15:00.000Z",
         "name": "Katie Colleran",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Getting Processing to work in Eclipse",
         "resolve": "Other"
@@ -2482,7 +2482,7 @@
     {
         "date": "2018-11-27T11:45:00.000Z",
         "name": "Ashmitha Mathukumar",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Invoking different super-constructors based on type of parameters",
         "resolve": "Resolved: they get it!"
@@ -2490,7 +2490,7 @@
     {
         "date": "2018-11-27T11:45:00.000Z",
         "name": "Bryan Aman",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Getting Processing to work in Eclipse",
         "resolve": "Other"
@@ -2498,7 +2498,7 @@
     {
         "date": "2018-11-27T11:00:00.000Z",
         "name": "Zi Ying Cao ",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Getting Processing to work in Eclipse",
         "resolve": "Unresolved - ran out of time"
@@ -2506,7 +2506,7 @@
     {
         "date": "2018-11-27T11:45:00.000Z",
         "name": "Cristina Llacer",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Getting Processing to work in Eclipse",
         "resolve": "Resolved: they get it!"
@@ -2514,7 +2514,7 @@
     {
         "date": "2018-11-27T01:00:00.000Z",
         "name": "Zi Ying Cao ",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Installing JDK 8 setting it up\"",
         "resolve": "Resolved: they get it!"
@@ -2522,7 +2522,7 @@
     {
         "date": "2018-11-27T01:15:00.000Z",
         "name": "Jessica Xu",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Anasse Bari",
         "info": "Reading files and creating objects from lines in csv",
         "resolve": "Resolved: they get it!"
@@ -2530,7 +2530,7 @@
     {
         "date": "2018-11-27T01:30:00.000Z",
         "name": "Nikhil massand",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Anasse Bari",
         "info": "Debugging syntax errors",
         "resolve": "Resolved: they get it!"
@@ -2538,7 +2538,7 @@
     {
         "date": "2018-11-27T01:45:00.000Z",
         "name": "Soho Hong",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Anasse Bari",
         "info": "Reading csv files",
         "resolve": "Resolved: they get it!"
@@ -2546,7 +2546,7 @@
     {
         "date": "2018-11-27T02:00:00.000Z",
         "name": "Carmen Liu",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Installing JDK 8 setting it up\"",
         "resolve": "Resolved: they get it!"
@@ -2554,7 +2554,7 @@
     {
         "date": "2018-11-27T02:15:00.000Z",
         "name": "Brendan Yap",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Installing JDK 8 setting it up\"",
         "resolve": "Resolved: they get it!"
@@ -2562,7 +2562,7 @@
     {
         "date": "2018-11-27T02:30:00.000Z",
         "name": "Mayu Ranganathan",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Installing JDK 8 setting it up\"",
         "resolve": "Resolved: they get it!"
@@ -2570,7 +2570,7 @@
     {
         "date": "2018-11-27T10:30:00.000Z",
         "name": "Olivia Huang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Anasse Bari",
         "info": "i/o reading txt files",
         "resolve": "Resolved: they get it!"
@@ -2578,7 +2578,7 @@
     {
         "date": "2018-11-27T11:00:00.000Z",
         "name": "Parthvi Bhutani",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Anasse Bari",
         "info": "Comparable Interface",
         "resolve": "Resolved: they get it!"
@@ -2586,7 +2586,7 @@
     {
         "date": "2018-11-27T11:15:00.000Z",
         "name": "Ryan Schwarz",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Anasse Bari",
         "info": "i/o reading txt files",
         "resolve": "Resolved: they get it!"
@@ -2594,7 +2594,7 @@
     {
         "date": "2018-11-27T11:30:00.000Z",
         "name": "Nonso Nwaokorie",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Anasse Bari",
         "info": "i/o reading txt files",
         "resolve": "Resolved: they get it!"
@@ -2602,7 +2602,7 @@
     {
         "date": "2018-11-27T11:30:00.000Z",
         "name": "Yixin Gu",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Anasse Bari",
         "info": "i/o reading txt files",
         "resolve": "Resolved: they get it!"
@@ -2610,7 +2610,7 @@
     {
         "date": "2018-11-28T12:15:00.000Z",
         "name": "Jessica Xu",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "i/o reading txt files",
         "resolve": "Resolved: they get it!"
@@ -2618,7 +2618,7 @@
     {
         "date": "2018-11-28T12:30:00.000Z",
         "name": "Eileen Lee",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Comparable Interface",
         "resolve": "Resolved: they get it!"
@@ -2626,7 +2626,7 @@
     {
         "date": "2018-11-29T11:00:00.000Z",
         "name": "Karishma Mohan",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Extending and implementing and issues with ArrayList of different types",
         "resolve": "Resolved - they're still shaky"
@@ -2634,7 +2634,7 @@
     {
         "date": "2018-11-29T12:00:00.000Z",
         "name": "Gabriel Haberberg",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Extending and implementing and issues with ArrayList of different types",
         "resolve": "Resolved: they get it!"
@@ -2642,7 +2642,7 @@
     {
         "date": "2018-11-30T03:00:00.000Z",
         "name": "Olivia Huang",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Anasse Bari",
         "info": "comparable interface",
         "resolve": "Resolved - they're still shaky"
@@ -2650,7 +2650,7 @@
     {
         "date": "2018-11-30T03:00:00.000Z",
         "name": "Revital Chavel",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Sentence Assignment",
         "resolve": "Resolved: they get it!"
@@ -2658,7 +2658,7 @@
     {
         "date": "2018-11-30T03:00:00.000Z",
         "name": "Andy Huang",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Sentence Assignment",
         "resolve": "Resolved: they get it!"
@@ -2666,7 +2666,7 @@
     {
         "date": "2018-11-30T03:30:00.000Z",
         "name": "Matt Eng",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Processing with OOP",
         "resolve": "Resolved: they get it!"
@@ -2674,7 +2674,7 @@
     {
         "date": "2018-11-30T03:30:00.000Z",
         "name": "Karishma Mohan",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Sentence Assignment",
         "resolve": "Resolved: they get it!"
@@ -2682,7 +2682,7 @@
     {
         "date": "2018-11-30T03:45:00.000Z",
         "name": "Gabriel Haberberg",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Sentence Assignment",
         "resolve": "Resolved: they get it!"
@@ -2690,7 +2690,7 @@
     {
         "date": "2018-12-01T01:00:00.000Z",
         "name": "Myles Agudelo",
-        "tutor": "Alexander Nguyen",
+        "tutor": "Alexander",
         "professor": "Amos Bloomberg",
         "info": "Sentence Assignment. Implementing Sentense constructor. Implementing a toString method for the word class. Understanding how the toString method in the word class will be called in the main method even when the word object is sent as an OrderedThing class.",
         "resolve": "Resolved: they get it!"
@@ -2698,7 +2698,7 @@
     {
         "date": "2018-12-02T01:00:00.000Z",
         "name": "Kathie Guo",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Eclipse processing errors",
         "resolve": "Resolved - they're still shaky"
@@ -2706,7 +2706,7 @@
     {
         "date": "2018-12-02T01:45:00.000Z",
         "name": "Yijia Chen",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Index out of bounds due to managing multiple classes",
         "resolve": "Resolved: they get it!"
@@ -2714,7 +2714,7 @@
     {
         "date": "2018-12-02T03:00:00.000Z",
         "name": "Zi Ying Cao ",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Suzanne McIntosh",
         "info": "Converting the game with multiple disks back into a game with a single disk. Had some small bugs when converting back.",
         "resolve": "Resolved: they get it!"
@@ -2722,7 +2722,7 @@
     {
         "date": "2018-12-02T03:30:00.000Z",
         "name": "rahul das",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "Using toString and how polimorphism handles calling the correct toString function when you call it on a OrderedThing object. How to implement the constructors to initialize an arrayList of words or characters rather than String",
         "resolve": "Resolved: they get it!"
@@ -2730,7 +2730,7 @@
     {
         "date": "2018-12-02T03:15:00.000Z",
         "name": "Jingyi Liang",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "Difference between an interface and abstract class and their purpose. Implementing the class constructors to initialize an arraylist based on an input string.",
         "resolve": "Resolved: they get it!"
@@ -2738,7 +2738,7 @@
     {
         "date": "2018-12-03T11:30:00.000Z",
         "name": "Jenny Jieng",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Understanding multiple classes",
         "resolve": "Resolved: they get it!"
@@ -2746,7 +2746,7 @@
     {
         "date": "2018-12-03T11:45:00.000Z",
         "name": "Ari Mayhew",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Matching ArrayList types to return types and toString methods for use in TestSequence class",
         "resolve": "Resolved: they get it!"
@@ -2754,7 +2754,7 @@
     {
         "date": "2018-12-03T11:30:00.000Z",
         "name": "David Iosilevich",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Candido Cabo",
         "info": "\"ArrayLists (looping etc)\"",
         "resolve": "Resolved: they get it!"
@@ -2762,7 +2762,7 @@
     {
         "date": "2018-12-03T11:15:00.000Z",
         "name": "Shinyoung Park",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Learning processing",
         "resolve": "Resolved - they're still shaky"
@@ -2770,7 +2770,7 @@
     {
         "date": "2018-12-03T02:00:00.000Z",
         "name": "Shinyoung Park",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Learning processing",
         "resolve": "Resolved: they get it!"
@@ -2778,7 +2778,7 @@
     {
         "date": "2018-12-03T02:30:00.000Z",
         "name": "jpw382@nyu.edu",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Polymorphism",
         "resolve": "Resolved: they get it!"
@@ -2786,7 +2786,7 @@
     {
         "date": "2018-12-04T01:00:00.000Z",
         "name": "Shinyoung Park",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Processing millis()\"",
         "resolve": "Resolved: they get it!"
@@ -2794,7 +2794,7 @@
     {
         "date": "2018-12-04T01:15:00.000Z",
         "name": "Jong Heon Han",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Processing millis()\"",
         "resolve": "Resolved: they get it!"
@@ -2802,7 +2802,7 @@
     {
         "date": "2018-12-04T01:30:00.000Z",
         "name": "Matt michelson",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Processing millis()\"",
         "resolve": "Resolved: they get it!"
@@ -2810,7 +2810,7 @@
     {
         "date": "2018-12-04T01:45:00.000Z",
         "name": "Zibin Zhen",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Processing millis()\"",
         "resolve": "Resolved: they get it!"
@@ -2818,7 +2818,7 @@
     {
         "date": "2018-12-04T02:00:00.000Z",
         "name": "Ezra Cohen",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Processing millis()\"",
         "resolve": "Resolved: they get it!"
@@ -2826,7 +2826,7 @@
     {
         "date": "2018-12-04T02:15:00.000Z",
         "name": "Mayu Ranganathan",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Processing millis()\"",
         "resolve": "Resolved: they get it!"
@@ -2834,7 +2834,7 @@
     {
         "date": "2018-12-04T02:30:00.000Z",
         "name": "Meetali Gupta",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Processing millis()\"",
         "resolve": "Resolved: they get it!"
@@ -2842,7 +2842,7 @@
     {
         "date": "2018-12-04T02:45:00.000Z",
         "name": "Janice Zhou",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Processing millis()\"",
         "resolve": "Resolved: they get it!"
@@ -2850,7 +2850,7 @@
     {
         "date": "2018-12-05T09:00:00.000Z",
         "name": "Mikhil Massond",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Anasse Bari",
         "info": "\"Processing how to get started\"",
         "resolve": "Resolved: they get it!"
@@ -2858,7 +2858,7 @@
     {
         "date": "2018-12-05T09:30:00.000Z",
         "name": "Katie Colleran",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Processing installing JDK 8\"",
         "resolve": "Resolved: they get it!"
@@ -2866,7 +2866,7 @@
     {
         "date": "2018-12-05T10:00:00.000Z",
         "name": "Esin Onal",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Teseo Schneider",
         "info": "\"Processing how to use separate files\"",
         "resolve": "Resolved: they get it!"
@@ -2874,7 +2874,7 @@
     {
         "date": "2018-12-05T11:00:00.000Z",
         "name": "Priya Onaganti",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Suzanne McIntosh",
         "info": "\"Procesing millis()",
         "resolve": "Resolved: they get it!"
@@ -2882,7 +2882,7 @@
     {
         "date": "2018-12-05T11:30:00.000Z",
         "name": "Mayu Ranganathan",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "\"Processing millis()",
         "resolve": "Resolved: they get it!"
@@ -2890,7 +2890,7 @@
     {
         "date": "2018-12-05T12:15:00.000Z",
         "name": "Anshula Srivastava",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Getting processing to work with Eclipse",
         "resolve": "Resolved: they get it!"
@@ -2898,7 +2898,7 @@
     {
         "date": "2018-12-05T12:15:00.000Z",
         "name": "Xiaoxu Deng",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Using processing",
         "resolve": "Resolved: they get it!"
@@ -2906,7 +2906,7 @@
     {
         "date": "2018-12-05T12:00:00.000Z",
         "name": "Eric He",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Interface",
         "resolve": "Resolved: they get it!"
@@ -2914,7 +2914,7 @@
     {
         "date": "2018-12-06T11:00:00.000Z",
         "name": "Karishma Mohan",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Figuring out what the code means",
         "resolve": "Resolved - they're still shaky"
@@ -2922,7 +2922,7 @@
     {
         "date": "2018-12-06T12:30:00.000Z",
         "name": "Hari Mohandas",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Merging two sorted arrays",
         "resolve": "Resolved: they get it!"
@@ -2930,7 +2930,7 @@
     {
         "date": "2018-12-07T02:00:00.000Z",
         "name": "Karishma Mohan",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Amos Bloomberg",
         "info": "Explaining Recursion",
         "resolve": "Resolved - they're still shaky"
@@ -2938,7 +2938,7 @@
     {
         "date": "2018-12-07T02:30:00.000Z",
         "name": "Emma Sargent",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Explaining relative path/absolute path",
         "resolve": "Resolved: they get it!"
@@ -2946,7 +2946,7 @@
     {
         "date": "2018-12-07T15:00:00.000Z",
         "name": "Ashmitha Mathukumar",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Anasse Bari",
         "info": "Explaining how to use methods and classes in processing ",
         "resolve": "Resolved: they get it!"
@@ -2954,7 +2954,7 @@
     {
         "date": "2018-12-07T08:00:00.000Z",
         "name": "Anshika Kapoor ",
-        "tutor": "Jeffrey Asamoah",
+        "tutor": "Jeff",
         "professor": "Anasse Bari",
         "info": "helping in hw ",
         "resolve": "Resolved: they get it!"
@@ -2962,7 +2962,7 @@
     {
         "date": "2018-12-08T03:00:00.000Z",
         "name": "Eileen Lee",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Anasse Bari",
         "info": "Using a PApplet object to access Processing methods in another class. Setting up javadocs",
         "resolve": "Resolved: they get it!"
@@ -2970,7 +2970,7 @@
     {
         "date": "2018-12-08T03:30:00.000Z",
         "name": "Myles Agudelo",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "Conventions for where javadocs comments are used and what things they usually include. Understanding how the fractal recursion works.",
         "resolve": "Resolved: they get it!"
@@ -2978,7 +2978,7 @@
     {
         "date": "2018-12-08T04:30:00.000Z",
         "name": "Eric He",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Amos Bloomberg",
         "info": "Understanding how the recursive method works",
         "resolve": "Resolved: they get it!"
@@ -2986,7 +2986,7 @@
     {
         "date": "2018-12-09T12:30:00.000Z",
         "name": "Karishma Mohan",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Commenting requirements",
         "resolve": "Resolved: they get it!"
@@ -2994,7 +2994,7 @@
     {
         "date": "2018-12-09T01:00:00.000Z",
         "name": "Revital Chavel",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Figuring out how the different values determine the fractal proportions",
         "resolve": "Resolved: they get it!"
@@ -3002,7 +3002,7 @@
     {
         "date": "2018-12-09T02:45:00.000Z",
         "name": "Shrina Parikh",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Setting up processing in eclipse",
         "resolve": "Resolved: they get it!"
@@ -3010,7 +3010,7 @@
     {
         "date": "2018-12-09T04:15:00.000Z",
         "name": "olivia huang ",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Anasse Bari",
         "info": "Problems with packages. How to get rid of them.",
         "resolve": "Resolved: they get it!"
@@ -3018,7 +3018,7 @@
     {
         "date": "2018-12-09T04:45:00.000Z",
         "name": "Nomuntuya Luehr",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Teseo Schneider",
         "info": "Problems setting up java 8 in eclipse.",
         "resolve": "Resolved: they get it!"
@@ -3026,7 +3026,7 @@
     {
         "date": "2018-12-09T04:45:00.000Z",
         "name": "Soho Hong",
-        "tutor": "Rahul Joshi",
+        "tutor": "Rahul",
         "professor": "Anasse Bari",
         "info": "Where to download processing and how to set it up",
         "resolve": "Resolved: they get it!"
@@ -3034,7 +3034,7 @@
     {
         "date": "2018-12-10T11:00:00.000Z",
         "name": "Esin Onal",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Teseo Schneider",
         "info": "\"Some debuger and \"\"hot code\"\" warning\"",
         "resolve": "Resolved: they get it!"
@@ -3042,7 +3042,7 @@
     {
         "date": "2018-12-10T11:15:00.000Z",
         "name": "Jessica Xu",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Multiple classes with processing",
         "resolve": "Resolved: they get it!"
@@ -3050,7 +3050,7 @@
     {
         "date": "2018-12-10T15:00:00.000Z",
         "name": "Prianka Saha",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Using the processing video library",
         "resolve": "Resolved: they get it!"
@@ -3058,7 +3058,7 @@
     {
         "date": "2018-12-10T03:00:00.000Z",
         "name": "Jane Kim",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Explaining processing",
         "resolve": "Resolved - they're still shaky"
@@ -3066,7 +3066,7 @@
     {
         "date": "2018-12-10T03:30:00.000Z",
         "name": "Brendan Metz",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Teseo Schneider",
         "info": "Explaining processing",
         "resolve": "Resolved: they get it!"
@@ -3074,7 +3074,7 @@
     {
         "date": "2018-12-10T04:15:00.000Z",
         "name": "David Iosilevich",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Candido Cabo",
         "info": "Throwing exceptions",
         "resolve": "Resolved: they get it!"
@@ -3082,7 +3082,7 @@
     {
         "date": "2018-12-10T04:30:00.000Z",
         "name": "Wangrui Hou",
-        "tutor": "Jonathan Wang",
+        "tutor": "Jonathan",
         "professor": "Suzanne McIntosh",
         "info": "Designing classes in Processing",
         "resolve": "Resolved: they get it!"
@@ -3090,7 +3090,7 @@
     {
         "date": "2018-12-11T12:00:00.000Z",
         "name": "Shaojun Jieng",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Understanding the system for keeping the angles and pattern constant",
         "resolve": "Resolved: they get it!"
@@ -3098,7 +3098,7 @@
     {
         "date": "2018-12-11T15:00:00.000Z",
         "name": "Olivia Huang",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Anasse Bari",
         "info": "Multiple classes with processing",
         "resolve": "Resolved: they get it!"
@@ -3106,7 +3106,7 @@
     {
         "date": "2018-12-11T15:00:00.000Z",
         "name": "Ziqin Xu",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Anasse Bari",
         "info": "Multiple classes with processing",
         "resolve": "Resolved: they get it!"
@@ -3114,7 +3114,7 @@
     {
         "date": "2018-12-11T01:00:00.000Z",
         "name": "Ellie Park",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "Tracing through a program with recursion",
         "resolve": "Resolved: they get it!"
@@ -3122,7 +3122,7 @@
     {
         "date": "2018-12-11T02:00:00.000Z",
         "name": "Shaojun Jiang",
-        "tutor": "Cindy Bui",
+        "tutor": "Cindy",
         "professor": "Amos Bloomberg",
         "info": "Tracing through the fractal",
         "resolve": "Resolved: they get it!"
@@ -3130,7 +3130,7 @@
     {
         "date": "2018-12-12T12:00:00.000Z",
         "name": "Gabriel Haberberg",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Amos Bloomberg",
         "info": "Recursive class",
         "resolve": "Resolved: they get it!"
@@ -3138,7 +3138,7 @@
     {
         "date": "2018-12-13T11:15:00.000Z",
         "name": "Katie Colleran",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "Using attributes with different values for each disk",
         "resolve": "Resolved: they get it!"
@@ -3146,7 +3146,7 @@
     {
         "date": "2018-12-13T11:45:00.000Z",
         "name": "Alma Zhan",
-        "tutor": "Gilad Waldman",
+        "tutor": "Gilad",
         "professor": "Suzanne McIntosh",
         "info": "IndexOutOfBounds when dealing with array of disks",
         "resolve": "Resolved: they get it!"

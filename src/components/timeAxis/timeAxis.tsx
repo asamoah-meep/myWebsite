@@ -109,13 +109,13 @@ export default function TimeAxis(props: TimeAxisProps){
     return <>
         <svg id = "timeBox" width={1100}/>
         <br/>
-        <div className="datePicker" id="startDate">
+        <div className={styles.datePicker} id="startDate">
             Start Date:
             <br/>
             <input type='date' value={format(props.selectedRange[0], constants.inputDateFormat)}
             min={format(constants.fallStart, constants.inputDateFormat)} onChange={props.updateStart}/>
         </div>
-        <div className="datePicker">
+        <div className={styles.datePicker}>
             End Date:
             <br/>
             <input type='date' value={format(props.selectedRange[1], constants.inputDateFormat)}

@@ -18,7 +18,6 @@ interface ProfessorProps{
 }
 
 function createInfo(event: PointerEvent, session: TutorSession){
-    console.log(session);
     const info = d3Selection.select("#info");
     info.classed('hideInfo',false);
     info.selectAll("*").remove();

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "npx eslint src"
@@ -46,6 +46,7 @@
     "d3-axis": "^1.0.12",
     "date-fns": "^4.1.0",
     "js-cookie": "^2.2.1",
+    "mongodb": "^6.17.0",
     "three": "^0.176.0",
     "three-orbit-controls": "^82.1.0",
     "vercel": "^41.6.2"

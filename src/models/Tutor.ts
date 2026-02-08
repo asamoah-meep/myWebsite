@@ -70,13 +70,13 @@ export const tutors = [Jeff, Julia, Bella, Alex, Alan, Hari, Ilias, Aashish, Gil
 
 export function fromTutor(tutorName: string){
     tutorName = tutorName.toLowerCase().trim();
-    if(tutorName === "jeff")
+    if(tutorName === "jeff" || tutorName === "seunggun")
         return Jeff;
     else if(tutorName === "julia")
         return Julia;
-    else if (tutorName === "ella")
+    else if (tutorName === "bella")
         return Bella;
-    else if(tutorName === "elex")
+    else if(tutorName === "alexander")
         return Alex;
     else if(tutorName === "alan")
         return Alan;
@@ -97,6 +97,6 @@ export function fromTutor(tutorName: string){
      else if(tutorName === "rahul")
         return  Rahul;
      else
-        //console.log("Unknown tutor " + tutorName + "found");
+        console.log("Unknown tutor " + tutorName + " found");
         return Jeff;
 }
