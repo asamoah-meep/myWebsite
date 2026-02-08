@@ -3,7 +3,7 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCaretSquareDown, faCaretSquareUp} from "@fortawesome/free-solid-svg-icons";
 import styles from "./dropdown.module.css";
-import { ReactElement, useState } from "react";
+import React, { ReactElement, useState } from "react";
 
 interface DropdownProps{
     title: string

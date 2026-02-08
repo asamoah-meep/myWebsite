@@ -1,7 +1,7 @@
 'use client';
 
-import * as d3Scale from "d3-scale";
-import {ChangeEvent, ReactElement, useEffect, useState} from 'react';
+// import * as d3Scale from "d3-scale";
+import React, {ChangeEvent, ReactElement, useEffect, useState} from 'react';
 import Professor from "src/components/professor/professor";
 import StickyBar from "src/components/stickyBar/stickyBar";
 import {TutorSession} from "src/models/TutorSession";
@@ -32,9 +32,9 @@ export default function TutorTimeline(){
         setSelectedRange([newStartDate, selectedRange[1]]);
     }
 
-    const scale = d3Scale.scaleTime()
-        .domain(selectedRange)
-        .range([startRange, endRange]);
+    // const scale = d3Scale.scaleTime()
+    //     .domain(selectedRange)
+    //     .range([startRange, endRange]);
 
     useEffect( () => {
 
@@ -70,6 +70,7 @@ export default function TutorTimeline(){
     }
 
 
+    const tutorList = tutors.map(t => <li key={t.name}>{t.name}: <span>{t.icon}</span></li>)
     const tutorList = tutors.map(t => <li key={t.name}>{t.name}: <span>{t.icon}</span></li>)
 
     

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import * as d3Scale from "d3-scale";
 import * as d3Selection from "d3-selection";
 import {TutorSession, getColorFromResolution } from "src/models/TutorSession";

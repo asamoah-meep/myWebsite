@@ -1,4 +1,4 @@
-import { ChangeEvent, Dispatch, SetStateAction, useEffect } from "react"
+import React, { ChangeEvent, Dispatch, SetStateAction, useEffect } from "react"
 import { differenceInMonths, differenceInHours, format } from "date-fns";
 import * as d3Axis from 'd3-axis';
 import * as d3Selection from 'd3-selection';

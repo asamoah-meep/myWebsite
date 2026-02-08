@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import styles from "./about.module.css";
 import StickyBar from 'src/components/stickyBar/stickyBar';
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 }
 
 
-export function About() {
+export default function About() {
     const courses = <div className={styles.aboutMe}>
         <ul>
             <li>Data structures</li>
@@ -47,15 +48,16 @@ export function About() {
     </div>
     
     const work = <div>
-        <p>Laguardia Studio(July 2017- September 2018)</p>
-        <p>Computer Science Tutoring(September 2017- May 2019)</p>
+        <p>Laguardia Studio(July 2017 - September 2018)</p>
+        <p>Computer Science Tutoring(September 2017 - May 2019)</p>
         <p>Comcast(May 2019 - August 2019)</p>
         <p>PVH Contractor (October 2019 - December 2019)</p>
-        <p>Full Stack Engineer at GEP(January 2020-July 2020)</p>
-        <p>Full Stack Engineer at Exiger(November 2020-November 2021)</p>
+        <p>Full Stack Engineer at GEP(January 2020 - July 2020)</p>
+        <p>Full Stack Engineer at Exiger(November 2020 - November 2021)</p>
         <p>Software Developer Engineer I at Amazon(November 2021 - March 2024)</p>
         <p>Computer Science Tutor at Juni(October 2023 - May 2024) </p>
-        <p>Software Developer Engineer II at Amazon (March 2024-Present)</p>
+        <p>Software Developer Engineer II at Amazon (March 2024 - July 2025)</p>
+        <p>Software Developer at Brigit(July 2025 - Present)</p>
     </div>
 
     const races = <div>
@@ -64,8 +66,7 @@ export function About() {
         <p>Brooklyn Experience Half Marathon (2025)</p>
     </div>
 
-    const resume =
-    <Link href="/misc/Resume.pdf" target='_blank'>My Resume</Link>
+    const resume = <Link href="/misc/Resume.pdf" target='_blank'>My Resume</Link>
 
     return <>
         <StickyBar/>
@@ -79,5 +80,3 @@ export function About() {
         {resume}
     </>;
 }
-
-export default About;
